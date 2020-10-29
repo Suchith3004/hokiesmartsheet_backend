@@ -1,0 +1,1168 @@
+10244	AHRM-1014	Design and Art for Consumers	ONLINE	
+Online: Asynchronous
+
+3	
+55
+
+55	RK Walsh	(ARR)	----- (ARR) -----	ONLINE	00X
+10245	AHRM-1014	Design and Art for Consumers	ONLINE	
+Online: Asynchronous
+
+3	
+55
+
+55	RK Walsh	(ARR)	----- (ARR) -----	ONLINE	00X
+10246	AHRM-1014	Design and Art for Consumers	ONLINE	
+Online: Asynchronous
+
+3	
+55
+
+55	RK Walsh	(ARR)	----- (ARR) -----	ONLINE	00X
+21400	ARCH-4514	Thesis Inquiry	
+B	
+3	
+Full 0
+
+0	A Ishida	T R	2:00PM	4:45PM	CO 000	14T
+21606	ARCH-4514	Thesis Inquiry	
+B	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	G Tew	T R	2:00PM	4:45PM	TBA	14T
+10991	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10992	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10993	ARCH-4524	Thesis Documentation	
+L01	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10994	ARCH-4524	Thesis Documentation	
+L01	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10995	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10996	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10997	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10998	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+10999	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11000	ARCH-4524	Thesis Documentation	
+L01	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11001	ARCH-4524	Thesis Documentation	
+L04	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11002	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11003	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11004	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11005	ARCH-4524	Thesis Documentation	
+L	
+3	
+130
+
+130	M McGrath	(ARR)	----- (ARR) -----	TBA	00X
+11006	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11007	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11008	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11009	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11010	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11011	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11012	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11013	ARCH-4524	Thesis Documentation	
+L02	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11014	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+11015	ARCH-4524	Thesis Documentation	
+L01	
+3	
+Full 0
+
+0	J Bassett	(ARR)	----- (ARR) -----	TBA	00X
+11016	ARCH-4524	Thesis Documentation	
+L	
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	TBA	00X
+21477	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	CR Vorster	T R	3:30PM	4:45PM	TBA	15T
+21478	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	HS Gartner	T R	3:30PM	4:45PM	TBA	15T
+21479	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	PA Doan	T R	3:30PM	4:45PM	TBA	15T
+21480	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	PA Zellner Bassett	T R	3:30PM	4:45PM	TBA	15T
+21481	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	WU Galloway	T R	3:30PM	4:45PM	ONLINE	15T
+21482	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	A Ishida	T R	3:30PM	4:45PM	TBA	15T
+21483	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	CB Pritchett	T R	3:30PM	4:45PM	TBA	15T
+21484	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	HT de Hahn	T R	3:30PM	4:45PM	ONLINE	15T
+21485	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	JR Jones	T R	3:30PM	4:45PM	ONLINE	15T
+21486	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	PA Doan	T R	3:30PM	4:45PM	ONLINE	15T
+21509	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	WU Galloway	T R	3:30PM	4:45PM	TBA	15T
+21510	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	H Bryon	T R	3:30PM	4:45PM	TBA	15T
+21511	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	JR Jones	T R	3:30PM	4:45PM	TBA	15T
+21512	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	MG Ermann	T R	3:30PM	4:45PM	TBA	15T
+21513	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	E Ruiz Geli	T R	3:30PM	4:45PM	TBA	15T
+21514	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	J Bedford	T R	3:30PM	4:45PM	TBA	15T
+21515	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	SR Thompson	T R	3:30PM	4:45PM	TBA	15T
+21516	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	EJ Grant	T R	3:30PM	4:45PM	TBA	15T
+21517	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	HT de Hahn	T R	3:30PM	4:45PM	TBA	15T
+21518	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	EB Braaten	T R	3:30PM	4:45PM	TBA	15T
+21519	ARCH-4524	Thesis Documentation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	EG Becker	T R	3:30PM	4:45PM	TBA	15T
+21520	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	M Breitschmid	T R	3:30PM	4:45PM	ONLINE	15T
+21521	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	S Tomer	T R	3:30PM	4:45PM	ONLINE	15T
+21522	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	SF Martin	T R	3:30PM	4:45PM	ONLINE	15T
+21523	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	DW Dunay	T R	3:30PM	4:45PM	ONLINE	15T
+21524	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	M Cortes	T R	3:30PM	4:45PM	ONLINE	15T
+21525	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	H Schnoedt	T R	3:30PM	4:45PM	ONLINE	15T
+21665	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	G Tew	T R	2:00PM	4:45PM	ONLINE	14T
+21666	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	T R	2:00PM	4:45PM	ONLINE	14T
+21667	ARCH-4524	Thesis Documentation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	T R	2:00PM	4:45PM	ONLINE	14T
+11168	ART-1004	TS: Drawing for Non-Majors	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	AR Salisbury	T R	9:30AM	12:15PM	ARMRY 105	09T
+11169	ART-1004	TS: Painting for Non-Majors	
+L01	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	DH Bannan	M W	12:20PM	3:05PM	ART C 112	12M
+11171	ART-1004	TS: Painting for Non-Majors	
+L01	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	DH Bannan	M W	9:20AM	12:05PM	ART C 112	09M
+11172	ART-1004	TS: Drawing for Non-Majors	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	AR Salisbury	T R	12:30PM	3:15PM	ARMRY 105	12T
+11174	ART-1004	TS: Digital Photography	ONLINE	
+Online: Asynchronous
+
+3	
+20
+
+20	J Rosenthal	(ARR)	----- (ARR) -----	ONLINE	00X
+11175	ART-1004	TS: Digital Photography	ONLINE	
+Online: Asynchronous
+
+3	
+20
+
+20	J Rosenthal	(ARR)	----- (ARR) -----	ONLINE	00X
+11176	ART-1004	TS: Digital Photography	ONLINE	
+Online: Asynchronous
+
+3	
+20
+
+20	J Rosenthal	(ARR)	----- (ARR) -----	ONLINE	00X
+20745	ART-1004	TS: Painting for Non-majors	
+L01	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	DH Bannan	M W	3:20PM	6:05PM	ART C 112	15M
+21399	ART-1004	TS: Contemporary Art Practices	
+L02	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	JL Hand	T R	9:30AM	12:15PM	ARMRY 101	09T
+21541	ART-1004	TS: Digital Art for Non-Majors	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+18
+
+18	TN Jones	T R	12:30PM	3:15PM	ONLINE	12T
+21542	ART-1004	TS: Principles of Art	
+L03	
+Hybrid (F2F & Online Instruc.)
+
+3	
+18
+
+18	H Okumura	M W	9:20AM	12:15PM	ARMRY 101	09M
+21673	ART-1004	TS: Digital Art	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+15
+
+15	AM Eddy	M W	12:20PM	3:05PM	ONLINE	12M
+11177	ART-1104	Language of Visual Arts	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	JR Jewitt	(ARR)	----- (ARR) -----	ONLINE	00X
+11178	ART-1104	Language of Visual Arts	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	M James	T R	9:30AM	10:45AM	HEND 204	09T
+21560	ART-1114	CT+E Play to Make	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	Staff	T R	3:30PM	4:45PM	TBA	15T
+11183	ART-1334	Visual Arts and Culture	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	A Knoblauch	(ARR)	----- (ARR) -----	ONLINE	00X
+11189	ART-2386	Surv Hist West Art	ONLINE	
+Online: Asynchronous
+
+3	
+300
+
+300	MY Moseley Christian	(ARR)	----- (ARR) -----	ONLINE	00X
+11190	ART-2514	Drawing Concepts	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+15
+
+15	T Head	M W	9:20AM	12:05PM	ONLINE	09M
+11196	ART-2604	Intro to Creative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+18
+
+18	VT Ampatzi	T R	10:20AM	12:15PM	ONLINE	10T
+11197	ART-2604	Intro to Creative Tech	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+18
+
+18	LJ Duffield	M W	10:10AM	12:05PM	TBA	10M
+20811	ART-3054	Islamic Art and Architecture	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	MY Moseley Christian	(ARR)	----- (ARR) -----	ONLINE	00X
+20816	ART-3674	History of Photography	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	AE Ronan	(ARR)	----- (ARR) -----	ONLINE	00X
+11213	ART-4104	Interpretation of Visual Arts	ONLINE	
+Online: Asynchronous
+
+3	
+20
+
+20	JR Jewitt	(ARR)	----- (ARR) -----	ONLINE	00X
+11993	BSE-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+21561	CAUS-1114	CT+E Play to Make	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	Staff	T R	3:30PM	4:45PM	TBA	15T
+21592	DANC-2014	Introduction to Dance History	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	GS Hardwig	(ARR)	----- (ARR) -----	ONLINE	00X
+21593	DANC-2014	Introduction to Dance History	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	GS Hardwig	(ARR)	----- (ARR) -----	ONLINE	00X
+14843	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	A Murphy	T R	11:00AM	12:15PM	ONLINE	11T
+14844	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	A Murphy	T R	2:00PM	3:15PM	ONLINE	14T
+14845	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	JR Scallorns	T R	3:30PM	4:45PM	ONLINE	15T
+14846	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	RM Allnutt	M W	4:00PM	5:15PM	ONLINE	16M
+14847	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	JR Scallorns	T R	2:00PM	3:15PM	ONLINE	14T
+14848	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	MV Palacio Ornelas	M W F	10:10AM	11:00AM	ONLINE	10M
+14849	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	AE Raab	M W F	10:10AM	11:00AM	ONLINE	10M
+14851	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	G Voros	(ARR)	----- (ARR) -----	ONLINE	00X
+14852	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	SK Boudreau	M W F	9:05AM	9:55AM	ONLINE	09M
+14853	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	CE Lischau	M W F	1:25PM	2:15PM	ONLINE	13M
+14854	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	G Voros	(ARR)	----- (ARR) -----	ONLINE	00X
+14855	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	EJ Massey	M W F	1:25PM	2:15PM	ONLINE	13M
+14856	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	SP Jones	M W F	10:10AM	11:00AM	ONLINE	10M
+14857	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	EL Bloomer	(ARR)	----- (ARR) -----	ONLINE	00X
+14858	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	DN Elhauge	M W F	1:25PM	2:15PM	ONLINE	13M
+14859	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	AR Garvoille	M W F	9:05AM	9:55AM	ONLINE	09M
+14860	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	RM Allnutt	M W	2:30PM	3:45PM	ONLINE	14M
+15188	FA-2004	Creativity & the Artistic Exp	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+225
+
+225	A Weinstein	T R	12:30PM	1:45PM	ONLINE	12T
+15487	FREC-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+16153	HORT-2164	Floral Design	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	BH Leshyn	M W	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	M	6:30PM	9:20PM	SAUND 102	 
+16154	HORT-2164	Floral Design	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	BH Leshyn	M W	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	M	2:30PM	5:20PM	SAUND 102	 
+16170	HORT-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+16260	HUM-1604	Intro Hum and Arts	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	EA McLain	T R	3:30PM	4:45PM	ONLINE	15T
+16261	HUM-1604	Intro Hum and Arts	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	DE Polanco	T R	2:00PM	3:15PM	ONLINE	14T
+16269	HUM-2204	The Creative Process	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	SE Plummer	T R	5:00PM	6:15PM	TBA	17T
+21470	IDS-1114	CT+E Play to Make	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+15
+
+15	Staff	T R	3:30PM	4:45PM	TBA	15T
+16592	ITDS-1114	Design Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+2700
+
+2700	G Tew	(ARR)	----- (ARR) -----	ONLINE	00X
+16685	LAR-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+18217	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+125
+
+125	M Elmer	(ARR)	----- (ARR) -----	ONLINE	00X
+18218	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	Y Dokshansky	(ARR)	----- (ARR) -----	ONLINE	00X
+18219	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	CR Reep	(ARR)	----- (ARR) -----	ONLINE	00X
+18220	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	WE Easter	(ARR)	----- (ARR) -----	ONLINE	00X
+21599	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	CS Foster	(ARR)	----- (ARR) -----	ONLINE	00X
+21654	MUS-1104	Music Appreciation	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JK Hutchins	(ARR)	----- (ARR) -----	TBA	00X
+18221	MUS-1114	Listening in the Digital Age	
+L	
+Face-to-Face Instruction
+
+3	
+70
+
+70	WJ Crone	M W F	12:20PM	1:10PM	SQUIR SALON	12M
+18228	MUS-2116	Survey of Western Music	ONLINE	
+Online: Asynchronous
+
+3	
+125
+
+125	M Wilkens-Reed	(ARR)	----- (ARR) -----	ONLINE	00X
+18284	MUS-3314	Instrumental Ensemble Music	
+L06	
+Hybrid (F2F & Online Instruc.)
+
+1	
+20
+
+20	JM Bean	T R	7:00PM	8:30PM	SQUIR 162	19T
+18289	MUS-3314	Instrumental Ensemble Music	
+L19	
+Face-to-Face Instruction
+
+1	
+40
+
+40	AS Irrera	M W F	1:25PM	2:15PM	SQUIR 243	13M
+ 	 	 	 	* Additional Times *	T R	12:30PM	1:45PM	SQUIR 243	 
+18290	MUS-3314	Instrumental Ensemble Music	
+L21	
+Hybrid (F2F & Online Instruc.)
+
+1	
+20
+
+20	A Weinstein	(ARR)	----- (ARR) -----	TBA	00X
+18291	MUS-3314	Instrumental Ensemble Music	
+L08	
+Hybrid (F2F & Online Instruc.)
+
+1	
+100
+
+100	D Shapiro	M W F	2:30PM	4:10PM	SQUIR 243	14M
+18292	MUS-3314	Instrumental Ensemble Music	
+L01	
+Face-to-Face Instruction
+
+1	
+100
+
+100	M Elmer	T R	7:30PM	10:00PM	SQUIR 243	19T
+18293	MUS-3314	Instrumental Ensemble Music	
+L	
+Hybrid (F2F & Online Instruc.)
+
+1	
+10
+
+10	AE Thomas	(ARR)	----- (ARR) -----	TBA	00X
+18294	MUS-3314	Instrumental Ensemble Music	
+L	
+Hybrid (F2F & Online Instruc.)
+
+1	
+10
+
+10	JA Crafton	T R	3:30PM	4:30PM	SQUIR 162	15T
+18296	MUS-3314	Instrumental Ensemble Music	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+15
+
+15	JK Hutchins	T	5:00PM	7:00PM	ONLINE	17T
+18299	MUS-3314	Instrumental Ensemble Music	
+L22	
+Hybrid (F2F & Online Instruc.)
+
+1	
+125
+
+125	PK Middleton	T R	3:30PM	4:45PM	SQUIR 243	15T
+18300	MUS-3314	Instrumental Ensemble Music	
+L15	
+Hybrid (F2F & Online Instruc.)
+
+1	
+10
+
+10	Y Dokshansky	(ARR)	----- (ARR) -----	TBA	00X
+18301	MUS-3314	Instrumental Ensemble Music	
+L03	
+Hybrid (F2F & Online Instruc.)
+
+1	
+130
+
+130	JM Bean	M W F	5:00PM	6:30PM	SQUIR 243	17M
+18302	MUS-3314	Instrumental Ensemble Music	
+L02	
+Hybrid (F2F & Online Instruc.)
+
+1	
+25
+
+25	JA Crafton	M W F	12:20PM	1:10PM	SQUIR 162	12M
+18303	MUS-3314	Instrumental Ensemble Music	
+L	
+Hybrid (F2F & Online Instruc.)
+
+1	
+15
+
+15	J Irrera	(ARR)	----- (ARR) -----	TBA	00X
+18306	MUS-3414	Choral Ensemble Music	
+L	
+Hybrid (F2F & Online Instruc.)
+
+1	
+100
+
+100	JC Sturgill	R	5:30PM	6:55PM	SQUIR SALON	17R
+ 	 	 	 	* Additional Times *	M	5:30PM	6:55PM	HEND 204	 
+18307	MUS-3414	Choral Ensemble Music	
+L06	
+Hybrid (F2F & Online Instruc.)
+
+1	
+50
+
+50	DD Bigler	M W F	3:35PM	5:15PM	SQUIR SALON	15M
+18308	MUS-3414	Choral Ensemble Music	
+L08	
+Hybrid (F2F & Online Instruc.)
+
+1	
+100
+
+100	JC Sturgill	M W	5:30PM	6:55PM	SQUIR SALON	17M
+20932	MUS-3414	Choral Ensemble Music	
+L	
+Hybrid (F2F & Online Instruc.)
+
+1	
+25
+
+25	AE Wyatt	T R	11:00AM	12:15PM	SQUIR SALON	11T
+19755	SPIA-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+19935	TA-2014	Introduction to Theatre	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+500
+
+500	SC Rinehart	M W F	11:15AM	12:05PM	ONLINE	11M
+19936	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	KS Rosin	M W	12:30PM	1:45PM	ONLINE	12M
+19937	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	J Rosin	T R	12:30PM	1:45PM	ONLINE	12T
+19938	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	WJ Goblirsch	T R	9:30AM	10:45AM	ONLINE	09T
+19939	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	WJ Goblirsch	M W	2:30PM	3:45PM	ONLINE	14M
+19941	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	J Rosin	M W	3:30PM	4:45PM	ONLINE	15M
+19942	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TE Wood	M W	4:00PM	5:15PM	ONLINE	16M
+19943	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TE Wood	T R	9:30AM	10:45AM	ONLINE	09T
+19944	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	J Rosin	T R	3:30PM	4:45PM	ONLINE	15T
+19945	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	WJ Goblirsch	T R	11:00AM	12:15PM	ONLINE	11T
+19947	TA-2024	Introduction to Acting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TE Wood	M W	9:30AM	10:45AM	ONLINE	09M
+19953	TA-2204	Creative Dance	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+20
+
+20	RG Rugh	T R	9:30AM	10:45AM	T101 101	09T
+19954	TA-2204	Creative Dance	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+20
+
+20	RG Rugh	T R	11:00AM	12:15PM	T101 101	11T
+19955	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	WJ Goblirsch	M W	12:30PM	1:45PM	ONLINE	12M
+19957	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	J Rosin	M W	9:30AM	10:45AM	ONLINE	09M
+19958	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	PA Raun	M W	11:00AM	12:15PM	ONLINE	11M
+19959	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TE Wood	M W	2:30PM	3:45PM	ONLINE	14M
+21320	UH-2824	TS: Interaction in Technology	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	T Rikakis	(ARR)	----- (ARR) -----	ONLINE	00X
+21321	UH-2824	TS: Form in Tech Innovation	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	T Rikakis	(ARR)	----- (ARR) -----	ONLINE	00X
+21322	UH-2824	TS: Aesthetics Tech Innovation	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	T Rikakis	(ARR)	----- (ARR) -----	ONLINE	00X

@@ -1,0 +1,1155 @@
+10103	ACIS-1004	Accounting Foundations	ONLINE	
+Online: Asynchronous
+
+3	
+300
+
+300	JM Lacoste	(ARR)	----- (ARR) -----	ONLINE	00X
+11747	BIT-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21496	BIT-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+11748	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	QJ Nottingham	T R	11:00AM	12:15PM	ONLINE	11T
+11749	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	JD Kern	M W F	12:20PM	1:10PM	ONLINE	12M
+11750	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	JD Kern	M W F	9:05AM	9:55AM	ONLINE	09M
+11751	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online: Asynchronous
+
+3	
+250
+
+250	QJ Nottingham	(ARR)	----- (ARR) -----	ONLINE	00X
+11752	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	D Simundza	T R	8:00AM	9:15AM	ONLINE	08T
+11753	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	D Simundza	T R	12:30PM	1:45PM	ONLINE	12T
+11754	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	JD Kern	M W F	1:25PM	2:15PM	ONLINE	13M
+21408	BIT-2405	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	D Simundza	M W F	8:00AM	8:50AM	ONLINE	08M
+13011	CONS-2304	Consumer and Family Finances	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+225
+
+225	G Cheng	T R	9:30AM	10:45AM	ONLINE	09T
+13045	CS-1014	Intro Computational Thinking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+72
+
+72	DG Kafura	T R	9:30AM	10:45AM	ONLINE	09T
+13046	CS-1014	Intro Computational Thinking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+72
+
+72	Staff	T R	5:00PM	6:15PM	ONLINE	17T
+13053	CS-1064	Intro to Programming in Python	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JA Lewis	(ARR)	----- (ARR) -----	ONLINE	00X
+13054	CS-1064	Intro to Programming in Python	ONLINE	
+Online: Asynchronous
+
+3	
+550
+
+550	JA Lewis	(ARR)	----- (ARR) -----	ONLINE	00X
+13096	CS-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21497	CS-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+20637	ENGL-2034	Analyzing Sounds of Language	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	AJ Walker	T R	11:00AM	12:15PM	ONLINE	11T
+15192	FIN-2114	Invest & Financial Literacy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	E Wikle	M W	2:30PM	3:45PM	ONLINE	14M
+15193	FIN-2114	Invest & Financial Literacy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	TB Reilly	T R	2:00PM	3:15PM	ONLINE	14T
+15194	FIN-2114	Invest & Financial Literacy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	TB Reilly	T R	12:30PM	1:45PM	ONLINE	12T
+15196	FIN-2114	Invest & Financial Literacy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	E Wikle	M W	4:00PM	5:15PM	ONLINE	16M
+15457	FREC-1004	Digital Planet	ONLINE	
+Online: Asynchronous
+
+3	
+180
+
+180	JP Gannon	(ARR)	----- (ARR) -----	ONLINE	00X
+15618	GEOG-1084	Digital Planet	ONLINE	
+Online: Asynchronous
+
+3	
+180
+
+180	JP Gannon	(ARR)	----- (ARR) -----	ONLINE	00X
+21257	HD-2104	Quantitative Community Researc	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	JM Roos	(ARR)	----- (ARR) -----	ONLINE	00X
+16024	HIST-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	12:20PM	1:10PM	ONLINE	12M
+16025	HIST-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	10:10AM	11:00AM	ONLINE	10M
+16026	HIST-2604	Intro Data in Social Context	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	E Stamm	(ARR)	----- (ARR) -----	ONLINE	00X
+16377	ISC-1106H	Integrated Science I	ONLINE	
+Online with Synchronous Mtgs.
+
+6	
+72
+
+72	GL Long	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T R	11:00AM	12:15PM	ONLINE	 
+16667	LAR-1254	Environment & Natural Systems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	M Kim	T R	9:30AM	10:45AM	ONLINE	09T
+16668	LAR-1254	Environment & Natural Systems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+70
+
+70	M Kim	T R	9:30AM	10:45AM	ONLINE	09T
+16794	MATH-1014	Precalc with Transcendental	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	J Thompson	(ARR)	----- (ARR) -----	ONLINE	00X
+16795	MATH-1014	Precalc with Transcendental	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	D Agud	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T R	9:30AM	10:20AM	ONLINE	 
+16796	MATH-1014	Precalc with Transcendental	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	J Thompson	(ARR)	----- (ARR) -----	ONLINE	00X
+16797	MATH-1014	Precalc with Transcendental	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	J Thompson	(ARR)	----- (ARR) -----	ONLINE	00X
+16798	MATH-1014	Precalc with Transcendental	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	J Thompson	(ARR)	----- (ARR) -----	ONLINE	00X
+16799	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16800	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16801	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16802	MATH-1025	Elementary Calculus	
+L	
+Face-to-Face Instruction
+
+3	
+Full 0
+
+0	SG Anderson	M W F	9:05AM	9:55AM	TBA	09M
+ 	 	 	 	* Additional Times *	T R	8:00AM	8:50AM	TBA	 
+16803	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16804	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16805	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16806	MATH-1025	Elementary Calculus	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	D Agud	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T R	11:00AM	11:50AM	ONLINE	 
+16807	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16808	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16809	MATH-1025	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16810	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16811	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16812	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16813	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16814	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16815	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16816	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16817	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16818	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16819	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16820	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16821	MATH-1026	Elementary Calculus	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KD Robinson	(ARR)	----- (ARR) -----	ONLINE	00X
+16828	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	TBA	 
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	ONLINE	 
+16829	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	9:05AM	9:55AM	TBA	09M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	ONLINE	 
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	TBA	 
+16830	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	TBA	12M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	ONLINE	 
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	TBA	 
+16831	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	R	2:00PM	2:50PM	TBA	 
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	ONLINE	 
+16832	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	TBA	 
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	ONLINE	 
+16833	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+30
+
+30	Staff	M T W F	8:00AM	8:50AM	TBA	08
+ 	 	 	 	* Additional Times *	R	8:00AM	8:50AM	ONLINE	 
+16834	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	R	2:00PM	2:50PM	ONLINE	 
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	TBA	 
+16835	MATH-1225	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	TBA	 
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	ONLINE	 
+16836	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	2:30PM	3:20PM	ONLINE	14M
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	ONLINE	 
+16837	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online: Asynchronous
+
+4	
+35
+
+35	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16838	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online: Asynchronous
+
+4	
+40
+
+40	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16839	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M T W F	8:00AM	8:50AM	ONLINE	08
+16840	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+Full 0
+
+0	Staff	M T W F	8:00AM	8:50AM	ONLINE	08
+16841	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	ONLINE	 
+16842	MATH-1225	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	ONLINE	 
+16843	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+45
+
+45	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	ONLINE	 
+16844	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	ONLINE	 
+16845	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	ONLINE	 
+16846	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	ONLINE	 
+16847	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T	8:00AM	8:50AM	ONLINE	 
+16848	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W R F	8:00AM	8:50AM	ONLINE	08
+16849	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	ONLINE	 
+16850	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+Full 0
+
+0	Staff	M W R F	8:00AM	8:50AM	ONLINE	08
+16851	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+45
+
+45	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	ONLINE	 
+16852	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+42
+
+42	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	R	2:00PM	2:50PM	ONLINE	 
+16853	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W R F	8:00AM	8:50AM	TBA	08
+16854	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	R	2:00PM	2:50PM	TBA	 
+16855	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+45
+
+45	Staff	M W F	9:05AM	9:55AM	TBA	09M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	TBA	 
+16856	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+42
+
+42	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	TBA	 
+16857	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+45
+
+45	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	TBA	 
+16858	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	TBA	12M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	TBA	 
+16859	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	TBA	12M
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	TBA	 
+16860	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	R	3:30PM	4:20PM	TBA	 
+16861	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	4:00PM	4:50PM	TBA	16M
+ 	 	 	 	* Additional Times *	T	3:30PM	4:20PM	TBA	 
+16862	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online: Asynchronous
+
+4	
+35
+
+35	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16863	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	TBA	 
+16864	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	TBA	 
+16865	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online: Asynchronous
+
+4	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16866	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+35
+
+35	Staff	M W R F	8:00AM	8:50AM	ONLINE	08
+16867	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	TBA	 
+16868	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	9:05AM	9:55AM	TBA	09M
+ 	 	 	 	* Additional Times *	R	8:00AM	8:50AM	TBA	 
+16869	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	TBA	 
+16870	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	TBA	12M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	TBA	 
+16871	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	TBA	 
+16872	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+42
+
+42	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	TBA	 
+16873	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	4:00PM	4:50PM	TBA	16M
+ 	 	 	 	* Additional Times *	T	3:30PM	4:20PM	TBA	 
+16874	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	9:05AM	9:55AM	TBA	09M
+ 	 	 	 	* Additional Times *	T	8:00AM	8:50AM	TBA	 
+16875	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	TBA	 
+16876	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	TBA	 
+16877	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M T W F	8:00AM	8:50AM	TBA	08
+16878	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+42
+
+42	Staff	M W F	11:15AM	12:05PM	TBA	11M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	TBA	 
+16879	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	12:20PM	1:10PM	TBA	12M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	TBA	 
+16880	MATH-1226	Calculus of a Single Variable	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	T	5:00PM	5:50PM	ONLINE	 
+16881	MATH-1226	Calculus of a Single Variable	
+L	
+Hybrid (F2F & Online Instruc.)
+
+4	
+40
+
+40	Staff	M W F	1:25PM	2:15PM	TBA	13M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	TBA	 
+16882	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16883	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16884	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16885	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16886	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16887	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16888	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16889	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16890	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16891	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16892	MATH-1524	Business Calculus	ONLINE	
+Online: Asynchronous
+
+4	
+75
+
+75	JH England	(ARR)	----- (ARR) -----	ONLINE	00X
+16893	MATH-1536	Geometry Mathematics of Design	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	ND Gildersleeve	(ARR)	----- (ARR) -----	ONLINE	00X
+16894	MATH-1536	Geometry Mathematics of Design	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	ND Gildersleeve	(ARR)	----- (ARR) -----	ONLINE	00X
+16895	MATH-1536	Geometry Mathematics of Design	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	ND Gildersleeve	(ARR)	----- (ARR) -----	ONLINE	00X
+16896	MATH-1536	Geometry Mathematics of Design	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	ND Gildersleeve	(ARR)	----- (ARR) -----	ONLINE	00X
+16897	MATH-1536	Geometry Mathematics of Design	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	ND Gildersleeve	(ARR)	----- (ARR) -----	ONLINE	00X
+19281	PSCI-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21495	PSCI-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+19447	REAL-2034	Real Estate Data Analysis	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+65
+
+65	JG Robert	T R	5:00PM	6:15PM	ONLINE	17T
+21256	SOC-2104	Quantitative Community Researc	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	JM Roos	(ARR)	----- (ARR) -----	ONLINE	00X
+19633	SOC-2604	Intro Data in Social Context	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	E Stamm	(ARR)	----- (ARR) -----	ONLINE	00X
+19634	SOC-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	12:20PM	1:10PM	ONLINE	12M
+19635	SOC-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	10:10AM	11:00AM	ONLINE	10M
+19766	STAT-2004	Introductory Statistics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+60
+
+60	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	T	3:30PM	4:45PM	TBA	 
+19767	STAT-2004	Introductory Statistics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+60
+
+60	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	R	3:30PM	4:45PM	TBA	 
+19768	STAT-2004	Introductory Statistics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	W	4:00PM	4:50PM	TBA	 
+19769	STAT-2004	Introductory Statistics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+60
+
+60	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	M	5:30PM	6:20PM	TBA	 
+19770	STAT-2004	Introductory Statistics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+60
+
+60	Staff	M W F	10:10AM	11:00AM	TBA	10M
+ 	 	 	 	* Additional Times *	W	4:00PM	4:50PM	TBA	 
+19882	STS-2604	Intro Data in Social Context	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	E Stamm	(ARR)	----- (ARR) -----	ONLINE	00X
+19884	STS-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	12:20PM	1:10PM	ONLINE	12M
+19885	STS-2604	Intro Data in Social Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	MS Davitt	M W F	10:10AM	11:00AM	ONLINE	10M
+20209	UH-2744	TS: Algorithmic Thinking	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	A Soysal	(ARR)	----- (ARR) -----	ONLINE	00X
+20210	UH-2744	TS:Prescript/Predict Analytics	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	M Kretser	(ARR)	----- (ARR) -----	ONLINE	00X
+20211	UH-2744	TS: Computing Systems	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	A Soysal	(ARR)	----- (ARR) -----	ONLINE	00X
+20212	UH-2744	TS: Est, Exp, Descr Analytics	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	M Kretser	(ARR)	----- (ARR) -----	ONLINE	00X
+20213	UH-2744	TS: Security and Privacy	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	A Soysal	(ARR)	----- (ARR) -----	ONLINE	00X
+21319	UH-2744	TS: Acquiring & Analyzing Data	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	M Kretser	(ARR)	----- (ARR) -----	ONLINE	00X

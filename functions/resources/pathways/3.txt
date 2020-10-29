@@ -1,0 +1,1891 @@
+10055	AAEC-1005	Econ Food Fiber Sys	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+80
+
+80	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+10056	AAEC-1005	Econ Food Fiber Sys	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	SK Stephenson	M W F	12:20PM	1:10PM	ONLINE	12M
+10057	AAEC-1006	Econ Food Fiber Syst	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+540
+
+540	MJ Ellerbrock	M W F	9:05AM	9:55AM	ONLINE	09M
+10064	AAEC-3204	Intl Agri Dvlp & Trad	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+48
+
+48	A Gupta	T R	11:00AM	12:15PM	ONLINE	11T
+10066	AAEC-3324	Environment Sustain Dev Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	MJ Ellerbrock	M W F	12:20PM	1:10PM	ONLINE	12M
+10067	AAEC-3324	Environment Sustain Dev Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	E Benami	T R	3:30PM	4:45PM	ONLINE	15T
+10225	AFST-1714	Intro African American Studies	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	AN Baldwin	T R	9:30AM	10:45AM	TBA	09T
+10226	AFST-1714	Intro African American Studies	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+10227	AFST-1714	Intro African American Studies	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+10228	AFST-1814	Intro to African Studies	
+L	
+Face-to-Face Instruction
+
+3	
+45
+
+45	PS Polanah	M W F	1:25PM	2:15PM	TBA	13M
+10248	AHRM-2404	Consumer Rights	ONLINE	
+Online: Asynchronous
+
+3	
+140
+
+140	PJ Fisher	(ARR)	----- (ARR) -----	ONLINE	00X
+10250	AINS-1104	Intro American Indian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	SR Cook	(ARR)	----- (ARR) -----	ONLINE	00X
+10251	AINS-1104	Intro American Indian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	SR Cook	(ARR)	----- (ARR) -----	ONLINE	00X
+10252	AINS-1104	Intro American Indian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	CK Hey	(ARR)	----- (ARR) -----	ONLINE	00X
+10328	ALS-4204	Concepts Comm Food Systems	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+10
+
+10	PE Ziegler	F	11:15AM	2:00PM	LITRV 244	11F
+10874	ARBC-2774	Arab Culture and Civilization	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	WC Taggart	M W	2:30PM	3:45PM	TBA	14M
+11538	BDS-2006	Fundamentals of BDS	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	M Kovach	T R	5:00PM	6:15PM	ONLINE	17T
+11539	BDS-3134	Choice and Behavior	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	M Kovach	T	6:30PM	9:30PM	ONLINE	18T
+11747	BIT-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21496	BIT-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+11993	BSE-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+12913	CMST-2134	Intro to Health Communication	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	AH Ivory	(ARR)	----- (ARR) -----	ONLINE	00X
+12930	COMM-1014	Introduction to Communication	ONLINE	
+Online: Asynchronous
+
+3	
+290
+
+290	BW Howell	(ARR)	----- (ARR) -----	ONLINE	00X
+12987	COMM-2084	Media and Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	JB Mackay	T R	3:30PM	4:45PM	ONLINE	15T
+13096	CS-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21497	CS-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+14253	ECON-1204	Economics of Race	ONLINE	
+Online: Asynchronous
+
+3	
+24
+
+24	Z Yang	(ARR)	----- (ARR) -----	ONLINE	00X
+14277	ECON-1214	Econ Hist: Diversity&Inclusion	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	M Miller	T R	5:00PM	6:15PM	ONLINE	17T
+14254	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+14255	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+450
+
+450	SC Trost	M W F	1:25PM	2:15PM	ONLINE	13M
+14257	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	ME Fox	M W F	12:20PM	1:10PM	ONLINE	12M
+14258	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+14261	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+450
+
+450	SC Trost	M W F	11:15AM	12:05PM	ONLINE	11M
+14262	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+20539	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+20541	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+20543	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	ME Fox	M W F	10:10AM	11:00AM	ONLINE	10M
+21284	ECON-2005	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+14264	ECON-2006	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	GH Gebremariam	M W F	11:15AM	12:05PM	ONLINE	11M
+14265	ECON-2006	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	GH Gebremariam	M W F	12:20PM	1:10PM	ONLINE	12M
+14266	ECON-2006	Principles of Economics	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	N Bose	(ARR)	----- (ARR) -----	ONLINE	00X
+14267	ECON-2006	Principles of Economics	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	Z Yang	(ARR)	----- (ARR) -----	ONLINE	00X
+14268	ECON-2006	Principles of Economics	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	ES Perdue	(ARR)	----- (ARR) -----	ONLINE	00X
+14269	ECON-2006	Principles of Economics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	GH Gebremariam	M W F	10:10AM	11:00AM	ONLINE	10M
+20547	ECON-2006	Principles of Economics	
+L	
+3	
+50
+
+50	Staff
+14270	ECON-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	G Hersch	M W	4:00PM	5:15PM	ONLINE	16M
+14271	ECON-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	M Moehler	M W	4:00PM	5:15PM	ONLINE	16M
+14281	ECON-3134	Choice and Behavior	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	M Kovach	T	6:30PM	9:30PM	ONLINE	18T
+14318	EDCI-2614	The Reading Mind	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	HA Mesmer	M W	2:30PM	3:45PM	ONLINE	14M
+21163	EDCI-2614	The Reading Mind	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	Staff
+14321	EDCI-3024	Issues of Schooling in the US	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+24
+
+24	Y Liu	T R	11:00AM	12:15PM	ONLINE	11T
+20667	EDCI-3144	Educ Excptnl Learners	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	EM Burns	M W	10:10AM	11:00AM	ONLINE	10M
+14618	ENGE-4094	Startup: Commercialization	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	W	6:30PM	9:30PM	ONLINE	18W
+14820	ENGL-1504	Introduction to Linguistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	CM Eska	T R	9:30AM	10:45AM	ONLINE	09T
+20616	ENGL-1514	Language and Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	K Carmichael	M W	4:00PM	5:15PM	ONLINE	16M
+21398	ENGL-1514	Language and Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	KG Morse	M W F	11:15AM	12:05PM	ONLINE	11M
+15243	FIN-4014	Cyberlaw and Policy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	A Price	T R	12:30PM	1:45PM	ONLINE	12T
+20852	FIW-4114	Biodiversity Conservation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+12
+
+12	MK Hamed	T	6:30PM	9:30PM	JCH 317BC	18T
+15460	FREC-2124	Forests, Society & Climate	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+70
+
+70	VA Thomas	T R	11:00AM	12:15PM	ONLINE	11T
+15465	FREC-2554	Leading Global Sustainability	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+140
+
+140	RB Hull	T R	12:30PM	1:45PM	ONLINE	12T
+15487	FREC-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+15617	GEOG-1014	World Regions	ONLINE	
+Online: Asynchronous
+
+3	
+2000
+
+2000	JD Boyer	(ARR)	----- (ARR) -----	ONLINE	00X
+15620	GEOG-1116	Seeking Sustainability	
+L	
+Face-to-Face Instruction
+
+3	
+30
+
+30	TD Baird	T R	9:30AM	10:45AM	TBA	09T
+15625	GEOG-2054	Introduction to World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	D Poets	T R	11:00AM	12:15PM	ONLINE	11T
+15626	GEOG-2054	Introduction to World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	2:30PM	3:45PM	TBA	14M
+21186	GEOG-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	MF Todd	(ARR)	----- (ARR) -----	ONLINE	00X
+21494	GEOG-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+15627	GEOG-2064	Global Econ and World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	4:00PM	5:15PM	TBA	16M
+15628	GEOG-2064	Global Econ and World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	PJ Salmons	T R	11:00AM	12:15PM	ONLINE	11T
+20968	GEOG-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20972	GEOG-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	SG Nelson	(ARR)	----- (ARR) -----	ONLINE	00X
+15632	GEOG-2244	Sustainable Urbanization	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+90
+
+90	RD Oliver	T R	5:00PM	6:15PM	ONLINE	17T
+15638	GEOG-3104	Environ Prob Pop Dev	
+L	
+Face-to-Face Instruction
+
+3	
+49
+
+49	L Juran	T R	11:00AM	12:15PM	TBA	11T
+15890	HD-1004	Human Development I	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	T R	11:00AM	12:15PM	TBA	11T
+15891	HD-1004	Human Development I	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	T R	9:30AM	10:45AM	TBA	09T
+15894	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+48
+
+48	JL Tillett	(ARR)	----- (ARR) -----	ONLINE	00X
+15895	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+48
+
+48	CL Beers	(ARR)	----- (ARR) -----	ONLINE	00X
+15897	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+48
+
+48	J Kim	(ARR)	----- (ARR) -----	ONLINE	00X
+15898	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	DM Devine	(ARR)	----- (ARR) -----	ONLINE	00X
+15899	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	CL Duncan Lane	(ARR)	----- (ARR) -----	ONLINE	00X
+20984	HD-1004	Human Development I	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+20985	HD-1004	Human Development I	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+20986	HD-1004	Human Development I	
+L	
+Face-to-Face Instruction
+
+3	
+Full 0
+
+0	Staff
+21136	HD-1004	Human Development I	ONLINE	
+Online: Asynchronous
+
+3	
+125
+
+125	CL Duncan Lane	(ARR)	----- (ARR) -----	ONLINE	00X
+15902	HD-2004	HD II: Adulthood & Aging	ONLINE	
+Online: Asynchronous
+
+3	
+48
+
+48	KS Patel	(ARR)	----- (ARR) -----	ONLINE	00X
+15904	HD-2004	HD II: Adulthood & Aging	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	DS Scott-Poe	(ARR)	----- (ARR) -----	ONLINE	00X
+15905	HD-2004	HD II: Adulthood & Aging	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	BD Katz	(ARR)	----- (ARR) -----	ONLINE	00X
+20989	HD-2004	HD II: Adulthood & Aging	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+20991	HD-2004	HD II: Adulthood & Aging	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+15906	HD-2014	Integrative Health Practices	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	MF Komelski	(ARR)	----- (ARR) -----	ONLINE	00X
+15909	HD-2314	Human Sexuality	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	M W F	10:10AM	11:00AM	TBA	10M
+15910	HD-2314	Human Sexuality	ONLINE	
+Online: Asynchronous
+
+3	
+48
+
+48	TM Fennell	(ARR)	----- (ARR) -----	ONLINE	00X
+15911	HD-2314	Human Sexuality	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	T R	12:30PM	1:45PM	TBA	12T
+15912	HD-2314	Human Sexuality	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	KK Puckett	(ARR)	----- (ARR) -----	ONLINE	00X
+15913	HD-2314	Human Sexuality	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	SC Cooke	(ARR)	----- (ARR) -----	ONLINE	00X
+20995	HD-2314	Human Sexuality	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	TBA	09M
+20997	HD-2314	Human Sexuality	ONLINE	
+Online: Asynchronous
+
+3	
+125
+
+125	R Wesche	(ARR)	----- (ARR) -----	ONLINE	00X
+21001	HD-2314	Human Sexuality	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+21002	HD-2314	Human Sexuality	ONLINE	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	Staff
+20668	HD-3144	Educ Excptnl Learners	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	Staff	M W	11:15AM	12:30PM	TBA	11M
+21123	HD-3144	Educ Excptnl Learners	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	EM Burns	M W	10:10AM	11:00AM	ONLINE	10M
+15988	HIST-1025	Intro to European History	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	MJ Alexander	(ARR)	----- (ARR) -----	ONLINE	00X
+21601	HIST-1025	Intro to European History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	JD Wolf	M W F	1:25PM	2:15PM	ONLINE	13M
+15989	HIST-1026	Intro to European History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+15990	HIST-1026	Intro to European History	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	M Hancock-Parmer	(ARR)	----- (ARR) -----	ONLINE	00X
+15998	HIST-1215	Intro to World History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	DF Skiles	M W F	10:10AM	11:00AM	ONLINE	10M
+15999	HIST-1215	Intro to World History	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	TL Findley	(ARR)	----- (ARR) -----	ONLINE	00X
+16000	HIST-1216	Intro to World History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	MN Pervaiz	M W F	9:05AM	9:55AM	ONLINE	09M
+16001	HIST-1216	Intro to World History	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16002	HIST-1764	History of Rock n Roll	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	RP Stephens	(ARR)	----- (ARR) -----	ONLINE	00X
+16005	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+23
+
+23	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+16006	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+23
+
+23	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+16007	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+16008	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+16009	HIST-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16010	HIST-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16011	HIST-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16012	HIST-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20535	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+20536	HIST-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+16021	HIST-2484	Modern Germany	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	HL Gumbert	(ARR)	----- (ARR) -----	ONLINE	00X
+16029	HIST-2715	History of Technology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	RF Hirsh	M W	4:00PM	5:15PM	ONLINE	16M
+20537	HIST-2716	History of Technology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	L Vinsel	M W F	12:20PM	1:10PM	ONLINE	12M
+16043	HIST-3544	World War II	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	A Narayanan	(ARR)	----- (ARR) -----	ONLINE	00X
+16046	HIST-3724	Disease, Med, & Health	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+49
+
+49	MS Dufour	T R	2:00PM	3:15PM	ONLINE	14T
+16084	HNFE-2314	Active Transp for Health	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	R Buehler	T R	11:00AM	12:15PM	ONLINE	11T
+16087	HNFE-2664	Behav Theory in Hlth Promotion	ONLINE	
+Online: Asynchronous
+
+3	
+99
+
+99	EM Smith	(ARR)	----- (ARR) -----	ONLINE	00X
+16155	HORT-2184	Plants Places Culture Globally	ONLINE	
+Online: Asynchronous
+
+3	
+70
+
+70	AX Niemiera	(ARR)	----- (ARR) -----	ONLINE	00X
+16170	HORT-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+16194	HTM-2454	Travel & Tourism Management	ONLINE	
+Online: Asynchronous
+
+3	
+165
+
+165	Z Xiang	(ARR)	----- (ARR) -----	ONLINE	00X
+16195	HTM-2454	Travel & Tourism Management	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16196	HTM-2454	Travel & Tourism Management	ONLINE	
+Online: Asynchronous
+
+3	
+165
+
+165	RR Perdue	(ARR)	----- (ARR) -----	ONLINE	00X
+16209	HTM-3484	Socio-Cult Impacts of Tourism	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	K Lamoureux	T R	11:00AM	12:15PM	ONLINE	11T
+20438	HUM-3204	Multicultural Communication	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	A Ansell	T R	5:00PM	6:15PM	ONLINE	17T
+16303	IDS-4094	Startup: Commercialization	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	W	6:30PM	9:30PM	ONLINE	18W
+16319	IS-1004	Nations and Nationalities	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	E Weisband	(ARR)	----- (ARR) -----	ONLINE	00X
+16328	IS-2054	Introduction to World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	D Poets	T R	11:00AM	12:15PM	ONLINE	11T
+16329	IS-2054	Introduction to World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	2:30PM	3:45PM	TBA	14M
+21185	IS-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	MF Todd	(ARR)	----- (ARR) -----	ONLINE	00X
+21493	IS-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16330	IS-2064	Global Econ and World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	PJ Salmons	T R	11:00AM	12:15PM	ONLINE	11T
+16331	IS-2064	Global Econ and World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	4:00PM	5:15PM	TBA	16M
+20967	IS-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20971	IS-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	SG Nelson	(ARR)	----- (ARR) -----	ONLINE	00X
+16612	JMC-2074	Introduction to Sports Media	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	WB Roth	(ARR)	----- (ARR) -----	ONLINE	00X
+16671	LAR-2554	Leading Global Sustainability	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+140
+
+140	RB Hull	T R	12:30PM	1:45PM	ONLINE	12T
+16675	LAR-3264	People Community and Place	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	WR Jacobson	T R	11:00AM	12:15PM	ONLINE	11T
+16685	LAR-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+17841	MGT-2064	Foundations Entrepreneurship	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+64
+
+64	RA Poff	M W	2:30PM	3:45PM	TBA	14M
+20722	MGT-2064	Foundations Entrepreneurship	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+64
+
+64	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+17846	MGT-2354	Leadership: Mgr & Entrepreneur	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	KA Carlson	M W	4:00PM	5:15PM	ONLINE	16M
+21385	MGT-2354	Leadership: Mgr & Entrepreneur	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+20
+
+20	KA Carlson	T R	5:00PM	6:15PM	TBA	17T
+17862	MGT-3444	Multi Diversity in Orgs	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+52
+
+52	AK Ward Bartlett	T R	11:00AM	12:15PM	ONLINE	11T
+17878	MGT-4094	Startup: Commercialization	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	DT Gray	W	6:30PM	9:30PM	ONLINE	18W
+18072	MN-4006	Leadership & Mgt/Ethics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+35
+
+35	DA Bradley	T R	9:30AM	10:45AM	MIL 207	09T
+ 	 	 	 	* Additional Times *	T	3:30PM	4:45PM	TBA	 
+18073	MN-4006	Leadership & Mgt/Ethics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+35
+
+35	DA Bradley	T R	8:00AM	9:15AM	MIL 207	08T
+ 	 	 	 	* Additional Times *	T	3:30PM	4:45PM	TBA	 
+18472	NR-1116	Seeking Sustainability	
+L	
+Face-to-Face Instruction
+
+3	
+30
+
+30	TD Baird	T R	9:30AM	10:45AM	TBA	09T
+18473	NR-2554	Leading Global Sustainability	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+140
+
+140	RB Hull	T R	12:30PM	1:45PM	ONLINE	12T
+18750	PHIL-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	G Hersch	M W	4:00PM	5:15PM	ONLINE	16M
+18751	PHIL-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	M Moehler	M W	4:00PM	5:15PM	ONLINE	16M
+18755	PHIL-3015	Political Theory	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	M W	5:30PM	6:45PM	ONLINE	17M
+18756	PHIL-3016	Political Theory	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	LL Cutter	(ARR)	----- (ARR) -----	ONLINE	00X
+18757	PHIL-3016	Political Theory	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20922	PM-4744	Housing Challenges & Policies	ONLINE	
+Online: Asynchronous
+
+3	
+35
+
+35	H Lee	(ARR)	----- (ARR) -----	ONLINE	00X
+19246	PR-2044	Principles of Public Relations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+42
+
+42	HL Shinault	M W F	10:10AM	11:00AM	ONLINE	10M
+19247	PR-2044	Principles of Public Relations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	HL Shinault	M W F	12:20PM	1:10PM	ONLINE	12M
+19248	PR-2044	Principles of Public Relations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	HL Shinault	M W F	11:15AM	12:05PM	ONLINE	11M
+19260	PSCI-1004	Nations and Nationalities	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	E Weisband	(ARR)	----- (ARR) -----	ONLINE	00X
+19261	PSCI-1014	US Gov & Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	CE Jewitt	(ARR)	----- (ARR) -----	ONLINE	00X
+19262	PSCI-1014	US Gov & Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	CA Hankinson	M W F	12:20PM	1:10PM	TBA	12M
+19263	PSCI-1014	US Gov & Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	CA Hankinson	M W F	10:10AM	11:00AM	TBA	10M
+19264	PSCI-1014	US Gov & Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	C Levinson	T R	2:30PM	3:45PM	ONLINE	14T
+19266	PSCI-1024	Comp Gov & Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+49
+
+49	BS Binev	T R	2:00PM	3:15PM	TBA	14T
+21180	PSCI-1024	Comp Gov & Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	RL Byg	(ARR)	----- (ARR) -----	ONLINE	00X
+21182	PSCI-1024	Comp Gov & Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19276	PSCI-2054	Introduction to World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	2:30PM	3:45PM	TBA	14M
+19277	PSCI-2054	Introduction to World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	D Poets	T R	11:00AM	12:15PM	ONLINE	11T
+21184	PSCI-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	MF Todd	(ARR)	----- (ARR) -----	ONLINE	00X
+21492	PSCI-2054	Introduction to World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19278	PSCI-2064	Global Econ and World Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	PJ Salmons	T R	11:00AM	12:15PM	ONLINE	11T
+19279	PSCI-2064	Global Econ and World Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+98
+
+98	CI Thomas	M W	4:00PM	5:15PM	TBA	16M
+20966	PSCI-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20970	PSCI-2064	Global Econ and World Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	SG Nelson	(ARR)	----- (ARR) -----	ONLINE	00X
+19281	PSCI-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	9:30AM	10:45AM	ONLINE	09T
+21495	PSCI-2164	Foundations Security Environ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	CH Suong	T R	12:30PM	1:45PM	ONLINE	12T
+19282	PSCI-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	G Hersch	M W	4:00PM	5:15PM	ONLINE	16M
+19283	PSCI-2894	Intro Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	M Moehler	M W	4:00PM	5:15PM	ONLINE	16M
+19287	PSCI-3015	Political Theory	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	M W	5:30PM	6:45PM	ONLINE	17M
+19288	PSCI-3016	Political Theory	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	LL Cutter	(ARR)	----- (ARR) -----	ONLINE	00X
+19289	PSCI-3016	Political Theory	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19366	PSVP-2044	Peace and Violence	ONLINE	
+Online: Asynchronous
+
+3	
+49
+
+49	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+21252	PSVP-2044	Peace and Violence	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+19373	PSYC-1004	Introductory Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+540
+
+540	ES Geller	(ARR)	----- (ARR) -----	ONLINE	00X
+19374	PSYC-1004	Introductory Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+540
+
+540	ES Geller	(ARR)	----- (ARR) -----	ONLINE	00X
+19379	PSYC-2034	Developmental Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	V Diaz	M W F	11:15AM	12:05PM	ONLINE	11M
+19380	PSYC-2034	Developmental Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	T Garcia Meza	(ARR)	----- (ARR) -----	ONLINE	00X
+19381	PSYC-2034	Developmental Psychology	
+L	
+Face-to-Face Instruction
+
+3	
+49
+
+49	A Means-Christensen	M W F	9:05AM	9:55AM	WMS 320	09M
+20952	PSYC-2034	Developmental Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	MD Bruce	T R	3:30PM	4:45PM	ONLINE	15T
+19382	PSYC-2044	Psychology of Learning	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	JC Faunce	M W F	12:20PM	1:10PM	ONLINE	12M
+19384	PSYC-2044	Psychology of Learning	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	KA Hoffman	(ARR)	----- (ARR) -----	ONLINE	00X
+19390	PSYC-2084	Social Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	JI Hernandez	(ARR)	----- (ARR) -----	ONLINE	00X
+19391	PSYC-2084	Social Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	MG Sturdivant	(ARR)	----- (ARR) -----	ONLINE	00X
+19392	PSYC-2084	Social Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	ME Minnen	M W F	12:20PM	1:10PM	ONLINE	12M
+20956	PSYC-2084	Social Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	JI Hernandez	(ARR)	----- (ARR) -----	ONLINE	00X
+19398	PSYC-3014	Abnormal Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	JA Richey	T R	9:30AM	10:45AM	ONLINE	09T
+19399	PSYC-3014	Abnormal Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	J Albright	M W F	12:20PM	1:10PM	ONLINE	12M
+19400	PSYC-3014	Abnormal Psychology	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	LD Antezana	(ARR)	----- (ARR) -----	ONLINE	00X
+19401	PSYC-3014	Abnormal Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	TC McFayden	T R	3:30PM	4:45PM	ONLINE	15T
+20982	PSYC-3014	Abnormal Psychology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+145
+
+145	RT Jones	T R	11:00AM	12:15PM	ONLINE	11T
+19460	RED-4604	Environ & Sustain Housing	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	E Hopkins	(ARR)	----- (ARR) -----	ONLINE	00X
+19477	RLCL-2464	Religion and Science	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	MR Goodrum	M W F	11:15AM	12:05PM	ONLINE	11M
+20459	RLCL-2514	Asian American Experience	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BK Singh	T R	2:00PM	3:15PM	ONLINE	14T
+20439	RLCL-3204	Multicultural Communication	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	A Ansell	T R	5:00PM	6:15PM	ONLINE	17T
+19613	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+19614	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JE Hawdon	M W	2:30PM	3:45PM	ONLINE	14M
+19615	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+19616	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	JE Hawdon	T R	9:30AM	10:45AM	ONLINE	09T
+19617	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	JE Hawdon	T R	2:00PM	3:15PM	ONLINE	14T
+19618	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+75
+
+75	MD Hughes	T R	11:00AM	12:15PM	ONLINE	11T
+19619	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JW Ryan	(ARR)	----- (ARR) -----	ONLINE	00X
+19620	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JW Ryan	(ARR)	----- (ARR) -----	ONLINE	00X
+21255	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+49
+
+49	MD Hughes	T R	2:00PM	3:15PM	ONLINE	14T
+19623	SOC-2004	Social Problems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	P Raonka	T R	8:00AM	9:15AM	ONLINE	08T
+19624	SOC-2004	Social Problems	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+75
+
+75	HM Williams	M W	4:00PM	5:15PM	TBA	16M
+19625	SOC-2004	Social Problems	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19626	SOC-2014	Soc Intimate Relationships	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19627	SOC-2024	Soc of Race and Ethnicity	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	I Islam	T R	12:30PM	1:45PM	ONLINE	12T
+19628	SOC-2024	Soc of Race and Ethnicity	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	H Momplaisir	(ARR)	----- (ARR) -----	ONLINE	00X
+20460	SOC-2514	Asian American Experience	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BK Singh	T R	2:00PM	3:15PM	ONLINE	14T
+19651	SOC-3314	Social Movements	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KM Byrd	(ARR)	----- (ARR) -----	ONLINE	00X
+20600	SPAN-3494	Intro to Hispanic Linguistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W	4:00PM	5:15PM	ONLINE	16M
+19749	SPIA-2024	Community Systems Thinking	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+20
+
+20	DL Zahm	T R	8:00AM	9:15AM	TBA	08T
+19750	SPIA-2244	Sustainable Urbanization	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+90
+
+90	RD Oliver	T R	5:00PM	6:15PM	ONLINE	17T
+19751	SPIA-2314	Active Transp for Health	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	R Buehler	T R	11:00AM	12:15PM	ONLINE	11T
+19755	SPIA-4554	Creating the Ecological City	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+27
+
+27	TL Clements	W	6:30PM	9:30PM	TBA	18W
+19864	STL-2304	Foundations of STL	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	D Cockrum	T R	12:30PM	1:45PM	TBA	12T
+19867	STS-1504	Intro Science, Tech, Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	PR Olson	T R	9:30AM	10:45AM	ONLINE	09T
+21719	STS-1504	Intro Science, Tech, Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+19868	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+19869	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+23
+
+23	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+19870	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+23
+
+23	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+19871	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+19872	STS-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19873	STS-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19874	STS-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19875	STS-2054	Engineering Cultures	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20533	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+20534	STS-2054	Engineering Cultures	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	GL Downey	M W	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+19878	STS-2444	Global Sci & Tech Policy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	SE Halfon	T R	9:30AM	10:45AM	ONLINE	09T
+19879	STS-2464	Religion and Science	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	MR Goodrum	M W F	11:15AM	12:05PM	ONLINE	11M
+19886	STS-2715	History of Technology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	RF Hirsh	M W	4:00PM	5:15PM	ONLINE	16M
+20510	STS-2716	History of Technology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	L Vinsel	M W F	12:20PM	1:10PM	ONLINE	12M
+20214	UH-2814	TS: Tech Systems Econ Dev	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	PL Knox	(ARR)	----- (ARR) -----	ONLINE	00X
+20215	UH-2814	TS: Human Environ Interaction	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	AK Velez	(ARR)	----- (ARR) -----	ONLINE	00X
+20216	UH-2814	TS: Market Analysis	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	M Kretser	(ARR)	----- (ARR) -----	ONLINE	00X
+20217	UH-2814	TS: World Economy	ONLINE	
+Online: Asynchronous
+
+1	
+40
+
+40	PL Knox	(ARR)	----- (ARR) -----	ONLINE	00X
+21344	UNIV-1824	Pathways to Success Exploring	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BB Blair	T	12:30PM	1:45PM	ONLINE	12T
+20374	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	S Samanta	T R	12:30PM	1:45PM	ONLINE	12T
+20375	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JE Hawdon	M W F	1:25PM	2:15PM	ONLINE	13M
+20376	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+20377	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JE Hawdon	T R	3:30PM	4:45PM	ONLINE	15T
+20378	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+20380	WGS-1824	Intro Womens & Gender Studies	ONLINE	
+Online: Asynchronous
+
+3	
+140
+
+140	NM King	(ARR)	----- (ARR) -----	ONLINE	00X
