@@ -1,0 +1,2693 @@
+11541	BIOL-1014	Introduction to Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	KJ Ojeda	M W F	10:10AM	11:00AM	ONLINE	10M
+21046	BIOL-1054	Human Biol: Cncpts Curr Issues	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	EP Hogan	T R	11:00AM	12:15PM	ONLINE	11T
+11542	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	JA Evans	T R	11:00AM	12:15PM	ONLINE	11T
+11543	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	MS Rosenzweig	M W	4:00PM	5:15PM	ONLINE	16M
+11544	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	TS Fredericksen	M W	4:00PM	5:15PM	ONLINE	16M
+11545	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	MM Emori	T R	2:00PM	3:15PM	ONLINE	14T
+11547	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	MS Rosenzweig	M W	2:30PM	3:45PM	ONLINE	14M
+11548	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	MV Lipscomb	T R	11:00AM	12:15PM	ONLINE	11T
+11549	BIOL-1106	Principles of Biology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	MV Lipscomb	T R	12:30PM	1:45PM	ONLINE	12T
+11821	BMES-2004	Concussion Perspectives	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	SM Duma	M W	2:30PM	3:45PM	ONLINE	14M
+12458	CHEM-1016	Chemistry in Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+325
+
+325	JE Eddleton	T R	11:00AM	12:15PM	ONLINE	11T
+12459	CHEM-1026	Chemistry in Context Lab	ONLINE	
+Online: Asynchronous
+
+1	
+75
+
+75	JE Eddleton	(ARR)	----- (ARR) -----	ONLINE	00X
+12460	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+285
+
+285	AT Wagner	M W	4:00PM	5:15PM	ONLINE	16M
+12461	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+12462	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+285
+
+285	CE Wall	M W F	10:10AM	11:00AM	ONLINE	10M
+12467	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+285
+
+285	JE Eddleton	T R	12:30PM	1:45PM	ONLINE	12T
+12484	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+285
+
+285	AT Wagner	M W F	1:25PM	2:15PM	ONLINE	13M
+12489	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+12494	CHEM-1035	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+285
+
+285	SM Arachchige	M W	2:30PM	3:45PM	ONLINE	14M
+12507	CHEM-1036	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	PG Amateis	M W F	12:20PM	1:10PM	ONLINE	12M
+12512	CHEM-1036	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	KA Neidigh	M W	2:30PM	3:45PM	ONLINE	14M
+12514	CHEM-1036	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	KA Neidigh	M W F	1:25PM	2:15PM	ONLINE	13M
+12519	CHEM-1036	General Chemistry	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	PG Amateis	M W F	11:15AM	12:05PM	ONLINE	11M
+12548	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12549	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12550	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12551	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12552	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12553	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12554	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12555	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12556	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12557	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12558	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12559	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12560	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12561	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12562	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12563	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12564	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12565	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12566	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12567	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12568	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12569	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12570	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12571	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12572	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12573	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12574	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12575	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12576	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12577	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12578	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12579	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12580	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12581	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12582	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12583	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12584	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12585	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12586	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12587	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12588	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12589	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12590	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12591	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12592	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12593	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12594	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12595	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12596	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12597	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12598	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12599	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12600	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12601	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12602	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12603	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12604	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12605	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12606	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12607	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12608	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12609	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12610	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12611	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12612	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12613	CHEM-1045	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12614	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12615	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12616	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12617	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12618	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12619	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12620	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12621	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12622	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12623	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12624	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12625	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12626	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12627	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12628	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12629	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12630	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12631	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12632	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12633	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12634	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12635	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12636	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12637	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12638	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12639	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12640	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12641	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12642	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12643	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12644	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12645	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12646	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12647	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12648	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12649	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12650	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12651	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12652	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12653	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12654	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12655	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12656	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12657	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12658	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12659	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12660	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12661	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12662	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12663	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12664	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12665	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12666	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12667	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12668	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12669	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12670	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12671	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12672	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12673	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+Full 0
+
+0	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12674	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12675	CHEM-1046	General Chemistry Laboratory	ONLINE	
+Online: Asynchronous
+
+1	
+24
+
+24	VK Long	(ARR)	----- (ARR) -----	ONLINE	00X
+12746	CHEM-3054	Postconsumer Materials	
+L	
+Face-to-Face Instruction
+
+3	
+45
+
+45	MB Bump	T R	3:30PM	4:45PM	TBA	15T
+14990	ENSC-1016	Found Environmental Sci	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+95
+
+95	MJ Eick	T	2:00PM	3:15PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	(ARR)	----- (ARR) -----	ONLINE	 
+15011	ENT-2004	Insects and Human Society	ONLINE	
+Online: Asynchronous
+
+3	
+700
+
+700	JM Wilson	(ARR)	----- (ARR) -----	ONLINE	00X
+15301	FIW-2114	Prin Fish and Wildl	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+140
+
+140	MK Hamed	T R	9:30AM	10:45AM	TBA	09T
+20852	FIW-4114	Biodiversity Conservation	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+12
+
+12	MK Hamed	T	6:30PM	9:30PM	JCH 317BC	18T
+15458	FREC-2004	Forest Ecosystems	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	B Strahm	(ARR)	----- (ARR) -----	ONLINE	00X
+15459	FREC-2114	Ecology of Appalachian Forests	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+125
+
+125	JR Seiler	M W F	10:10AM	11:00AM	TBA	10M
+15460	FREC-2124	Forests, Society & Climate	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+70
+
+70	VA Thomas	T R	11:00AM	12:15PM	ONLINE	11T
+15703	GEOS-1004	Introduction to Earth Science	ONLINE	
+Online: Asynchronous
+
+3	
+300
+
+300	NE Johnson	(ARR)	----- (ARR) -----	ONLINE	00X
+15704	GEOS-1004	Introduction to Earth Science	ONLINE	
+Online: Asynchronous
+
+3	
+300
+
+300	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+15705	GEOS-1014	Evolution of Earth-Life System	ONLINE	
+Online: Asynchronous
+
+3	
+70
+
+70	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+15706	GEOS-1024	Earth Resources, Soc, & Env	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	JA Chermak	T R	12:30PM	1:45PM	ONLINE	12T
+15707	GEOS-1024	Earth Resources, Soc, & Env	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	JA Chermak	T R	11:00AM	12:15PM	ONLINE	11T
+15708	GEOS-1024	Earth Resources, Soc, & Env	ONLINE	
+Online: Asynchronous
+
+3	
+250
+
+250	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+15709	GEOS-1034	Earths Natural Hazards	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	NE Johnson	(ARR)	----- (ARR) -----	ONLINE	00X
+15710	GEOS-1034	Earths Natural Hazards	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+144
+
+144	DS Stamps	M W F	12:20PM	1:10PM	ONLINE	12M
+15711	GEOS-1034	Earths Natural Hazards	ONLINE	
+Online: Asynchronous
+
+3	
+70
+
+70	Y Zhou	(ARR)	----- (ARR) -----	ONLINE	00X
+20857	GEOS-1064	Climate History	ONLINE	
+Online: Asynchronous
+
+3	
+300
+
+300	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+15712	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	T	2:00PM	4:50PM	ONLINE	14T
+15713	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	W	9:05AM	11:55AM	ONLINE	09W
+15714	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	W	4:00PM	6:50PM	ONLINE	16W
+15715	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	T	5:00PM	7:50PM	ONLINE	17T
+15716	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	W	12:20PM	3:10PM	ONLINE	12W
+15717	GEOS-1104	Intro to Earth Sciences Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	R	5:00PM	7:50PM	ONLINE	17R
+15718	GEOS-1124	Earth Res, Society & Env Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	T	12:30PM	3:20PM	ONLINE	12T
+15719	GEOS-1124	Earth Res, Society & Env Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	T	9:20AM	12:10PM	ONLINE	09T
+15720	GEOS-1124	Earth Res, Society & Env Lab	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+25
+
+25	JA Chermak	R	5:00PM	7:50PM	ONLINE	17R
+16377	ISC-1106H	Integrated Science I	ONLINE	
+Online with Synchronous Mtgs.
+
+6	
+72
+
+72	GL Long	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T R	11:00AM	12:15PM	ONLINE	 
+16378	ISC-1116	Integrated Sceince Lab I	
+B	
+Hybrid (F2F & Online Instruc.)
+
+2	
+34
+
+34	GL Long	M W	2:30PM	5:00PM	NCB 310	14M
+16379	ISC-1116	Integrated Sceince Lab I	
+B	
+Hybrid (F2F & Online Instruc.)
+
+2	
+34
+
+34	GL Long	T R	2:00PM	4:30PM	NCB 310	14T
+16667	LAR-1254	Environment & Natural Systems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	M Kim	T R	9:30AM	10:45AM	ONLINE	09T
+16668	LAR-1254	Environment & Natural Systems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+70
+
+70	M Kim	T R	9:30AM	10:45AM	ONLINE	09T
+18099	MSE-1014	Mat Science Everyday Life	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	S McGinnis	T R	2:00PM	3:15PM	ONLINE	14T
+18822	PHYS-1056	Introduction to Astronomy	ONLINE	
+Online: Asynchronous
+
+3	
+600
+
+600	BE Bear	(ARR)	----- (ARR) -----	ONLINE	00X
+18829	PHYS-2205	General Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+325
+
+325	DJ Osborne	M W	5:30PM	6:45PM	ONLINE	17M
+18830	PHYS-2206	General Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+295
+
+295	K Papavasiliou	T R	2:00PM	3:15PM	ONLINE	14T
+18831	PHYS-2206	General Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+120
+
+120	VG Soghomonian	M W F	1:25PM	2:15PM	ONLINE	13M
+18832	PHYS-2206	General Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+295
+
+295	K Papavasiliou	T R	5:00PM	6:15PM	ONLINE	17T
+18833	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18834	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+18835	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18836	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18837	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+18838	PHYS-2215	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18839	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+18840	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18841	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	W	12:20PM	2:10PM	ONLINE	12W
+18842	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	12:20PM	2:10PM	ONLINE	12F
+18843	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+18844	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	2:30PM	4:20PM	ONLINE	14F
+18845	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	W	12:20PM	2:10PM	ONLINE	12W
+18846	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18847	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18848	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	12:20PM	2:10PM	ONLINE	12F
+18849	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	2:30PM	4:20PM	ONLINE	14F
+18850	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18851	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18852	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18853	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	8:00AM	9:50AM	ONLINE	08F
+18854	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18855	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18856	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	10:10AM	12:00PM	ONLINE	10F
+18857	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	8:00AM	9:50AM	ONLINE	08F
+18858	PHYS-2216	General Physics Laboratory	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+32
+
+32	TR Merritt	F	10:10AM	12:00PM	ONLINE	10F
+18859	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	VW Scarola	T R	11:00AM	12:15PM	ONLINE	11T
+ 	 	 	 	* Additional Times *	W	9:05AM	9:55AM	ONLINE	 
+18860	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	6:50PM	8:40PM	ONLINE	18M
+18861	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	M	6:50PM	8:40PM	ONLINE	18M
+18862	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	10:10AM	12:00PM	ONLINE	10W
+18863	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	4:40PM	6:30PM	ONLINE	16T
+18864	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	10:10AM	12:00PM	ONLINE	10W
+18865	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+18866	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	4:40PM	6:30PM	ONLINE	16T
+18867	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	8:00AM	9:50AM	ONLINE	08W
+18868	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+18869	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18870	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+18871	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18872	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18873	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18874	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	2:30PM	4:20PM	ONLINE	14T
+18875	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	W	6:50PM	8:40PM	ONLINE	18W
+18876	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18877	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18878	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	W	4:40PM	6:30PM	ONLINE	16W
+18879	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	12:20PM	2:10PM	ONLINE	12M
+18880	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18881	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T	12:30PM	1:20PM	ONLINE	 
+18882	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	8:00AM	8:50AM	ONLINE	08M
+ 	 	 	 	* Additional Times *	M	9:05AM	9:55AM	ONLINE	 
+18883	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	9:30AM	10:45AM	ONLINE	09T
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+18884	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	8:00AM	9:15AM	ONLINE	08T
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+18885	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	W	6:50PM	8:40PM	ONLINE	18W
+18886	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18887	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18888	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	6:50PM	8:40PM	ONLINE	18T
+18889	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	6:50PM	8:40PM	ONLINE	18R
+18890	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	6:50PM	8:40PM	ONLINE	18R
+18891	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	6:50PM	8:40PM	ONLINE	18R
+18892	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	6:50PM	8:40PM	ONLINE	18R
+18893	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	8:00AM	9:50AM	ONLINE	08W
+18894	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18895	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	4:40PM	6:30PM	ONLINE	16R
+18896	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+18897	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	3:30PM	4:45PM	ONLINE	15T
+ 	 	 	 	* Additional Times *	W	10:10AM	11:00AM	ONLINE	 
+18898	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	9:30AM	10:45AM	ONLINE	09T
+ 	 	 	 	* Additional Times *	F	1:25PM	2:15PM	ONLINE	 
+18899	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	5:00PM	6:15PM	ONLINE	17T
+ 	 	 	 	* Additional Times *	F	9:05AM	9:55AM	ONLINE	 
+18900	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	3:30PM	4:45PM	ONLINE	15T
+ 	 	 	 	* Additional Times *	W	11:15AM	12:05PM	ONLINE	 
+18901	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	4:40PM	6:30PM	ONLINE	16R
+18902	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	8:00AM	9:50AM	ONLINE	08M
+18903	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	TR Merritt	T R	12:30PM	1:45PM	ONLINE	12T
+ 	 	 	 	* Additional Times *	M	12:20PM	1:10PM	ONLINE	 
+18904	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	12:20PM	2:10PM	ONLINE	12M
+18905	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18906	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	12:20PM	2:10PM	ONLINE	12W
+18907	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	8:00AM	8:50AM	ONLINE	08M
+ 	 	 	 	* Additional Times *	M	10:10AM	11:00AM	ONLINE	 
+18908	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	9:30AM	10:45AM	ONLINE	09T
+ 	 	 	 	* Additional Times *	M	8:00AM	8:50AM	ONLINE	 
+18909	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	8:00AM	9:15AM	ONLINE	08T
+ 	 	 	 	* Additional Times *	W	1:25PM	2:15PM	ONLINE	 
+18910	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	T	2:00PM	2:50PM	ONLINE	 
+18911	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	M	1:25PM	2:15PM	ONLINE	 
+18912	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	8:00AM	8:50AM	ONLINE	08M
+ 	 	 	 	* Additional Times *	M	11:15AM	12:05PM	ONLINE	 
+18913	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	VW Scarola	T R	11:00AM	12:15PM	ONLINE	11T
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+18914	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	8:00AM	9:15AM	ONLINE	08T
+ 	 	 	 	* Additional Times *	W	11:15AM	12:05PM	ONLINE	 
+18915	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	TR Merritt	T R	12:30PM	1:45PM	ONLINE	12T
+ 	 	 	 	* Additional Times *	M	8:00AM	8:50AM	ONLINE	 
+18916	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	5:00PM	6:15PM	ONLINE	17T
+ 	 	 	 	* Additional Times *	W	12:20PM	1:10PM	ONLINE	 
+18917	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	VW Scarola	T R	11:00AM	12:15PM	ONLINE	11T
+ 	 	 	 	* Additional Times *	F	12:20PM	1:10PM	ONLINE	 
+18918	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T	8:00AM	8:50AM	ONLINE	 
+18919	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	5:00PM	6:15PM	ONLINE	17T
+ 	 	 	 	* Additional Times *	W	1:25PM	2:15PM	ONLINE	 
+18920	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	W	10:10AM	11:00AM	ONLINE	 
+18921	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	TR Merritt	T R	12:30PM	1:45PM	ONLINE	12T
+ 	 	 	 	* Additional Times *	M	10:10AM	11:00AM	ONLINE	 
+18922	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	R	8:00AM	8:50AM	ONLINE	 
+18923	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	4:40PM	6:30PM	ONLINE	16M
+18924	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	8:00AM	9:15AM	ONLINE	08T
+ 	 	 	 	* Additional Times *	W	12:20PM	1:10PM	ONLINE	 
+18925	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	ONLINE	 
+18926	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	4:40PM	6:30PM	ONLINE	16R
+18927	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	VW Scarola	T R	11:00AM	12:15PM	ONLINE	11T
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+18928	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+18929	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	4:40PM	6:30PM	ONLINE	16W
+18930	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	10:10AM	12:00PM	ONLINE	10M
+18931	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18932	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	2:30PM	4:20PM	ONLINE	14R
+18933	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+18934	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	2:30PM	4:20PM	ONLINE	14T
+18935	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	6:50PM	8:40PM	ONLINE	18W
+18936	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	12:20PM	2:10PM	ONLINE	12T
+18937	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	4:40PM	6:30PM	ONLINE	16W
+18938	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18939	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	ONLINE	 
+18940	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18941	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	12:20PM	2:10PM	ONLINE	12W
+18942	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	10:10AM	12:00PM	ONLINE	10M
+18943	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	6:50PM	8:40PM	ONLINE	18T
+18944	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	3:30PM	4:45PM	ONLINE	15T
+ 	 	 	 	* Additional Times *	M	1:25PM	2:15PM	ONLINE	 
+18945	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	R	2:00PM	2:50PM	ONLINE	 
+18946	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	W	8:00AM	8:50AM	ONLINE	 
+18947	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	5:00PM	6:15PM	ONLINE	17T
+ 	 	 	 	* Additional Times *	F	8:00AM	8:50AM	ONLINE	 
+18948	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18949	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	4:40PM	6:30PM	ONLINE	16M
+18950	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	8:00AM	9:50AM	ONLINE	08M
+18951	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	12:20PM	2:10PM	ONLINE	12T
+18952	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18953	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	8:00AM	8:50AM	ONLINE	08M
+ 	 	 	 	* Additional Times *	M	12:20PM	1:10PM	ONLINE	 
+18954	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	9:30AM	10:45AM	ONLINE	09T
+ 	 	 	 	* Additional Times *	F	12:20PM	1:10PM	ONLINE	 
+18955	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	11:15AM	12:05PM	ONLINE	11M
+ 	 	 	 	* Additional Times *	W	9:05AM	9:55AM	ONLINE	 
+18956	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	TR Merritt	T R	12:30PM	1:45PM	ONLINE	12T
+ 	 	 	 	* Additional Times *	M	11:15AM	12:05PM	ONLINE	 
+18957	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	1:25PM	2:15PM	ONLINE	13M
+ 	 	 	 	* Additional Times *	F	8:00AM	8:50AM	ONLINE	 
+18958	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	KP Nelson	M W F	10:10AM	11:00AM	ONLINE	10M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	ONLINE	 
+18959	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	4:40PM	6:30PM	ONLINE	16R
+18960	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	ONLINE	 
+18961	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	DJ Osborne	M W F	12:20PM	1:10PM	ONLINE	12M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	ONLINE	 
+18962	PHYS-2305	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	F Lin	T R	3:30PM	4:45PM	ONLINE	15T
+ 	 	 	 	* Additional Times *	W	8:00AM	8:50AM	ONLINE	 
+18963	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	12:20PM	2:10PM	ONLINE	12M
+18964	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	M W	2:30PM	3:45PM	ONLINE	14M
+ 	 	 	 	* Additional Times *	R	9:30AM	10:20AM	ONLINE	 
+18965	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	M W	2:30PM	3:45PM	ONLINE	14M
+ 	 	 	 	* Additional Times *	F	10:10AM	11:00AM	ONLINE	 
+18966	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	M W	2:30PM	3:45PM	ONLINE	14M
+ 	 	 	 	* Additional Times *	F	11:15AM	12:05PM	ONLINE	 
+18967	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	RB Vogelaar	M W	4:00PM	5:15PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	W	10:10AM	11:00AM	ONLINE	 
+18968	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	M W	5:30PM	6:45PM	ONLINE	17M
+ 	 	 	 	* Additional Times *	T	11:00AM	11:50AM	ONLINE	 
+18969	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	M W	2:30PM	3:45PM	ONLINE	14M
+ 	 	 	 	* Additional Times *	F	12:20PM	1:10PM	ONLINE	 
+18970	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	W	6:50PM	8:40PM	ONLINE	18W
+18971	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	W	4:40PM	6:30PM	ONLINE	16W
+18972	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	R	8:00AM	9:50AM	ONLINE	08R
+18973	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	T R	2:00PM	3:15PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	R	12:30PM	1:20PM	ONLINE	 
+18974	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	T R	2:00PM	3:15PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	W	8:00AM	8:50AM	ONLINE	 
+18975	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	T R	2:00PM	3:15PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	M	9:05AM	9:55AM	ONLINE	 
+18976	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	LN Chang	T R	2:00PM	3:15PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	W	12:20PM	1:10PM	ONLINE	 
+18977	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	8:00AM	9:50AM	ONLINE	08W
+18978	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18979	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	10:10AM	12:00PM	ONLINE	10R
+18980	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	T	4:40PM	6:30PM	ONLINE	16T
+18981	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	8:00AM	9:50AM	ONLINE	08M
+18982	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	M	8:00AM	9:50AM	ONLINE	08M
+18983	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	T	4:40PM	6:30PM	ONLINE	16T
+18984	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	4:40PM	6:30PM	ONLINE	16M
+18985	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+Full 0
+
+0	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+18986	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	2:30PM	4:20PM	ONLINE	14M
+18987	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	T R	6:30PM	7:45PM	ONLINE	18T
+ 	 	 	 	* Additional Times *	F	9:00AM	9:55AM	ONLINE	 
+18988	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	T R	6:30PM	7:45PM	ONLINE	18T
+ 	 	 	 	* Additional Times *	M	10:10AM	11:00AM	ONLINE	 
+18989	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18990	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	AL Robinson	M W F	9:05AM	9:55AM	ONLINE	09M
+ 	 	 	 	* Additional Times *	R	2:00PM	3:15PM	ONLINE	 
+18991	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	T R	6:30PM	7:45PM	ONLINE	18T
+ 	 	 	 	* Additional Times *	M	9:05AM	9:55AM	ONLINE	 
+18992	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	M W	5:30PM	6:45PM	ONLINE	17M
+ 	 	 	 	* Additional Times *	T	9:30AM	10:20AM	ONLINE	 
+18993	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	12:20PM	2:10PM	ONLINE	12W
+18994	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	10:10AM	12:00PM	ONLINE	10W
+18995	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	10:10AM	12:00PM	ONLINE	10T
+18996	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	R	12:20PM	2:10PM	ONLINE	12R
+18997	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	10:10AM	12:00PM	ONLINE	10M
+18998	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	12:20PM	2:10PM	ONLINE	12M
+18999	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	12:20PM	2:10PM	ONLINE	12T
+19000	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	2:30PM	4:20PM	ONLINE	14T
+19001	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	8:00AM	9:50AM	ONLINE	08T
+19002	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	W	2:30PM	4:20PM	ONLINE	14W
+19003	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	12:20PM	2:10PM	ONLINE	12T
+19004	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	M W	5:30PM	6:45PM	ONLINE	17M
+ 	 	 	 	* Additional Times *	R	11:00AM	11:50AM	ONLINE	 
+19005	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	RB Vogelaar	M W	4:00PM	5:15PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	M	11:15AM	12:05PM	ONLINE	 
+19006	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	RB Vogelaar	M W	4:00PM	5:15PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	M	12:20PM	1:10PM	ONLINE	 
+19007	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	RB Vogelaar	M W	4:00PM	5:15PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	W	11:15AM	12:05PM	ONLINE	 
+19008	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	M W	5:30PM	6:45PM	ONLINE	17M
+ 	 	 	 	* Additional Times *	R	5:30PM	6:20PM	ONLINE	 
+19009	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	4:40PM	6:30PM	ONLINE	16M
+19010	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+44
+
+44	A Khan	T R	6:30PM	7:45PM	ONLINE	18T
+ 	 	 	 	* Additional Times *	W	9:05AM	9:55AM	ONLINE	 
+19011	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	M	10:10AM	12:00PM	ONLINE	10M
+19012	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+0	
+36
+
+36	TR Merritt	T	2:30PM	4:20PM	ONLINE	14T
+20969	PHYS-2306	Foundations of Physics	ONLINE	
+Online with Synchronous Mtgs.
+
+4	
+40
+
+40	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+ 	 	 	 	* Additional Times *	R	2:00PM	3:15PM	ONLINE	 
+20481	PPWS-2004	Mysterious Mushrooms & Molds	ONLINE	
+Online: Asynchronous
+
+3	
+144
+
+144	DG Schmale	(ARR)	----- (ARR) -----	ONLINE	00X
+19387	PSYC-2064	Intro Neuroscience of Behavior	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+48
+
+48	HA Kissel	T R	9:30AM	10:45AM	WMS 134	09T
+19388	PSYC-2064	Intro Neuroscience of Behavior	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	AJ Raines	(ARR)	----- (ARR) -----	ONLINE	00X
+19389	PSYC-2064	Intro Neuroscience of Behavior	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	RA Diana	(ARR)	----- (ARR) -----	ONLINE	00X

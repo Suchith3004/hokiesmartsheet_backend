@@ -1,0 +1,1037 @@
+10253	AINS-2414	Identity & Inclusion in Agric	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	DM Westfall-Rudd	T	8:00AM	9:15AM	LITRV 200	08T
+ 	 	 	 	* Additional Times *	R	8:00AM	9:15AM	ONLINE	 
+10260	ALCE-2414	Identity & Inclusion in Agric	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	DM Westfall-Rudd	T	8:00AM	9:15AM	LITRV 200	08T
+ 	 	 	 	* Additional Times *	R	8:00AM	9:15AM	ONLINE	 
+10729	APSC-4004	Contemporary Issues in APSC	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+13
+
+13	EN Feuerbacher	M	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	T	3:30PM	5:20PM	ONLINE	 
+10730	APSC-4004	Contemporary Issues in APSC	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+13
+
+13	FH Biase	M	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	T	11:15AM	1:05PM	ONLINE	 
+10731	APSC-4004	Contemporary Issues in APSC	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+13
+
+13	RP Rhoads	M	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	W	3:30PM	5:20PM	TBA	 
+10732	APSC-4004	Contemporary Issues in APSC	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+13
+
+13	Staff	M	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	R	11:00AM	12:50PM	TBA	 
+10733	APSC-4004	Contemporary Issues in APSC	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+13
+
+13	JW Knight	M	4:00PM	4:50PM	ONLINE	16M
+ 	 	 	 	* Additional Times *	W	11:15AM	1:05PM	TBA	 
+11213	ART-4104	Interpretation of Visual Arts	ONLINE	
+Online: Asynchronous
+
+3	
+20
+
+20	JR Jewitt	(ARR)	----- (ARR) -----	ONLINE	00X
+21603	BIT-4164	Future of Security	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+11798	BIT-4854	Analytics in Action	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	CT Ragsdale	T R	3:30PM	4:45PM	ONLINE	15T
+11821	BMES-2004	Concussion Perspectives	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+250
+
+250	SM Duma	M W	2:30PM	3:45PM	ONLINE	14M
+12074	CEE-3304	Fluid Mech for CEE	
+B	
+Hybrid (F2F & Online Instruc.)
+
+0	
+30
+
+30	RP Scardina	W	4:30PM	6:20PM	PAT 12	16W
+12075	CEE-3304	Fluid Mech for CEE	
+B	
+Hybrid (F2F & Online Instruc.)
+
+0	
+30
+
+30	RP Scardina	M	4:30PM	6:20PM	PAT 12	16M
+12076	CEE-3304	Fluid Mech for CEE	
+B	
+Hybrid (F2F & Online Instruc.)
+
+0	
+30
+
+30	RP Scardina	T	4:00PM	5:50PM	PAT 12	16T
+12077	CEE-3304	Fluid Mech for CEE	ONLINE	
+Online: Asynchronous
+
+4	
+60
+
+60	RP Scardina	(ARR)	----- (ARR) -----	ONLINE	00X
+12078	CEE-3304	Fluid Mech for CEE	ONLINE	
+Online: Asynchronous
+
+4	
+60
+
+60	RP Scardina	(ARR)	----- (ARR) -----	ONLINE	00X
+12079	CEE-3304	Fluid Mech for CEE	
+B	
+Hybrid (F2F & Online Instruc.)
+
+0	
+30
+
+30	RP Scardina	R	4:00PM	5:50PM	PAT 12	16R
+12131	CEE-4804	Prof & Legal Issues Civil Eng	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+144
+
+144	BJ Katz	M W	2:30PM	3:45PM	ONLINE	14M
+12419	CEM-2104	Intro to CEM	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	K Afsari	T R	12:30PM	1:45PM	ONLINE	12T
+12420	CEM-3084	Construction Economy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	CP Koelling	T R	8:00AM	9:15AM	ONLINE	08T
+20675	CEM-3084	Construction Economy	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	AL Johnson	T R	2:00PM	3:15PM	ONLINE	14T
+21539	CEM-4445	CEM Capstone	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	AL Johnson	T R	11:00AM	12:15PM	ONLINE	11T
+12425	CEM-4446	CEM Capstone	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+33
+
+33	LB Lally	T R	2:00PM	3:15PM	ONLINE	14T
+20686	CEM-4446	CEM Capstone	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+24
+
+24	LB Lally	T R	9:30AM	10:45AM	ONLINE	09T
+12947	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12948	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12949	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+12950	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12951	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12952	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+12953	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12954	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12955	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+12956	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12957	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12958	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12959	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12960	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12961	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12962	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12963	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+12964	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	9:05AM	9:55AM	ONLINE	09M
+12965	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	12:20PM	1:10PM	ONLINE	12M
+12966	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12967	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12968	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12969	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	11:15AM	12:05PM	ONLINE	11M
+12970	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+21130	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+21132	COMM-2004	Public Speaking	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	B Quesenberry	M W F	10:10AM	11:00AM	ONLINE	10M
+12993	COMM-2764H	TS: Broadcast Comm Tech Innov	ONLINE	
+Online: Asynchronous
+
+1	
+42
+
+42	JD Ivory	(ARR)	----- (ARR) -----	ONLINE	00X
+12994	COMM-2764H	TS: Collab Tools Tech Innov	ONLINE	
+Online: Asynchronous
+
+1	
+42
+
+42	JD Ivory	(ARR)	----- (ARR) -----	ONLINE	00X
+12995	COMM-2764H	TS: Digital Media Tech Innov	ONLINE	
+Online: Asynchronous
+
+1	
+42
+
+42	JD Ivory	(ARR)	----- (ARR) -----	ONLINE	00X
+21318	COMM-2764H	TS: Multimodal Rec Pers Knwldg	ONLINE	
+Online: Asynchronous
+
+1	
+42
+
+42	JA Keyel	(ARR)	----- (ARR) -----	ONLINE	00X
+13592	ECE-4805	Senior Design Project	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+200
+
+200	JS Ransbottom	T R	8:00AM	9:15AM	ONLINE	08T
+13593	ECE-4806	Senior Design Project	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+200
+
+200	JS Ransbottom	T R	8:00AM	9:15AM	ONLINE	08T
+14292	ECON-4884	Adv Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	M Snegovaya	W	4:00PM	6:45PM	ONLINE	16W
+14841	ENGL-2634	Writing and Social Justice	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+22
+
+22	JR Greene	M W	2:30PM	3:45PM	ONLINE	14M
+14843	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	A Murphy	T R	11:00AM	12:15PM	ONLINE	11T
+14844	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	A Murphy	T R	2:00PM	3:15PM	ONLINE	14T
+14845	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	JR Scallorns	T R	3:30PM	4:45PM	ONLINE	15T
+14846	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	RM Allnutt	M W	4:00PM	5:15PM	ONLINE	16M
+14847	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	JR Scallorns	T R	2:00PM	3:15PM	ONLINE	14T
+14848	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	MV Palacio Ornelas	M W F	10:10AM	11:00AM	ONLINE	10M
+14849	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	AE Raab	M W F	10:10AM	11:00AM	ONLINE	10M
+14851	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	G Voros	(ARR)	----- (ARR) -----	ONLINE	00X
+14852	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	SK Boudreau	M W F	9:05AM	9:55AM	ONLINE	09M
+14853	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	CE Lischau	M W F	1:25PM	2:15PM	ONLINE	13M
+14854	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	G Voros	(ARR)	----- (ARR) -----	ONLINE	00X
+14855	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	EJ Massey	M W F	1:25PM	2:15PM	ONLINE	13M
+14856	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	SP Jones	M W F	10:10AM	11:00AM	ONLINE	10M
+14857	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	EL Bloomer	(ARR)	----- (ARR) -----	ONLINE	00X
+14858	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	DN Elhauge	M W F	1:25PM	2:15PM	ONLINE	13M
+14859	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	AR Garvoille	M W F	9:05AM	9:55AM	ONLINE	09M
+14860	ENGL-2744	Intro to Creative Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+21
+
+21	RM Allnutt	M W	2:30PM	3:45PM	ONLINE	14M
+14865	ENGL-3024	Religion and Literature	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	AS Armstrong	M W	4:00PM	5:15PM	ONLINE	16M
+20636	ENGL-3134	Gender and Linguistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	AJ Walker	T R	2:00PM	3:15PM	ONLINE	14T
+14874	ENGL-3534	Literature and the Environment	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+22
+
+22	MD Moore	T R	3:30PM	4:45PM	ONLINE	15T
+14886	ENGL-3764	Technical Writing	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+21
+
+21	J Barton	M W	2:30PM	3:45PM	TBA	14M
+14887	ENGL-3764	Technical Writing	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+21
+
+21	CN Bean	M W F	9:05AM	9:55AM	TBA	09M
+14888	ENGL-3764	Technical Writing	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+21
+
+21	CN Bean	M W F	11:15AM	12:05PM	TBA	11M
+14889	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	EA Lautenschlager	(ARR)	----- (ARR) -----	ONLINE	00X
+14890	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	EA Lautenschlager	(ARR)	----- (ARR) -----	ONLINE	00X
+14891	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	MJ Homer	(ARR)	----- (ARR) -----	ONLINE	00X
+14892	ENGL-3764	Technical Writing	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+21
+
+21	CN Bean	M W F	1:25PM	2:15PM	TBA	13M
+14893	ENGL-3764	Technical Writing	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+21
+
+21	CN Bean	M W F	10:10AM	11:00AM	TBA	10M
+14894	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	TL Gardner	(ARR)	----- (ARR) -----	ONLINE	00X
+14895	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+14896	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	TL Gardner	(ARR)	----- (ARR) -----	ONLINE	00X
+14897	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	AF Kinder	(ARR)	----- (ARR) -----	ONLINE	00X
+14898	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	TL Gardner	(ARR)	----- (ARR) -----	ONLINE	00X
+14899	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+14900	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	MR Armstrong	(ARR)	----- (ARR) -----	ONLINE	00X
+14901	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	SD Mooney	(ARR)	----- (ARR) -----	ONLINE	00X
+14902	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	S Patcha-Lum	(ARR)	----- (ARR) -----	ONLINE	00X
+14903	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	AF Kinder	(ARR)	----- (ARR) -----	ONLINE	00X
+14904	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	SD Mooney	(ARR)	----- (ARR) -----	ONLINE	00X
+14905	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	MR Armstrong	(ARR)	----- (ARR) -----	ONLINE	00X
+14906	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+14907	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	S Patcha-Lum	(ARR)	----- (ARR) -----	ONLINE	00X
+14908	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	TL Gardner	(ARR)	----- (ARR) -----	ONLINE	00X
+14909	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	AF Kinder	(ARR)	----- (ARR) -----	ONLINE	00X
+14910	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	MR Armstrong	(ARR)	----- (ARR) -----	ONLINE	00X
+14911	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	MR Armstrong	(ARR)	----- (ARR) -----	ONLINE	00X
+20687	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+20688	ENGL-3764	Technical Writing	ONLINE	
+Online: Asynchronous
+
+3	
+21
+
+21	S Patcha-Lum	(ARR)	----- (ARR) -----	ONLINE	00X
+14925	ENGL-3844	Writing and Digital Media	ONLINE	
+Online: Asynchronous
+
+3	
+22
+
+22	D Mueller	(ARR)	----- (ARR) -----	ONLINE	00X
+14926	ENGL-3844	Writing and Digital Media	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+22
+
+22	B Gaines	M W F	9:05AM	9:55AM	ONLINE	09M
+14927	ENGL-3844	Writing and Digital Media	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+22
+
+22	B Gaines	M W F	11:15AM	12:05PM	ONLINE	11M
+14930	ENGL-4164	Studies in Shakespeare	
+L	
+Face-to-Face Instruction
+
+3	
+35
+
+35	DH Radcliffe	M W	4:00PM	5:15PM	TBA	16M
+15088	ESM-4016	Creative Design and Project	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+60
+
+60	CB Arena	T R	3:30PM	4:45PM	TBA	15T
+15474	FREC-3524	Environmental Interpretation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+27
+
+27	MJ Stern	T	2:00PM	4:45PM	ONLINE	14T
+ 	 	 	 	* Additional Times *	W F	1:25PM	2:15PM	ONLINE	 
+15477	FREC-3734	Forest Fiber Supply	
+L	
+Face-to-Face Instruction
+
+3	
+25
+
+25	MC Bolding	M W	11:15AM	12:05PM	TBA	11M
+15486	FREC-4454	Urban and Community Forestry	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+28
+
+28	PE Wiseman	M W	11:15AM	12:05PM	JCH 317BC	11M
+ 	 	 	 	* Additional Times *	R	2:00PM	4:45PM	JCH 220	 
+20514	GEOG-3274	Polar Environments	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+33
+
+33	LM Resler	T R	9:30AM	10:45AM	ONLINE	09T
+15744	GEOS-4024	Senior Seminar	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+34
+
+34	JA Spotila	T	2:00PM	4:59PM	ONLINE	14T
+16028	HIST-2624	Topics Hist Data Soc Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	ET Ewing	M W	2:30PM	3:45PM	ONLINE	14M
+16271	HUM-2504	Intro Amer Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	AS Armstrong	M W F	12:20PM	1:10PM	ONLINE	12M
+21014	ISE-3034	Tech Comm for Engineers	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	KE Carper	M W	2:30PM	3:45PM	ONLINE	14M
+21016	ISE-3034	Tech Comm for Engineers	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	KE Carper	M W	4:00PM	5:15PM	ONLINE	16M
+16677	LAR-4034	Evol of the Am Land	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	TL Clements	T	6:00PM	8:50PM	BUR 120A	18T
+17097	ME-3024	Engineering Design & Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+33
+
+33	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+17098	ME-3024	Engineering Design & Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+33
+
+33	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+21127	ME-3034	Mech Engng Discourse	ONLINE	
+Online with Synchronous Mtgs.
+
+1	
+400
+
+400	Staff	F	1:25PM	2:15PM	ONLINE	13F
+17149	ME-4016	Engineering Design and Project	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+430
+
+430	RS Ott	(ARR)	----- (ARR) -----	TBA	00X
+17879	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	11:00AM	12:15PM	ONLINE	11T
+17880	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	12:30PM	1:45PM	ONLINE	12T
+20733	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	2:00PM	3:15PM	ONLINE	14T
+18769	PHIL-4884	Adv Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	M Snegovaya	W	4:00PM	6:45PM	ONLINE	16W
+19250	PR-3144	Writing and Editing for PR	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	SA Smith	M W	4:00PM	5:15PM	ONLINE	16M
+19251	PR-3144	Writing and Editing for PR	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	CL Woods	T R	3:30PM	4:45PM	ONLINE	15T
+19252	PR-3144	Writing and Editing for PR	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TJ Shoop	M W	4:00PM	5:15PM	ONLINE	16M
+21604	PSCI-4164	Future of Security	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+21605	PSCI-4164	Future of Security	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+19338	PSCI-4884	Adv Philosophy Politics Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	M Snegovaya	W	4:00PM	6:45PM	ONLINE	16W
+19478	RLCL-2504	Intro Amer Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	AS Armstrong	M W F	12:20PM	1:10PM	ONLINE	12M
+19481	RLCL-3024	Religion and Literature	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	AS Armstrong	M W	4:00PM	5:15PM	ONLINE	16M
+21179	SPIA-4784	Community Systems Capstone	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	N Moayerian	W	1:30PM	4:00PM	ONLINE	13W
+19865	STL-4314	Current Topics in STL	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JD Steiner	M	4:00PM	6:30PM	ONLINE	16M
+19955	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	WJ Goblirsch	M W	12:30PM	1:45PM	ONLINE	12M
+19957	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	J Rosin	M W	9:30AM	10:45AM	ONLINE	09M
+19958	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	PA Raun	M W	11:00AM	12:15PM	ONLINE	11M
+19959	TA-2404	Intro App Collaborative Tech	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	TE Wood	M W	2:30PM	3:45PM	ONLINE	14M
+21225	WGS-3134	Gender and Linguistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	AJ Walker	T R	2:00PM	3:15PM	ONLINE	14T
