@@ -12,7 +12,7 @@ const fs = require('fs');
  * @param {*} req 
  * @param {*} res - resturns result of load as JSON
  */
-exports.loadDbCourses = async (request, response) => {
+exports.loadDbCourses = async () => {
 
     console.log("Started loading courses into db...");
 
@@ -57,7 +57,21 @@ exports.loadDbCourses = async (request, response) => {
             credits: parseInt(course[4]),
         }
 
-        batch.set(courseCollection.doc(course[1]), new_course);
+        if (course_type === 'Lab') {
+            // await courseCollection.doc(course[1]).get()
+            //     .then(function (doc) {
+            //         if (!doc.exists) {
+            //             batch.set(courseCollection.doc(course[1]), new_course);
+            //         }
+
+            //     })
+            //     .catch(function(error) {
+            //         return handleError(response, 500, "Failed when checking for lab. " + error);
+            //     });
+        }
+        else {
+            batch.set(courseCollection.doc(course[1]), new_course);
+        }
 
         count++;
         if (count == 500) {
@@ -86,7 +100,7 @@ exports.loadDbCourses = async (request, response) => {
 /**
  * Loads the database with all checksheets in directory: ./resources/checksheets/
  */
-exports.loadDbChecksheets = async (request, response) => {
+exports.loadDbChecksheets = async () => {
     console.log("Started loading checksheets into db...");
 
     // Adjust later to loop through all directories 
@@ -101,7 +115,7 @@ exports.loadDbChecksheets = async (request, response) => {
         const sheetInfo = allLines[0].split(',');
 
         const new_checksheet = {
-            abrv: sheetInfo[0],
+            abreviation: sheetInfo[0],
             major: sheetInfo[1],
             year: sheetInfo[2],
             school: sheetInfo[3],
@@ -198,6 +212,7 @@ exports.loadDbChecksheets = async (request, response) => {
                         if (course[8] !== '') {
                             pathways.push({
                                 courseId: curr_course,
+                                name: updated_course.name,
                                 type: course[8]
                             });
                         }
@@ -253,7 +268,7 @@ exports.loadDbChecksheets = async (request, response) => {
 /**
  *  Loads the database with pathways for all courses from directory: ./resources/pathways/
  */
-exports.loadDbPathways = async (response) => {
+exports.loadDbPathways = async () => {
     console.log("Started loading pathways into db...");
 
     const pathwayCategories = ['1a', '1f', '2', '3', '4', '5a', '5f', '6a', '6d', '7'];
@@ -269,7 +284,7 @@ exports.loadDbPathways = async (response) => {
         var batch = db.batch();
         var count = 0;
         for (const line of allLines) {
-            if(count == 500) {
+            if (count == 500) {
                 await batch.commit().catch(function (error) {
                     console.log("failed to batch update pathways ", error);
                 });
@@ -313,8 +328,14 @@ exports.loadDbPathways = async (response) => {
 }
 
 
-
-exports.autocompleteSearch = async(collection, field, prefix, cleanerFunction) => {
+/**
+ * Autocomplete searches given a field and a prefix for that field in a provided collection.
+ * 
+ * @param {*} collection 
+ * @param {*} field 
+ * @param {*} prefix 
+ */
+exports.autocompleteSearch = async (collection, field, prefix) => {
 
     var strSearch = prefix;
     var strlength = strSearch.length;
@@ -323,7 +344,7 @@ exports.autocompleteSearch = async(collection, field, prefix, cleanerFunction) =
 
     var startcode = strSearch;
     var endcode = strFrontCode + String.fromCharCode(strEndCode.charCodeAt(0) + 1);
-    
+
     console.log(prefix);
 
     const queryResult = [];
@@ -331,19 +352,30 @@ exports.autocompleteSearch = async(collection, field, prefix, cleanerFunction) =
         .where(field, '>=', startcode)
         .where(field, '<', endcode)
         .get()
-        .then(function(querySnapshot) {
-            querySnapshot.forEach(function (doc){
+        .then(function (querySnapshot) {
+            querySnapshot.forEach(function (doc) {
                 queryResult.push(doc.data());
             });
         })
-        .catch(function(error) {
+        .catch(function (error) {
             throw new Error("Failed to Query. ", error);
         })
-    
-    return queryResult;
-}  
 
-exports.autocompleteSearchSecond = async(collection, field1, search, field2, prefix, cleanerFunction) => {
+    return queryResult;
+}
+
+/**
+ * Autocomplete searchs given a field and a prefix for that field in a provided collection,
+ *      while also ensuring that the first field provided matches the first search value.
+ * 
+ * 
+ * @param {*} collection 
+ * @param {*} field1 
+ * @param {*} search 
+ * @param {*} field2 
+ * @param {*} prefix 
+ */
+exports.autocompleteSearchSecond = async (collection, field1, search, field2, prefix) => {
 
     var strSearch = prefix;
     var strlength = strSearch.length;
@@ -352,7 +384,7 @@ exports.autocompleteSearchSecond = async(collection, field1, search, field2, pre
 
     var startcode = strSearch;
     var endcode = strFrontCode + String.fromCharCode(strEndCode.charCodeAt(0) + 1);
-    
+
     console.log(prefix);
 
     const queryResult = [];
@@ -361,28 +393,30 @@ exports.autocompleteSearchSecond = async(collection, field1, search, field2, pre
         .where(field2, '<', endcode)
         .where(field1, '==', search)
         .get()
-        .then(function(querySnapshot) {
-            querySnapshot.forEach(function (doc){
+        .then(function (querySnapshot) {
+            querySnapshot.forEach(function (doc) {
                 queryResult.push(doc.data());
             });
         })
-        .catch(function(error) {
+        .catch(function (error) {
             throw new Error("Failed to Query. ", error);
         })
-    
+
     return queryResult;
-}  
+}
 
-const { promisify } = require('util')
-const sleep = promisify(setTimeout)   
-
-exports.loadStaticData = async() => {
+/**
+ * Loads static data into database as resources to be used later as reference.
+ */
+exports.loadStaticData = async () => {
 
     const majors = {
-        CS: 'Computer Science'
+        'CS': 'Computer Science'
     };
 
-    const schools = ['College of Engineering'];
+    const schools = {
+        'College of Engineering': ['CS']
+    };
 
     const pathways = {
         '1a': 'Advanced/Applied Discourse',
@@ -397,20 +431,59 @@ exports.loadStaticData = async() => {
         '7': 'Critical Analysis of Equity and Identity in the United States'
     };
 
+    // Load Ap equivalents
+    const ap_equivalents = [];
+
+    var apClasses = fs.readFileSync("./resources/AP2022.csv").toString('utf-8');
+    const allEquivalents = apClasses.split('\n');
+
+    var splitEquivalent = [];
+    var equivalentId = 0;
+    for (const equivalent of allEquivalents) {
+        splitEquivalent = equivalent.split(',');
+        var vtCourse = splitEquivalent[3] + '-' + splitEquivalent[4];
+        var new_equivalent = {
+            equivalentId: equivalentId,
+            apAbreviation: splitEquivalent[0],
+            apName: splitEquivalent[1],
+            apScore: splitEquivalent[2],
+            vtCourseId: vtCourse,
+            vtCourseName: splitEquivalent[5]
+        };
+
+        ap_equivalents.push(new_equivalent);
+        equivalentId++;
+
+        if (splitEquivalent[6] !== '') {
+            vtCourse = splitEquivalent[6] + '-' + splitEquivalent[7];
+
+            new_equivalent = {
+                equivalentId: equivalentId,
+                apAbreviation: splitEquivalent[0],
+                apName: splitEquivalent[1],
+                apScore: splitEquivalent[2],
+                vtCourseId: vtCourse,
+                vtCourseName: splitEquivalent[5]
+            };
+
+            ap_equivalents.push(new_equivalent);
+            equivalentId++;
+        }
+    }
+
     const staticData = {
         majors: majors,
         schools: schools,
-        pathways: pathways
+        pathways: pathways,
+        apEquivalents: ap_equivalents
     }
 
     console.log('Loading static resources...')
     await resoursesCollection.doc('static').set(staticData)
-        .catch(function(error) {
+        .catch(function (error) {
             console.log('Failed to add static resources. ', error);
             throw new Error(error);
         });
-     
-    await sleep(60); //Sleep until loadResources function is triggered and database is loaded
 
     console.log('Finished loading static resources!');
 
