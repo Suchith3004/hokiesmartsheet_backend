@@ -78,6 +78,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
                 userChecksheet = doc.data();
                 userChecksheet.userId = userId;
+                userChecksheet.homlessCourses = [];
 
                 userChecksheet.apEquivalents = [];
                 //Update all semesters to include completion status and ap/ib equivalent used. (currently only ap)
