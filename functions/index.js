@@ -33,6 +33,9 @@ const handleResponse = (response, status, body) => {
     //         Body: body,
     //     },
     // });
+    response.set('Access-Control-Allow-Origin', '*');
+    response.set('Acess-Control-Allow-Methods', 'GET')
+    response.set('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     if (body) {
         return response.status(200).json(body);
     }
