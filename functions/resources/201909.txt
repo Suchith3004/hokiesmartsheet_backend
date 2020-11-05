@@ -9125,3 +9125,5 @@
 89595	WGS-4994H	Undergraduate Research	R	1	0	Staff	ARR	ARR	TBA	00X
 89800	WGS-5934	Sexualities and Queer Theory	L	3	15	SM Cassinelli	M	7:00PM	9:50PM	NOR 209	19M
 89598	WGS-5974	Independent Study	I	1	0	Staff	ARR	ARR	TBA	00X
+89598	WGS-5974	Independent Study	I	1	0	Staff	ARR	ARR	TBA	00X
+89598	WGS-5974	Independent Study	I	1	0	Staff	ARR	ARR	TBA	00X

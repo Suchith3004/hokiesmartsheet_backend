@@ -11,4 +11,3 @@ exports.cleanCourse = (course, prefix) => {
 
 };
 
-
