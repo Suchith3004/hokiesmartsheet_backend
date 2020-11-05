@@ -1,3 +1,9 @@
+/**
+ * Author: Suchith Suddala
+ * Date: 11/4/2020
+ * 
+ */
+
 // Firebase Cloud Firestore
 const admin = require('firebase-admin');
 const db = admin.firestore();
@@ -23,8 +29,20 @@ exports.loadDbCourses = async () => {
     var course_type;
     var batch = db.batch();
     var count = 0;
+
+    var currCourse = '';
+    var currCourseInfo = {
+        lecture: false,
+        lab: false
+    };
     for (const line of courseLines) {
         course = line.split("\t");
+        
+        if(currCourse !== course[1]) {
+            currCourse = course[1];
+            currCourseInfo.lecture = false;
+            currCourseInfo.lab = false;
+        }
 
         switch (course[3]) {
             case 'I':
@@ -57,20 +75,25 @@ exports.loadDbCourses = async () => {
             credits: parseInt(course[4]),
         }
 
-        if (course_type === 'Lab') {
-            // await courseCollection.doc(course[1]).get()
-            //     .then(function (doc) {
-            //         if (!doc.exists) {
-            //             batch.set(courseCollection.doc(course[1]), new_course);
-            //         }
-
-            //     })
-            //     .catch(function(error) {
-            //         return handleError(response, 500, "Failed when checking for lab. " + error);
-            //     });
+        const courseId = course[1];        
+        if (new_course.type !== 'Lab' && new_course.type !== 'Lecture') {
+            batch.set(courseCollection.doc(courseId), new_course);
         }
-        else {
-            batch.set(courseCollection.doc(course[1]), new_course);
+        else if(new_course.type === 'Lecture' && !currCourseInfo.lecture) {
+            if(currCourseInfo.lab) {
+                new_course.lab = true;
+            }
+            batch.set(courseCollection.doc(courseId), new_course);
+            currCourseInfo.lecture = true;
+        }
+        else if(new_course.type === 'Lab' && !currCourseInfo.lab) {
+            if(currCourseInfo.lecture) {
+                batch.set(courseCollection.doc(courseId), {lab: true}, {merge: true});
+            }
+            else {
+                batch.set(courseCollection.doc(courseId), new_course);
+            }
+            currCourseInfo.lab = true;
         }
 
         count++;
@@ -122,6 +145,12 @@ exports.loadDbChecksheets = async () => {
             totalCredits: sheetInfo[4]
         }
 
+        const checksheet_id = sheetInfo[0] + '-' + sheetInfo[2];
+        await checksheetCollection.doc(checksheet_id).set(new_checksheet)
+            .catch(function (error) {
+                console.log("Could not load checksheet for " + checksheet_id, error);
+            })
+
         var semesters = [];        // List of all semesters for checksheet
         var pathways = [];         // Pathways for the checksheet
         var electives = [];        // Categories of electives
@@ -141,11 +170,16 @@ exports.loadDbChecksheets = async () => {
                     // Add semester to list of semesters for checksheet
                     if (curr_semester != 0) {
 
-                        semesters.push({
+
+                        // Add semester to checksheet semester collection
+                        await checksheetCollection.doc(checksheet_id).collection('semesters').doc('Semester ' + curr_semester).set({
                             semNum: curr_semester,
                             totalCredits: semester_credits,
                             semesterCourses: semester_courses
-                        });
+                        })
+                            .catch(function (error) {
+                                console.log("Could not load semester " + curr_semester, error);
+                            });
                     }
 
                     // Reset current semester values
@@ -185,8 +219,15 @@ exports.loadDbChecksheets = async () => {
                         const updated_course = courseDoc.data();
 
                         // seperate the requisites into array
-                        const prerequisites = course[6].split('&');
-                        const corequisites = course[7].split('&');
+                        var prerequisites = [];
+                        var corequisites = [];
+
+                        if (course[6].length !== 0)
+                            prerequisites = course[6].split('&');
+
+                        if (course[7].length !== 0)
+                            corequisites = course[7].split('&');
+
 
                         // update the course fields
                         updated_course.prerequisites = prerequisites;
@@ -241,18 +282,33 @@ exports.loadDbChecksheets = async () => {
             count++;
         }
 
-        semesters.push({
+        await checksheetCollection.doc(checksheet_id).collection('semesters').doc('Semester ' + curr_semester).set({
             semNum: curr_semester,
             totalCredits: semester_credits,
             semesterCourses: semester_courses
-        });
+        })
+            .catch(function (error) {
+                console.log("Could not load semester " + curr_semester, error);
+            });
 
-        new_checksheet.semesters = semesters;
-        new_checksheet.pathways = pathways;
 
-        const checksheet_id = sheetInfo[0] + '-' + sheetInfo[2];
+        // Add pathways to checksheet
+        var updated_checksheet = new_checksheet;
 
-        await checksheetCollection.doc(checksheet_id).set(new_checksheet)
+        await checksheetCollection.doc(checksheet_id).get()
+            .then(function (doc) {
+                if (doc.exists)
+                    updated_checksheet = doc.data();
+                else
+                    console.log("Checksheet doesn't exist.");
+            })
+            .catch(function (error) {
+                console.log("Could not load checksheet for " + checksheet_id, error);
+            });
+
+        updated_checksheet.pathways = pathways;
+
+        await checksheetCollection.doc(checksheet_id).set(updated_checksheet)
             .catch(function (error) {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             })
@@ -260,8 +316,6 @@ exports.loadDbChecksheets = async () => {
     }
 
     console.log("Finished loading checksheets into db!");
-
-    // response.json({ result: "db has been loaded with all checksheets!" })
 
 }
 
