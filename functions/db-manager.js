@@ -151,7 +151,7 @@ exports.loadDbChecksheets = async () => {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             })
 
-        var semesters = [];        // List of all semesters for checksheet
+        var pathwaysIds = [];
         var pathways = [];         // Pathways for the checksheet
         var electives = [];        // Categories of electives
         var course;
@@ -234,8 +234,6 @@ exports.loadDbChecksheets = async () => {
                         updated_course.corequisites = corequisites;
                         updated_course.minGrade = course[4];
 
-                        // console.log(updated_course);
-
                         // Update course in db
                         await courseCollection.doc(curr_course).set(updated_course)
                             .catch(function (error) {
@@ -250,7 +248,8 @@ exports.loadDbChecksheets = async () => {
                         });
 
                         // add course to list of pathways
-                        if (course[8] !== '') {
+                        if (course[8] !== '' && updated_course.type !== 'Lab') {
+                            pathwaysIds.push(curr_course);
                             pathways.push({
                                 courseId: curr_course,
                                 name: updated_course.name,
@@ -306,6 +305,7 @@ exports.loadDbChecksheets = async () => {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             });
 
+        updated_checksheet.pathwayIds = pathwaysIds;
         updated_checksheet.pathways = pathways;
 
         await checksheetCollection.doc(checksheet_id).set(updated_checksheet)
@@ -362,9 +362,6 @@ exports.loadDbPathways = async () => {
                     updated_course.pathways.push(category);
 
                     batch.set(courseCollection.doc(line), updated_course);
-                    // await courseCollection.doc(line).set(updated_course).catch(function (error) {
-                    //     console.log("Failed to update pathway for course: " + line, error);
-                    // });
                 }
             }
             count++;
