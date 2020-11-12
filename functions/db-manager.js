@@ -157,6 +157,7 @@ exports.loadDbChecksheets = async () => {
         var course;
         var curr_course;
         var count = 0;
+        var pathwayCount = 0;      //Counter variable to keep track of free of choice pathways
         var curr_semester = 0;
         var semester_credits = 0;  // total credits for curr_semester
         var semester_courses = []; // List of courses for each semester
@@ -259,11 +260,13 @@ exports.loadDbChecksheets = async () => {
                     }
                 }
                 else if (course[8] === '0') {  // Course is a pathway
+                    const pathwayId = "Pathway " + pathwayCount;
                     semester_courses.push({
-                        courseId: "Pathway",
+                        courseId: pathwayId,
                         name: "Pathway",
                         credits: course[5]
                     });
+                    pathwayCount++;
                 }
                 else {  // Elective 
                     const elec = course[9].replace("\r", "");
@@ -381,10 +384,6 @@ exports.loadDbPathways = async () => {
 
 /**
  * Autocomplete searches given a field and a prefix for that field in a provided collection.
- * 
- * @param {*} collection 
- * @param {*} field 
- * @param {*} prefix 
  */
 exports.autocompleteSearch = async (collection, field, prefix) => {
 
@@ -418,13 +417,6 @@ exports.autocompleteSearch = async (collection, field, prefix) => {
 /**
  * Autocomplete searchs given a field and a prefix for that field in a provided collection,
  *      while also ensuring that the first field provided matches the first search value.
- * 
- * 
- * @param {*} collection 
- * @param {*} field1 
- * @param {*} search 
- * @param {*} field2 
- * @param {*} prefix 
  */
 exports.autocompleteSearchSecond = async (collection, field1, search, field2, prefix) => {
 
