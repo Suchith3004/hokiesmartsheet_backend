@@ -29,18 +29,17 @@ const dbManager = require('./db-manager');
 const dataCleaner = require('./data-cleaner');
 
 // Response Handling
-const handleError = (request, response, status, error) => {
+const handleError = (response, status, error) => {
     console.error(status, error);
     response.set('Access-Control-Allow-Origin', '*');
     response.set('Acess-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS')
     response.set('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
-    return cors()(request, response, () => {
-        console.log(request.body);
-        response.status(status).json(error);
-    });
+
+    return response.status(status).json(error);
+
 };
 
-const handleResponse = (request, response, status, body) => {
+const handleResponse = (response, status, body) => {
     // console.log({
     //     Response: {
     //         Status: status,
@@ -60,11 +59,11 @@ const handleResponse = (request, response, status, body) => {
 exports.healthCheck = functions.https.onRequest((request, response) => {
     functions.logger.info("Hello logs!", { structuredData: true });
     cors(request, response, () => {
-        return handleResponse(request, response, 200, "Health Check Successful")
+        return handleResponse(response, 200, "Health Check Successful")
     });
 });
 
-//-----------------User Functions-------------------------------
+
 /**
  * Creates a user with the appropriate changes based on completed AP classes and Transfer classes.
  */
@@ -73,7 +72,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
     cors(request, response, async () => {
 
         if (request.body.firstName || request.body.lastName || request.body.userId === undefined || request.body.major === undefined || request.body.gradYear === undefined || request.body.apEquivalents === undefined || request.body.transferCredits === undefined)
-            return handleError(request, response, 400, "Not all parameters provided");
+            return handleError(response, 400, "Not all parameters provided");
 
         const userId = request.body.userId;
         const checksheetId = request.body.major + '-' + request.body.gradYear;
@@ -81,7 +80,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
         //Retrieve checksheet for major and grad year
         const checksheetDoc = await checksheetCollection.doc(checksheetId).get()
             .catch(error => {
-                return handleError(request, response, 500, "Failed to retrieve checksheet: " + checksheetId + " ." + error);
+                return handleError(response, 500, "Failed to retrieve checksheet: " + checksheetId + " ." + error);
             })
 
         //Duplicate checksheet for user (without semesters collection)
@@ -95,17 +94,17 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
             await userCollection.doc(userId).set(userChecksheet)
                 .catch(error => {
-                    return handleError(request, response, 500, "Failed to create user. " + error.message);
+                    return handleError(response, 500, "Failed to create user. " + error.message);
                 })
         }
         else {
-            return handleError(request, response, 400, "Checksheet" + checksheetId + "doesn't exist.");
+            return handleError(response, 400, "Checksheet" + checksheetId + "doesn't exist.");
         }
 
         // Update use checksheet to adjust for AP/IB classes (only AP right now)
         const userSheetRef = await userCollection.doc(userId).get()
             .catch(error => {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             })
 
         const userChecksheet = userSheetRef.data();
@@ -113,7 +112,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
         //Duplicate semester collection in user with added completion fields
         const semSnapshot = await checksheetCollection.doc(checksheetId).collection('semesters').get()
             .catch(error => {
-                return handleError(request, response, 500, "Failed to retrieve checksheet: " + checksheetId + " ." + error);
+                return handleError(response, 500, "Failed to retrieve checksheet: " + checksheetId + " ." + error);
             });
 
         for (const semDoc of semSnapshot.docs) {
@@ -148,7 +147,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
             // Add semester to user checksheet collection
             await userCollection.doc(userId).collection('semesters').doc(semDoc.id).set(semester)
                 .catch(error => {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 })
         }
 
@@ -161,11 +160,11 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
             // Retrieve matching ap equivalent from the backend
             var staticRef = await resourcesCollection.doc('static').get()
                 .catch(function (error) {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 });
 
             if (!staticRef.exists) {
-                return handleError(request, response, 500, 'No static resources exist.');
+                return handleError(response, 500, 'No static resources exist.');
             }
 
             const updatedEquivalent = staticRef.data().apEquivalents[equivalentId];
@@ -176,7 +175,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
             var querySnapshot = await userCollection.doc(userId).collection('semesters')
                 .where('courseReferences', 'array-contains', updatedEquivalent.vtCourseId).get()
                 .catch(function (error) {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 });
 
             if (!querySnapshot.empty) {
@@ -196,7 +195,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
                         await userCollection.doc(userId).collection('semesters').doc('Semester ' + updatedSemester.semNum).set(updatedSemester)
                             .catch(error => {
-                                return handleError(request, response, 500, error);
+                                return handleError(response, 500, error);
                             });
 
                         break;
@@ -211,7 +210,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
         // Update the ap equivalents for the user checksheet
         await userCollection.doc(userId).set(userChecksheet, { merge: true })
             .catch(error => {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             })
 
         // Return the newly created user checksheet
@@ -227,10 +226,10 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
                     cleanedSheet.semesters.push(currSem);
                 });
 
-                return handleResponse(request, response, 200, cleanedSheet);
+                return handleResponse(response, 200, cleanedSheet);
             })
             .catch(error => {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             })
     });
 
@@ -256,12 +255,12 @@ exports.getUserChecksheet = functions.https.onRequest(async (request, response) 
                         delete currSem.courseReferences;
                         cleanedSheet.semesters.push(currSem);
                     });
-                    return handleResponse(request, response, 200, cleanedSheet);
+                    return handleResponse(response, 200, cleanedSheet);
                 }
-                return handleError(request, response, 400, "User doesn't exist.");
+                return handleError(response, 400, "User doesn't exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, "Failed to retrieve checksheet. " + error);
+                return handleError(response, 500, "Failed to retrieve checksheet. " + error);
             })
     });
 
@@ -280,113 +279,180 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
         const toSem = request.body.toSem;
 
         if (courseId === undefined || fromSem === undefined || toSem === undefined || userId === undefined)
-            return handleError(request, response, 400, "Missing body parameters.");
+            return handleError(response, 400, "Missing body parameters.");
+
+        // Retrieve user checksheet from db
+        const userSheetRef = await userCollection.doc(userId).get()
+            .catch(function (error) {
+                return handleError(response, 500, error);
+            });
+
+        if (!userSheetRef.exists)
+            return handleError(response, 400, "User (" + userId + ") doesn't exist in the db.");
+
+        const userChecksheet = userSheetRef.data();
 
         // Check if course exists in origin semester
         const courseRef = await userCollection.doc(userId).collection('semesters').doc('Semester ' + fromSem).get()
             .catch(error => {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             })
 
         if (courseRef.exists) {
             const courses = courseRef.data().courseReferences
             if (!courses.includes(courseId))
-                return handleError(request, response, 400, 'Course ' + courseId + ' does not exisit in semester ' + fromSem);
+                return handleError(response, 400, 'Course ' + courseId + ' does not exisit in semester ' + fromSem);
         }
         else {
-            return handleError(request, response, sem, 'Semester ' + fromSem + 'does not exist in db.');
+            return handleError(response, sem, 'Semester ' + fromSem + 'does not exist in db.');
         }
 
         // Return parameters init
         const moveStatus = {
             prerequisites: false,
-            corequisites: false
+            corequisites: false,
+            dependents: false
         }
 
         // If pathway or elective it can be immediately moved
         if (courseId.includes('Pathway') || courseId.includes('Elective')) {
             await internalMoveCourse(toSem, fromSem, courseId, userId)
                 .catch(error => {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 });
 
             moveStatus.prerequisites = true;
             moveStatus.corequisites = true;
 
-            return handleResponse(request, response, 200, moveStatus);
+            return handleResponse(response, 200, moveStatus);
         }
 
         // Retrieve full course data from db
         const courseToMoveRef = await courseCollection.doc(courseId).get()
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             });
 
         if (!courseToMoveRef.exists)
-            return handleError(request, response, 400, "Course " + courseId + " doesn't exist in the db.");
+            return handleError(response, 400, "Course " + courseId + " doesn't exist in the db.");
 
         const courseToMove = courseToMoveRef.data();
 
-        // Retrieve user checksheet from db
-        const userSheetRef = await userCollection.doc(userId).get()
-            .catch(function (error) {
-                return handleError(request, response, 500, error);
-            });
-
-        if (!userSheetRef.exists)
-            return handleError(request, response, 400, "User (" + userId + ") doesn't exist in the db.");
-
-        const userChecksheet = userSheetRef.data();
 
         // Check to ensure all prerequisites and co requisites are met
         const preReqs = courseToMove.prerequisites;
         const coReqs = courseToMove.corequisites;
+        const dependentCourses = [];
 
         for (i = 1; i <= toSem; i++) {
+
+            var semester;
             // Retrieve semester
-            await userCollection.doc(userId).collection('semesters').doc('Semester ' + i).get()
-                .then(async function (doc) {
-                    const semester = doc.data();
-
-                    // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
-                    //TODO: IB classes
-                    userChecksheet.apEquivalents.forEach(equivalent => {
-
-                        // Check pre-reqs
-                        for (const preReq of preReqs) {
-                            // Seperate the prerequisties that include 'or'
-                            const seperatedReqs = preReq.split('|');
-                            if (seperatedReqs.includes(equivalent.vtCourseId))
-                                preReqs.splice(preReqs.indexOf(preReq), 1);
-                        }
-
-                        // Check co-reqs                    
-                        if (coReqs.includes(equivalent.vtCourseId))
-                            coReqs.splice(coReqs.indexOf(equivalent.id), 1);
-
-                    })
-
-                    semester.courseReferences.forEach(id => {
-
-                        // Remove course from pre-reqs if it is taken in the semester before destination
-                        if (i !== toSem) {
-                            for (const preReq of preReqs) {
-                                // Seperate the prerequisties that include 'or'
-                                const seperatedReqs = preReq.split('|');
-                                if (seperatedReqs.includes(id))
-                                    preReqs.splice(preReqs.indexOf(preReq), 1);
-                            }
-                        }
-
-                        // Remove course from co-reqs if it is taken in the destination semester of before
-                        if (coReqs.includes(id))
-                            coReqs.splice(coReqs.indexOf(id), 1);
-
-                    });
-                })
+            const semesterDoc = await userCollection.doc(userId).collection('semesters').doc('Semester ' + i).get()
                 .catch(error => {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 })
+
+            if(semesterDoc.exists) {
+                semester = semesterDoc.data()
+            }
+            else {
+                return handleError(response, 500, 'Semester not found.')
+            }
+
+            // Check pre-reqs
+            for (const preReq of preReqs) {
+                // Seperate the prerequisties that include 'or'
+                const seperatedReqs = preReq.split('|');
+
+                // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
+                //TODO: IB classes
+                userChecksheet.apEquivalents.forEach(equivalent => {
+                    if (seperatedReqs.includes(equivalent.vtCourseId))
+                        preReqs.splice(preReqs.indexOf(preReq), 1);
+                })
+
+                // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
+                userChecksheet.transferCourses.forEach(course => {
+
+                    if (seperatedReqs.includes(course.courseId))
+                        preReqs.splice(preReqs.indexOf(preReq), 1);
+                });
+
+                // Remove course from pre-reqs if it is taken in the semester before destination
+                semester.courseReferences.forEach(id => {
+                    if (i !== toSem) {
+                        if (seperatedReqs.includes(id))
+                            preReqs.splice(preReqs.indexOf(preReq), 1);
+                    }
+                });
+
+            }
+
+            // Check co-reqs
+            for (const coReq of coReqs) {
+                // Seperate the coRequisties that include 'or'
+                const seperatedReqs = coReq.split('|');
+
+                // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
+                //TODO: IB classes
+                userChecksheet.apEquivalents.forEach(equivalent => {
+                    if (seperatedReqs.includes(equivalent.vtCourseId))
+                        coReqs.splice(coReqs.indexOf(coReq), 1);
+                })
+
+                // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
+                userChecksheet.transferCourses.forEach(course => {
+
+                    if (seperatedReqs.includes(course.courseId))
+                        coReqs.splice(coReqs.indexOf(coReq), 1);
+                });
+
+                // Remove course from pre-reqs if it is taken in the semester before destination
+                semester.courseReferences.forEach(id => {
+                    if (seperatedReqs.includes(id))
+                        coReqs.splice(coReqs.indexOf(coReq), 1);
+                });
+
+            }
+
+            if (i > fromSem) {
+                //If course is being moved up in semesters (toSem > fromSem)
+                //TODO: add force move and account for OR's
+                for (const currCourse of semester.courseReferences) {
+
+                    const courseRef = await courseCollection.doc(currCourse).get()
+                        .catch(error => {
+                            return handleError(response, 500, error);
+                        });
+
+                    if (courseRef.exists) {
+                        const course = courseRef.data();
+
+                        if (course.prerequisites) {
+                            course.prerequisites.forEach(req => {
+                                if (req.includes(courseId)) {
+
+                                    moveStatus.dependents = true;
+                                    dependentCourses.push(currCourse);
+                                }
+                            });
+                        }
+                        if (course.corequisites) {
+                            course.corequisites.forEach(req => {
+                                if (req.includes(courseId)) {
+                                    moveStatus.dependents = true;
+                                    dependentCourses.push(currCourse);
+                                }
+                            });
+                        }
+                    }
+                    else {
+                        console.log(currCourse + " does not exists.");
+                    }
+
+                }
+            }
         }
 
         // If all pre-requisites and co-requisites have been met, move the course
@@ -396,21 +462,22 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
         if (coReqs.length === 0)
             moveStatus.corequisites = true;
 
-        moveStatus.preReqsNotMet = preReqs;
-        moveStatus.coReqsNotsMet = coReqs;
+        moveStatus.preReqsNotMet = (preReqs.length) ? preReqs : "N/A";
+        moveStatus.coReqsNotMet = (coReqs.length) ? coReqs : "N/A";
+        moveStatus.dependentCourses = (dependentCourses.length) ? dependentCourses : "N/A";
 
-        if (moveStatus.prerequisites && moveStatus.corequisites) {
+        if (moveStatus.prerequisites && moveStatus.corequisites && !moveStatus.dependents) {
             await this.internalMoveCourse(toSem, fromSem, courseId, userId)
                 .then(() => {
 
-                    return handleResponse(request, response, 200, moveStatus);
+                    return handleResponse(response, 200, moveStatus);
                 })
                 .catch(error => {
-                    return handleError(request, response, 500, error);
+                    return handleError(response, 500, error);
                 });
         }
         else {
-            return handleResponse(request, response, 200, moveStatus);
+            return handleResponse(response, 200, moveStatus);
         }
 
     });
@@ -489,10 +556,10 @@ exports.getCourseByPrefix = functions.https.onRequest(async (request, response) 
         const number = request.query.number;
 
         if (category === undefined)
-            return handleError(request, response, 400, "Course category not provided (undefined).")
+            return handleError(response, 400, "Course category not provided (undefined).")
 
         if (number === undefined)
-            return handleError(request, response, 400, "Course category not provided (undefined).")
+            return handleError(response, 400, "Course category not provided (undefined).")
 
         const coursePrefix = category.toUpperCase() + '-' + number;
 
@@ -500,10 +567,10 @@ exports.getCourseByPrefix = functions.https.onRequest(async (request, response) 
 
         if (courseRef.exists) {
             // const course = dataCleaner.cleanCourse(courseRef.data(), coursePrefix);
-            return handleResponse(request, response, 200, courseRef.data());
+            return handleResponse(response, 200, courseRef.data());
         }
         else {
-            return handleError(request, response, 400, 'Course not found: ' + coursePrefix);
+            return handleError(response, 400, 'Course not found: ' + coursePrefix);
         }
 
     });
@@ -520,27 +587,27 @@ exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, res
         const number = request.query.number;
 
         if (category === undefined)
-            return handleError(request, response, 400, "Course category not provided (undefined).")
+            return handleError(response, 400, "Course category not provided (undefined).")
 
         if (category === '')
-            return handleResponse(request, response, 200, []);
+            return handleResponse(response, 200, []);
 
         if (number !== undefined || number === '') {
             await dbManager.autocompleteSearch(courseCollection, 'category', category, 'number', number)
                 .then(function (queryResult) {
-                    return handleResponse(request, response, 200, queryResult);
+                    return handleResponse(response, 200, queryResult);
                 })
                 .catch(function (error) {
-                    return handleError(request, response, 400, error);
+                    return handleError(response, 400, error);
                 });
         }
         else { //just category
             await dbManager.autocompleteSearch(courseCollection, 'category', category)
                 .then(function (queryResult) {
-                    return handleResponse(request, response, 200, queryResult);
+                    return handleResponse(response, 200, queryResult);
                 })
                 .catch(function (error) {
-                    return handleError(request, response, 400, error);
+                    return handleError(response, 400, error);
                 });
         }
     });
@@ -556,14 +623,14 @@ exports.getCourseByName = functions.https.onRequest(async (request, response) =>
         const courseName = (request.path).replace('/', '');
 
         if (courseName === undefined)
-            return handleError(request, response, 400, "Course name not provided (undefined).");
+            return handleError(response, 400, "Course name not provided (undefined).");
 
         const courseRef = await courseCollection.doc(courseName).get();
 
         if (courseRef.exists)
-            return handleResponse(request, response, 200, courseRef.data());
+            return handleResponse(response, 200, courseRef.data());
         else
-            return handleError(request, response, 400, 'Course not found: ' + courseName);
+            return handleError(response, 400, 'Course not found: ' + courseName);
     });
 
 });
@@ -577,15 +644,15 @@ exports.autocompleteCourseName = functions.https.onRequest(async (request, respo
         const courseName = (request.path).replace('/', '');
 
         if (courseName === undefined)
-            return handleError(request, response, 400, "Course name not provided (undefined).");
+            return handleError(response, 400, "Course name not provided (undefined).");
 
 
         await dbManager.autocompleteSearch(courseCollection, 'name', courseName)
             .then(function (queryResult) {
-                return handleResponse(request, response, 200, queryResult);
+                return handleResponse(response, 200, queryResult);
             })
             .catch(function (error) {
-                return handleError(request, response, 400, error);
+                return handleError(response, 400, error);
             });
 
     });
@@ -601,12 +668,12 @@ exports.getAllMajors = functions.https.onRequest(async (request, response) => {
         await resourcesCollection.doc('static').get()
             .then(function (doc) {
                 if (doc.exists)
-                    return handleResponse(request, response, 200, doc.data().majors);
+                    return handleResponse(response, 200, doc.data().majors);
                 else
-                    return handleError(request, response, 400, "static resources do not exist.");
+                    return handleError(response, 400, "static resources do not exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             });
     });
 
@@ -621,12 +688,12 @@ exports.getAllAPEquivalents = functions.https.onRequest(async (request, response
         await resourcesCollection.doc('static').get()
             .then(function (doc) {
                 if (doc.exists)
-                    return handleResponse(request, response, 200, doc.data().apEquivalents);
+                    return handleResponse(response, 200, doc.data().apEquivalents);
                 else
-                    return handleError(request, response, 400, "static resources do not exist.");
+                    return handleError(response, 400, "static resources do not exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             });
     });
 
@@ -647,13 +714,13 @@ exports.getAllSchools = functions.https.onRequest(async (request, response) => {
                         if (schoolsRef.hasOwnProperty(key))
                             schools.push(key);
 
-                    return handleResponse(request, response, 200, schools);
+                    return handleResponse(response, 200, schools);
                 }
                 else
-                    return handleError(request, response, 400, "Schools does not exist.");
+                    return handleError(response, 400, "Schools does not exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             });
 
     });
@@ -669,12 +736,12 @@ exports.getAllPathways = functions.https.onRequest(async (request, response) => 
         await resourcesCollection.doc('static').get()
             .then(function (doc) {
                 if (doc.exists)
-                    return handleResponse(request, response, 200, doc.data().pathways);
+                    return handleResponse(response, 200, doc.data().pathways);
                 else
-                    return handleError(request, response, 400, "Pathways does not exist.");
+                    return handleError(response, 400, "Pathways does not exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             });
 
     });
@@ -682,7 +749,9 @@ exports.getAllPathways = functions.https.onRequest(async (request, response) => 
 });
 
 
-// ----------------- Checksheet Functions ------------------
+/**
+ * Retrieves the default checksheet given a major and graduation year
+ */
 exports.getDefaultChecksheet = functions.https.onRequest(async (request, response) => {
     cors(request, response, async () => {
 
@@ -690,9 +759,9 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
         const major = request.query.major;
 
         if (year === undefined)
-            return handleError(request, response, 400, 'Year not provided');
+            return handleError(response, 400, 'Year not provided');
         if (major === undefined)
-            return handleError(request, response, 400, 'Major not provided');
+            return handleError(response, 400, 'Major not provided');
 
         const checksheetId = major.toUpperCase() + '-' + year;
         await checksheetCollection.doc(checksheetId).get()
@@ -706,14 +775,14 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
                         cleanedSheet.semesters.push(semester.data());
                     });
 
-                    return handleResponse(request, response, 200, cleanedSheet);
+                    return handleResponse(response, 200, cleanedSheet);
 
                 }
                 else
-                    return handleError(request, response, 400, "Checksheet does not exist.");
+                    return handleError(response, 400, "Checksheet does not exist.");
             })
             .catch(function (error) {
-                return handleError(request, response, 500, error);
+                return handleError(response, 500, error);
             })
     });
 
@@ -748,14 +817,18 @@ exports.loadResources = functions.firestore
     });
 
 
+
+/**
+ * Initializes the database by loading in all static data. 
+ */
 exports.initializeDB = functions.https.onRequest(async (request, response) => {
 
     await dbManager.loadStaticData()
         .then(function () {
-            return handleResponse(request, response, 200, "Success!");
+            return handleResponse(response, 200, "Success!");
         })
         .catch(function (error) {
-            return handleError(request, response, 500, error);
+            return handleError(response, 500, error);
         })
 
 });
