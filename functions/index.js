@@ -24,11 +24,33 @@ const courseCollection = db.collection('courses');
 const checksheetCollection = db.collection('checksheets');
 const resourcesCollection = db.collection('resources');
 const userCollection = db.collection('users');
+const organizationCollection = db.collection('organization');
 
 const dbManager = require('./db-manager');
 const dataCleaner = require('./data-cleaner');
 
-// Response Handling
+
+/**
+ * Allows client to validate connection 
+ */
+exports.healthCheck = functions.https.onRequest((request, response) => {
+    functions.logger.info("Hello logs!", { structuredData: true });
+    cors(request, response, () => {
+        return handleResponse(response, 200, "Health Check Successful")
+    });
+});
+
+
+
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              CLIENT RESPONSE HANDLING
+ * --------------------------------------------------------------------------------------------------
+ */
+/**
+ * Converts a response, status, and error into a JSON response to be sent to client
+ */
 const handleError = (response, status, error) => {
     console.error(status, error);
     response.set('Access-Control-Allow-Origin', '*');
@@ -39,6 +61,9 @@ const handleError = (response, status, error) => {
 
 };
 
+/**
+ * Converts a response, status, and body into a JSON response to be sent to client
+ */
 const handleResponse = (response, status, body) => {
     // console.log({
     //     Response: {
@@ -56,14 +81,63 @@ const handleResponse = (response, status, body) => {
 };
 
 
-exports.healthCheck = functions.https.onRequest((request, response) => {
-    functions.logger.info("Hello logs!", { structuredData: true });
-    cors(request, response, () => {
-        return handleResponse(response, 200, "Health Check Successful")
-    });
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              INITIALIZING DATABASE
+ * --------------------------------------------------------------------------------------------------
+ */
+
+/**
+* Initializes the database by loading in all static data. 
+*/
+exports.initializeDB = functions.https.onRequest(async (request, response) => {
+
+    await dbManager.loadStaticData()
+        .then(function () {
+            return handleResponse(response, 200, "Success!");
+        })
+        .catch(function (error) {
+            return handleError(response, 500, error);
+        })
+
 });
 
+/**
+ * Loads all the courses, checksheets, and pathways into the db
+ */
+exports.loadResources = functions.firestore
+    .document('resources/static')
+    .onCreate(async (snap, context) => {
+        // Initialize and load database
+        console.log("Initializing database...");
+        await dbManager.loadDbCourses()
+            .catch(function (error) {
+                console.log("Failed to load courses", error);
+            });
 
+        await dbManager.loadDbChecksheets()
+            .catch(function (error) {
+                console.log("Failed to load checksheets", error);
+            });
+
+        await dbManager.loadDbPathways()
+            .catch(function (error) {
+                console.log("Failed to load pathways", error);
+            });
+
+        console.log("Database initialized and loaded...");
+
+    });
+
+
+
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              USER FUNCTIONS
+ * --------------------------------------------------------------------------------------------------
+ */
 /**
  * Creates a user with the appropriate changes based on completed AP classes and Transfer classes.
  */
@@ -71,11 +145,25 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
     cors(request, response, async () => {
 
-        if (request.body.firstName || request.body.lastName || request.body.userId === undefined || request.body.major === undefined || request.body.gradYear === undefined || request.body.apEquivalents === undefined || request.body.transferCredits === undefined)
+        //TODO: Check for empty strings
+        if (!(request.body.firstName && request.body.lastName && request.body.userId && request.body.major && request.body.gradYear && request.body.apEquivalents && request.body.transferCredits))
             return handleError(response, 400, "Not all parameters provided");
 
         const userId = request.body.userId;
         const checksheetId = request.body.major + '-' + request.body.gradYear;
+
+        //TODO: Seperate so that checksheets for user are stored in their own collection 
+        //TODO: ADD PLAN
+
+        // Check if the user already exists
+        await userCollection.doc(userId).get()
+            .then(doc => {
+                if (doc.exists)
+                    return handleError(response, 400, "User " + userId + " already exists.");
+            })
+            .catch(error => {
+                return handleError(response, 500, error.message);
+            })
 
         //Retrieve checksheet for major and grad year
         const checksheetDoc = await checksheetCollection.doc(checksheetId).get()
@@ -87,6 +175,8 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
         if (checksheetDoc.exists) {
             const userChecksheet = checksheetDoc.data();
             userChecksheet.userId = userId;
+            userChecksheet.firstName = request.body.firstName;
+            userChecksheet.lastName = request.body.lastName;
             userChecksheet.homlessCourses = [];
 
             userChecksheet.apEquivalents = [];
@@ -353,7 +443,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
                     return handleError(response, 500, error);
                 })
 
-            if(semesterDoc.exists) {
+            if (semesterDoc.exists) {
                 semester = semesterDoc.data()
             }
             else {
@@ -546,6 +636,13 @@ this.internalMoveCourse = async (toSem, fromSem, courseId, userId) => {
 
 }
 
+
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              COURSE FUNCTIONS
+ * --------------------------------------------------------------------------------------------------
+ */
 /**
  * Returns a course with the name of the prefix
  */
@@ -635,6 +732,13 @@ exports.getCourseByName = functions.https.onRequest(async (request, response) =>
 
 });
 
+
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              STATIC RESOURCES FUNCTIONS
+ * --------------------------------------------------------------------------------------------------
+ */
 /**
  * Returns a list of courses that start with the course name prefix provided
  */
@@ -749,6 +853,12 @@ exports.getAllPathways = functions.https.onRequest(async (request, response) => 
 });
 
 
+
+/**
+ * --------------------------------------------------------------------------------------------------
+ *                              CHECKSHEET FUNCTIONS
+ * --------------------------------------------------------------------------------------------------
+ */
 /**
  * Retrieves the default checksheet given a major and graduation year
  */
@@ -789,46 +899,153 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
 });
 
 
-/**
- * Loads all the courses, checksheets, and pathways into the db
- */
-exports.loadResources = functions.firestore
-    .document('resources/static')
-    .onCreate(async (snap, context) => {
-        // Initialize and load database
-        console.log("Initializing database...");
-        await dbManager.loadDbCourses()
-            .catch(function (error) {
-                console.log("Failed to load courses", error);
-            });
-
-        await dbManager.loadDbChecksheets()
-            .catch(function (error) {
-                console.log("Failed to load checksheets", error);
-            });
-
-        await dbManager.loadDbPathways()
-            .catch(function (error) {
-                console.log("Failed to load pathways", error);
-            });
-
-        console.log("Database initialized and loaded...");
-
-    });
-
 
 
 /**
- * Initializes the database by loading in all static data. 
+ * --------------------------------------------------------------------------------------------------
+ *                              MENTORING FUNCTIONS
+ * --------------------------------------------------------------------------------------------------
  */
-exports.initializeDB = functions.https.onRequest(async (request, response) => {
 
-    await dbManager.loadStaticData()
-        .then(function () {
-            return handleResponse(response, 200, "Success!");
-        })
-        .catch(function (error) {
-            return handleError(response, 500, error);
-        })
+/**
+* Creates a mentor if they do not already exist as a student
+*/
+exports.createMentor = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        const mentorId = request.body.mentorId;
+        const organizationId = request.body.organizationId;
+        const occupation = request.body.occupation;
+        const description = request.body.description;
+        const vtAlumni = request.body.vtAlumni;
+
+        if (!(mentorId && organizationId && occupation && description && vtAlumni === undefined))
+            return handleError(response, 400, "One or more body parameters are missing!");
+
+        await userCollection.doc(mentorId).get()
+            .then(doc => {
+                if (doc.exists)
+                    return handleError(response, 400, "Mentor " + mentorId + " already exists!");
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        // Check if the organization exists
+        await organizationCollection.doc(organizationId).get()
+            .then(doc => {
+                if (!doc.exists)
+                    return handleError(response, 400, "Organization " + organizationId + " does not exist.");
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+
+        const mentor = {
+            organizationId: organizationId,
+            occupation: occupation,
+            description: description,
+            vtAlumni: vtAlumni
+        }
+
+        await userCollection.doc(mentorId).set(mentor)
+            .catch(error => {
+                return handleError(response, 500, "Failed to add mentor " + mentorId + ". " + error.message);
+            })
+
+    })
 
 });
+//TODO: Make all errors more specific.
+
+/**
+ *  If a student is also mentor, then their profile is modfied to include their mentor information
+ */
+exports.addMentorToUser = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        const userId = request.body.userId;
+        const organizationId = request.body.organizationId
+        const description = request.body.description
+
+        if (!(userId && organizationId && description))
+            return handleError(response, 400, 'One or more query parameters are missing!');
+
+        // Check if the user exists
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!userDoc.exists)
+            return handleError(response, 400, "User " + userId + " does not exist");
+
+        // Check if the organization exists
+        await organizationCollection.doc(organizationId).get()
+            .then(doc => {
+                if (!doc.exists)
+                    return handleError(response, 400, "Organization " + organizationId + " does not exist.");
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+        // Add mentor status to user
+        const user = user.data();
+        user.mentor = true;
+        user.organizationId = organizationId;
+        user.description = description;
+
+        await userCollection.doc(userId).set(user)
+            .then(() => {
+                return handleResponse(response, 200, user);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
+
+
+exports.addMentorOrganization = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, () => {
+
+        const name = request.body.name;
+        const school = request.body.school;
+        const representatives = request.body.representatives;
+
+        if (!(school && representatives && name))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+        
+        // Check if the organization exists
+        await organizationCollection.doc(organizationId).get()
+            .then(doc => {
+                if (doc.exists)
+                    return handleError(response, 400, "Organization " + organizationId + " already exists!");
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        const organization = {
+            name: name,
+            school: school,
+            representatives: representatives
+        };
+
+        await organizationCollection.add(organization)
+            .then( () => {
+                return handleResponse(response, 200, organization);
+            })
+            .catch( error => {
+                return handleError(response, 500, error);
+            })
+    })
+
+})
+
