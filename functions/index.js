@@ -126,6 +126,13 @@ exports.loadResources = functions.firestore
                 console.log("Failed to load pathways", error);
             });
 
+        await organizationCollection.doc("VirginiaTech").set( {
+            name: "Virginia Tech",
+            school: "Virginia Tech",
+            representatives: {},
+            description: "Students that belong to the unversity."
+        })
+
         console.log("Database initialized and loaded...");
 
     });
@@ -177,7 +184,9 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
             userChecksheet.userId = userId;
             userChecksheet.firstName = request.body.firstName;
             userChecksheet.lastName = request.body.lastName;
-            userChecksheet.homlessCourses = [];
+            // userChecksheet.homlessCourses = [];
+            userChecksheet.mentors = {};
+            userChecksheet.mentorRequests = {};
 
             userChecksheet.apEquivalents = [];
             userChecksheet.transferCourses = [];
@@ -915,14 +924,17 @@ exports.createMentor = functions.https.onRequest(async (request, response) => {
     cors(request, response, async () => {
 
         const mentorId = request.body.mentorId;
+        const firstName = request.body.firstName;
+        const lastName = request.body.lastName;
         const organizationId = request.body.organizationId;
         const occupation = request.body.occupation;
         const description = request.body.description;
         const vtAlumni = request.body.vtAlumni;
 
-        if (!(mentorId && organizationId && occupation && description && vtAlumni === undefined))
+        if (!(mentorId && firstName && lastName && organizationId && occupation && description && vtAlumni !== undefined))
             return handleError(response, 400, "One or more body parameters are missing!");
 
+        // Check if the mentor already exists
         await userCollection.doc(mentorId).get()
             .then(doc => {
                 if (doc.exists)
@@ -933,21 +945,27 @@ exports.createMentor = functions.https.onRequest(async (request, response) => {
             })
 
         // Check if the organization exists
-        await organizationCollection.doc(organizationId).get()
-            .then(doc => {
-                if (!doc.exists)
-                    return handleError(response, 400, "Organization " + organizationId + " does not exist.");
-            })
+        const organizationDoc = await organizationCollection.doc(organizationId).get()
             .catch(error => {
                 return handleError(response, 500, error);
             })
 
+        if (!organizationDoc.exists)
+            return handleError(response, 400, "Organization " + organizationId + " does not exist.");
+
+        const organization = organizationDoc.data();
 
         const mentor = {
+            isMentor: true,
+            firstName: firstName,
+            lastName: lastName,
             organizationId: organizationId,
+            organizationName: organization.name,
             occupation: occupation,
             description: description,
-            vtAlumni: vtAlumni
+            vtAlumni: vtAlumni,
+            requests: {},
+            mentees: {}
         }
 
         await userCollection.doc(mentorId).set(mentor)
@@ -993,10 +1011,12 @@ exports.addMentorToUser = functions.https.onRequest(async (request, response) =>
                 return handleError(response, 500, error);
             })
         // Add mentor status to user
-        const user = user.data();
-        user.mentor = true;
+        const user = userDoc.data();
+        user.isMentor = true;
         user.organizationId = organizationId;
         user.description = description;
+        user.requests = {};
+        user.mentees = {};
 
         await userCollection.doc(userId).set(user)
             .then(() => {
@@ -1010,20 +1030,23 @@ exports.addMentorToUser = functions.https.onRequest(async (request, response) =>
 
 })
 
+/**
+ * Creates a mentor organization 
+ */
+exports.createMentorOrganization = functions.https.onRequest(async (request, response) => {
 
-exports.addMentorOrganization = functions.https.onRequest(async (request, response) => {
-
-    cors(request, response, () => {
+    cors(request, response, async () => {
 
         const name = request.body.name;
         const school = request.body.school;
         const representatives = request.body.representatives;
+        const description = request.body.description;
 
-        if (!(school && representatives && name))
+        if (!(school && representatives && name && description))
             return handleError(response, 400, "One or more of the required body parameters are missing!");
-        
+
         // Check if the organization exists
-        await organizationCollection.doc(organizationId).get()
+        await organizationCollection.where(name,'==', name).get()
             .then(doc => {
                 if (doc.exists)
                     return handleError(response, 400, "Organization " + organizationId + " already exists!");
@@ -1035,17 +1058,270 @@ exports.addMentorOrganization = functions.https.onRequest(async (request, respon
         const organization = {
             name: name,
             school: school,
-            representatives: representatives
+            representatives: representatives,
+            description: description
         };
 
         await organizationCollection.add(organization)
-            .then( () => {
+            .then(() => {
                 return handleResponse(response, 200, organization);
             })
-            .catch( error => {
+            .catch(error => {
                 return handleError(response, 500, error);
             })
     })
 
 })
 
+/**
+ * Adds a mentee to mentor
+ */
+exports.sendMenteeRequest = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        const menteeId = request.body.menteeId;
+        const mentorId = request.body.mentorId;
+
+        if (!(menteeId && mentorId))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        // Check if mentor exists
+        const mentorDoc = await userCollection.doc(mentorId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!mentorDoc.exists)
+            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+        // Check if user is actually a mentor
+        const mentor = mentorDoc.data();
+        if (!mentor.isMentor)
+            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+
+        // Check if mentee exists
+        const menteeDoc = await userCollection.doc(menteeId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!menteeDoc.exists)
+            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+        const mentee = menteeDoc.data();
+
+        //Check if mentee already has the same mentor
+        if (mentee.mentors.hasOwnProperty(mentorId))
+            return handleError(response, 400, mentorID + " is already a mentor of mentee " + menteeId);
+
+
+        // Update both mentee and mentor requests
+        mentor.requests[menteeId] = "RECIEVED";
+        mentee.mentorRequests[mentorId] = "SENT";
+
+        await userCollection.doc(mentorId).set(mentor)
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        await userCollection.doc(menteeId).set(mentee)
+            .then(() => {
+                return handleResponse(response, 200);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
+
+/**
+ * Updates the response to a request from amentee
+ */
+exports.respondToMenteeRequest = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        const menteeId = request.body.menteeId;
+        const mentorId = request.body.mentorId;
+        const result = request.body.response;
+
+        if (!(menteeId && mentorId && result !== undefined))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        // Check if mentor exists
+        const mentorDoc = await userCollection.doc(mentorId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!mentorDoc.exists)
+            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+        // Check if user is actually a mentor
+        const mentor = mentorDoc.data();
+        if (!mentor.isMentor)
+            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+        // Check if mentor has a request from mentee
+        if (!mentor.requests[menteeId])
+            return handleError(response, 400, "Mentor " + mentorId + " does not have a request from " + menteeId);
+
+
+        // Check if mentee exists
+        const menteeDoc = await userCollection.doc(menteeId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!menteeDoc.exists)
+            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+        const mentee = menteeDoc.data();
+
+        //Check if mentee has a request to the mentor
+        if (!mentee.mentorRequests[mentorId])
+            return handleError(response, 400, "Request for mentor " + mentorID + " does not exist.");
+
+        // Update requests to reflect response
+        const mentorName = mentor.firstName + ' ' + mentor.lastName;
+        const menteeName = mentee.firstName + ' ' + mentee.lastName;
+
+        if (response) { // Accepted
+            delete mentor.requests[menteeId];
+            delete mentee.mentorRequests[mentorId];
+
+            mentor.mentees[menteeId] = menteeName;
+            mentee.mentors[mentorId] = mentorName;
+        }
+        else {
+            delete mentor.requests[menteeId];
+            mentee.mentorRequests[mentorId] = 'DECLINED';
+        }
+
+        await userCollection.doc(mentorId).set(mentor)
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        await userCollection.doc(menteeId).set(mentee)
+            .then(() => {
+                return handleResponse(response, 200);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
+
+
+/**
+ * Returns all mentors available
+ */
+exports.getAllMentors = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        await userCollection.where('isMentor', '==', true).get()
+            .then(function (querySnapshot) {
+                const mentors = [];
+                querySnapshot.forEach(function (doc) {
+                    const mentor = doc.data();
+                    const cleanedMentor = {
+                        mentorId: mentor.id,
+                        name: mentor.firstName + ' ' + mentor.lastName,
+                        organizationName: mentor.organizationName,
+                        occupation: mentor.occupation,
+                        description: mentor.description,
+                        vtAlumni: mentor.vtAlumni
+                    }
+                    mentors.push(cleanedMentor);
+                })
+
+                handleResponse(response, 200, mentors);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
+
+
+/**
+ * Returns all mentor organizations that are supported
+ */
+exports.getAllOrganizations = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        await organizationCollection.get()
+            .then(function (querySnapshot) {
+                const organizations = [];
+                querySnapshot.forEach(function (doc) {
+                    organizations.push(doc.data());
+                })
+
+                return handleResponse(response, 200, organizations);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
+
+
+/**
+ * Returns all mentors in affiliated with a given organization
+ */
+exports.getAllMentorsInOrganization = functions.https.onRequest(async (request, response) => {
+
+    cors(request, response, async () => {
+
+        const organizationId = request.params.organizationId;
+        if (!organizationId)
+            return handleError(response, 400, 'Oranization id ' + organizationId + ' is missing!');
+
+        await organizationCollection.doc(organizationId).get()
+            .then(doc => {
+                if (!doc.exists)
+                    return handleError(response, 400, 'Oranization id ' + organizationId + ' not valid!');
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        await userCollection
+            .where('isMentor', '==', true)
+            .where('oraganizationId', '==', organizationId)
+            .get()
+            .then(function (querySnapshot) {
+                const mentors = [];
+                querySnapshot.forEach(function (doc) {
+                    const mentor = doc.data();
+                    const cleanedMentor = {
+                        mentorId: mentor.id,
+                        name: mentor.firstName + ' ' + mentor.lastName,
+                        organizationName: mentor.organizationName,
+                        occupation: mentor.occupation,
+                        description: mentor.description,
+                        vtAlumni: mentor.vtAlumni
+                    }
+                    mentors.push(cleanedMentor);
+                })
+
+                handleResponse(response, 200, mentors);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+    })
+
+})
