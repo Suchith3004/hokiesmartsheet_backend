@@ -969,6 +969,9 @@ exports.createMentor = functions.https.onRequest(async (request, response) => {
         }
 
         await userCollection.doc(mentorId).set(mentor)
+            .then(() => {
+                return handleResponse(response, 200);
+            })
             .catch(error => {
                 return handleError(response, 500, "Failed to add mentor " + mentorId + ". " + error.message);
             })
