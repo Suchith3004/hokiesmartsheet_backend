@@ -428,7 +428,7 @@ exports.autocompleteSearchSecond = async (collection, field1, search, field2, pr
     var startcode = strSearch;
     var endcode = strFrontCode + String.fromCharCode(strEndCode.charCodeAt(0) + 1);
 
-    console.log(prefix);
+    console.log(search + ' p' + prefix);
 
     const queryResult = [];
     await collection
