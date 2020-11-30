@@ -2,24 +2,21 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+        "es2021": true
     },
-    "extends": "standard",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
-        "indent": [
-            "warn",
-            4
-        ],
-        "semi": [
-            "warn",
-            "always"
-        ]
     }
 }

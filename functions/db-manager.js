@@ -153,7 +153,7 @@ exports.loadDbChecksheets = async () => {
 
         var pathwaysIds = [];
         var pathways = [];         // Pathways for the checksheet
-        var electives = [];        // Categories of electives
+        // var electives = [];        // Categories of electives
         var course;
         var curr_course;
         var count = 0;

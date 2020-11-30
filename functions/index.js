@@ -9,7 +9,7 @@ const functions = require('firebase-functions');
 
 // Firebase Cloud Firestore
 const admin = require('firebase-admin');
-const serviceAccount = require('../sec7-firebase-service-account-key.json');
+const serviceAccount = require('./sec7-firebase-service-account-key.json');
 
 // Initialze application
 admin.initializeApp({
@@ -27,7 +27,6 @@ const userCollection = db.collection('users');
 const organizationCollection = db.collection('organization');
 
 const dbManager = require('./db-manager');
-const dataCleaner = require('./data-cleaner');
 
 
 /**
@@ -89,15 +88,15 @@ const handleResponse = (response, status, body) => {
  */
 
 /**
-* Initializes the database by loading in all static data. 
-*/
-exports.initializeDB = functions.https.onRequest(async (request, response) => {
+ * Initializes the database by loading in all static data. 
+ */
+exports.initializeDB = functions.https.onRequest(async(request, response) => {
 
     await dbManager.loadStaticData()
-        .then(function () {
+        .then(function() {
             return handleResponse(response, 200, "Success!");
         })
-        .catch(function (error) {
+        .catch(function(error) {
             return handleError(response, 500, error);
         })
 
@@ -108,25 +107,25 @@ exports.initializeDB = functions.https.onRequest(async (request, response) => {
  */
 exports.loadResources = functions.firestore
     .document('resources/static')
-    .onCreate(async (snap, context) => {
+    .onCreate(async() => {
         // Initialize and load database
         console.log("Initializing database...");
         await dbManager.loadDbCourses()
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Failed to load courses", error);
             });
 
         await dbManager.loadDbChecksheets()
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Failed to load checksheets", error);
             });
 
         await dbManager.loadDbPathways()
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Failed to load pathways", error);
             });
 
-        await organizationCollection.doc("VirginiaTech").set( {
+        await organizationCollection.doc("VirginiaTech").set({
             name: "Virginia Tech",
             school: "Virginia Tech",
             representatives: {},
@@ -148,9 +147,9 @@ exports.loadResources = functions.firestore
 /**
  * Creates a user with the appropriate changes based on completed AP classes and Transfer classes.
  */
-exports.createUser = functions.https.onRequest(async (request, response) => {
+exports.createUser = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         //TODO: Check for empty strings
         if (!(request.body.firstName && request.body.lastName && request.body.userId && request.body.major && request.body.gradYear && request.body.apEquivalents && request.body.transferCredits))
@@ -195,8 +194,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
                 .catch(error => {
                     return handleError(response, 500, "Failed to create user. " + error.message);
                 })
-        }
-        else {
+        } else {
             return handleError(response, 400, "Checksheet" + checksheetId + "doesn't exist.");
         }
 
@@ -229,8 +227,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
                     coursesToRemove.push(i);
                     semester.totalCredits -= course.credits;
                     semester.semesterCourses[i].completed = true;
-                }
-                else {
+                } else {
                     // add course to references
                     semester.courseReferences.push(course.courseId);
                     semester.semesterCourses[i].completed = false;
@@ -258,7 +255,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
             // Retrieve matching ap equivalent from the backend
             var staticRef = await resourcesCollection.doc('static').get()
-                .catch(function (error) {
+                .catch(function(error) {
                     return handleError(response, 500, error);
                 });
 
@@ -273,7 +270,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
             // Look for matching course within users' checksheet
             var querySnapshot = await userCollection.doc(userId).collection('semesters')
                 .where('courseReferences', 'array-contains', updatedEquivalent.vtCourseId).get()
-                .catch(function (error) {
+                .catch(function(error) {
                     return handleError(response, 500, error);
                 });
 
@@ -314,7 +311,7 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 
         // Return the newly created user checksheet
         await userCollection.doc(userId).get()
-            .then(async function (doc) {
+            .then(async function(doc) {
                 const cleanedSheet = doc.data();
                 cleanedSheet.semesters = [];
                 const snapshot = await userCollection.doc(userId).collection('semesters').get();
@@ -337,13 +334,13 @@ exports.createUser = functions.https.onRequest(async (request, response) => {
 /**
  * Retrieves the checksheet of a user
  */
-exports.getUserChecksheet = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getUserChecksheet = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const userId = request.path.replace('/', '');
 
         await userCollection.doc(userId).get()
-            .then(async function (doc) {
+            .then(async function(doc) {
                 if (doc.exists) {
                     const cleanedSheet = doc.data();
                     cleanedSheet.semesters = [];
@@ -358,7 +355,7 @@ exports.getUserChecksheet = functions.https.onRequest(async (request, response) 
                 }
                 return handleError(response, 400, "User doesn't exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, "Failed to retrieve checksheet. " + error);
             })
     });
@@ -368,8 +365,8 @@ exports.getUserChecksheet = functions.https.onRequest(async (request, response) 
 /**
  * Moves a class from one semester to another if the prerequisites and co requisites have been met
  */
-exports.moveClass = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.moveClass = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         //TODO: Add check to ensure semester numbers given are within limits
         const userId = request.body.userId
@@ -382,7 +379,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
 
         // Retrieve user checksheet from db
         const userSheetRef = await userCollection.doc(userId).get()
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
 
@@ -401,9 +398,8 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
             const courses = courseRef.data().courseReferences
             if (!courses.includes(courseId))
                 return handleError(response, 400, 'Course ' + courseId + ' does not exisit in semester ' + fromSem);
-        }
-        else {
-            return handleError(response, sem, 'Semester ' + fromSem + 'does not exist in db.');
+        } else {
+            return handleError(response, 400, 'Semester ' + fromSem + 'does not exist in db.');
         }
 
         // Return parameters init
@@ -428,7 +424,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
 
         // Retrieve full course data from db
         const courseToMoveRef = await courseCollection.doc(courseId).get()
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
 
@@ -443,7 +439,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
         const coReqs = courseToMove.corequisites;
         const dependentCourses = [];
 
-        for (i = 1; i <= toSem; i++) {
+        for (var i = 1; i <= toSem; i++) {
 
             var semester;
             // Retrieve semester
@@ -454,8 +450,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
 
             if (semesterDoc.exists) {
                 semester = semesterDoc.data()
-            }
-            else {
+            } else {
                 return handleError(response, 500, 'Semester not found.')
             }
 
@@ -545,8 +540,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
                                 }
                             });
                         }
-                    }
-                    else {
+                    } else {
                         console.log(currCourse + " does not exists.");
                     }
 
@@ -574,8 +568,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
                 .catch(error => {
                     return handleError(response, 500, error);
                 });
-        }
-        else {
+        } else {
             return handleResponse(response, 200, moveStatus);
         }
 
@@ -586,7 +579,7 @@ exports.moveClass = functions.https.onRequest(async (request, response) => {
 /**
  * Moves the course with courseId from fromSem to toSem for the specified user.
  */
-this.internalMoveCourse = async (toSem, fromSem, courseId, userId) => {
+this.internalMoveCourse = async(toSem, fromSem, courseId, userId) => {
 
     const fromSemId = 'Semester ' + fromSem;
     const toSemId = 'Semester ' + toSem;
@@ -629,8 +622,7 @@ this.internalMoveCourse = async (toSem, fromSem, courseId, userId) => {
             .catch(error => {
                 throw new Error(error);
             })
-    }
-    else {  // update origin semester if not empty
+    } else { // update origin semester if not empty
         await userCollection.doc(userId).collection('semesters').doc(fromSemId).set(fromSemester)
             .catch(error => {
                 throw new Error(error);
@@ -655,8 +647,8 @@ this.internalMoveCourse = async (toSem, fromSem, courseId, userId) => {
 /**
  * Returns a course with the name of the prefix
  */
-exports.getCourseByPrefix = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getCourseByPrefix = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const category = request.query.category;
         const number = request.query.number;
@@ -672,10 +664,8 @@ exports.getCourseByPrefix = functions.https.onRequest(async (request, response) 
         const courseRef = await courseCollection.doc(coursePrefix).get();
 
         if (courseRef.exists) {
-            // const course = dataCleaner.cleanCourse(courseRef.data(), coursePrefix);
             return handleResponse(response, 200, courseRef.data());
-        }
-        else {
+        } else {
             return handleError(response, 400, 'Course not found: ' + coursePrefix);
         }
 
@@ -686,8 +676,8 @@ exports.getCourseByPrefix = functions.https.onRequest(async (request, response) 
 /**
  * Returns a list of courses that start with the category prefix and/or number prefix of course provided
  */
-exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.autocompleteCoursePrefix = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const category = request.query.category;
         const number = request.query.number;
@@ -700,7 +690,7 @@ exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, res
 
         if (number !== undefined && number !== '') {
             await dbManager.autocompleteSearchSecond(courseCollection, 'category', category, 'number', number)
-                .then(function (queryResult) {
+                .then(function(queryResult) {
                     const cleanedCourses = [];
                     queryResult.forEach(course => {
                         cleanedCourses.push({
@@ -710,13 +700,12 @@ exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, res
                     })
                     return handleResponse(response, 200, cleanedCourses);
                 })
-                .catch(function (error) {
+                .catch(function(error) {
                     return handleError(response, 400, error);
                 });
-        }
-        else { //just category
+        } else { //just category
             await dbManager.autocompleteSearch(courseCollection, 'category', category)
-                .then(function (queryResult) {
+                .then(function(queryResult) {
                     const cleanedCourses = [];
                     queryResult.forEach(course => {
                         cleanedCourses.push({
@@ -726,7 +715,7 @@ exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, res
                     })
                     return handleResponse(response, 200, cleanedCourses);
                 })
-                .catch(function (error) {
+                .catch(function(error) {
                     return handleError(response, 400, error);
                 });
         }
@@ -737,8 +726,8 @@ exports.autocompleteCoursePrefix = functions.https.onRequest(async (request, res
 /**
  * Returns a course using the name of the course
  */
-exports.getCourseByName = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getCourseByName = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const courseName = (request.path).replace('/', '');
 
@@ -758,8 +747,8 @@ exports.getCourseByName = functions.https.onRequest(async (request, response) =>
 /**
  * Returns a list of courses that start with the course name prefix provided
  */
-exports.autocompleteCourseName = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.autocompleteCourseName = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const courseName = (request.path).replace('/', '');
 
@@ -768,7 +757,7 @@ exports.autocompleteCourseName = functions.https.onRequest(async (request, respo
 
 
         await dbManager.autocompleteSearch(courseCollection, 'name', courseName)
-            .then(function (queryResult) {
+            .then(function(queryResult) {
                 const cleanedCourses = [];
                 queryResult.forEach(course => {
                     cleanedCourses.push({
@@ -778,7 +767,7 @@ exports.autocompleteCourseName = functions.https.onRequest(async (request, respo
                 })
                 return handleResponse(response, 200, cleanedCourses);
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 400, error);
             });
 
@@ -796,17 +785,17 @@ exports.autocompleteCourseName = functions.https.onRequest(async (request, respo
 /**
  * Retrieves a list of all supported majors at VT
  */
-exports.getAllMajors = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getAllMajors = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         await resourcesCollection.doc('static').get()
-            .then(function (doc) {
+            .then(function(doc) {
                 if (doc.exists)
                     return handleResponse(response, 200, doc.data().majors);
                 else
                     return handleError(response, 400, "static resources do not exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
     });
@@ -816,17 +805,17 @@ exports.getAllMajors = functions.https.onRequest(async (request, response) => {
 /**
  * Returns a list of all AP equivalents
  */
-exports.getAllAPEquivalents = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getAllAPEquivalents = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         await resourcesCollection.doc('static').get()
-            .then(function (doc) {
+            .then(function(doc) {
                 if (doc.exists)
                     return handleResponse(response, 200, doc.data().apEquivalents);
                 else
                     return handleError(response, 400, "static resources do not exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
     });
@@ -836,24 +825,22 @@ exports.getAllAPEquivalents = functions.https.onRequest(async (request, response
 /**
  * Retrieves a list of all supported schools at VT
  */
-exports.getAllSchools = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getAllSchools = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         await resourcesCollection.doc('static').get()
-            .then(function (doc) {
+            .then(function(doc) {
                 if (doc.exists) {
                     const schools = [];
                     const schoolsRef = doc.data().schools;
                     for (var key in schoolsRef)
-                        if (schoolsRef.hasOwnProperty(key))
-                            schools.push(key);
+                        schools.push(key);
 
                     return handleResponse(response, 200, schools);
-                }
-                else
+                } else
                     return handleError(response, 400, "Schools does not exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
 
@@ -864,17 +851,17 @@ exports.getAllSchools = functions.https.onRequest(async (request, response) => {
 /**
  * Retrieves a list of all supported schools at VT
  */
-exports.getAllPathways = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getAllPathways = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         await resourcesCollection.doc('static').get()
-            .then(function (doc) {
+            .then(function(doc) {
                 if (doc.exists)
                     return handleResponse(response, 200, doc.data().pathways);
                 else
                     return handleError(response, 400, "Pathways does not exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             });
 
@@ -892,8 +879,8 @@ exports.getAllPathways = functions.https.onRequest(async (request, response) => 
 /**
  * Retrieves the default checksheet given a major and graduation year
  */
-exports.getDefaultChecksheet = functions.https.onRequest(async (request, response) => {
-    cors(request, response, async () => {
+exports.getDefaultChecksheet = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
 
         const year = request.query.gradYear;
         const major = request.query.major;
@@ -905,7 +892,7 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
 
         const checksheetId = major.toUpperCase() + '-' + year;
         await checksheetCollection.doc(checksheetId).get()
-            .then(async function (doc) {
+            .then(async function(doc) {
                 if (doc.exists) {
 
                     const cleanedSheet = doc.data();
@@ -917,11 +904,10 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
 
                     return handleResponse(response, 200, cleanedSheet);
 
-                }
-                else
+                } else
                     return handleError(response, 400, "Checksheet does not exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 return handleError(response, 500, error);
             })
     });
@@ -938,13 +924,13 @@ exports.getDefaultChecksheet = functions.https.onRequest(async (request, respons
  */
 
 /**
-* Creates a mentor if they do not already exist as a student
-*/
-exports.createMentor = functions.https.onRequest(async (request, response) => {
+ * Creates a mentor if they do not already exist as a student
+ */
+exports.createMentor = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
-        const mentorId = request.body.mentorId;
+        const mentorId = request.body.userId;
         const firstName = request.body.firstName;
         const lastName = request.body.lastName;
         const organizationId = request.body.organizationId;
@@ -955,7 +941,7 @@ exports.createMentor = functions.https.onRequest(async (request, response) => {
         const hobbies = request.body.hobbies;
         const mentorInterests = request.body.mentorInterests;
 
-        if (!(mentorId && firstName && lastName && organizationId && occupation && description && qualities && hobbies && mentorInterests && vtAlumni))
+        if (!(mentorId && firstName && lastName && organizationId && occupation && description && qualities && hobbies && mentorInterests && alumni))
             return handleError(response, 400, "One or more body parameters are missing!");
 
         // Check if the mentor already exists
@@ -1011,9 +997,9 @@ exports.createMentor = functions.https.onRequest(async (request, response) => {
 /**
  *  If a student is also mentor, then their profile is modfied to include their mentor information
  */
-exports.addMentorToUser = functions.https.onRequest(async (request, response) => {
+exports.addMentorToUser = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         const userId = request.body.userId;
         const organizationId = request.body.organizationId;
@@ -1027,7 +1013,7 @@ exports.addMentorToUser = functions.https.onRequest(async (request, response) =>
         if (!(userId && organizationId && description && qualities && hobbies && mentorInterests && clubs))
             return handleError(response, 400, 'One or more query parameters are missing!');
 
-        
+
 
         // Check if the user exists
         const userDoc = await userCollection.doc(userId).get()
@@ -1047,7 +1033,7 @@ exports.addMentorToUser = functions.https.onRequest(async (request, response) =>
             .catch(error => {
                 return handleError(response, 500, error);
             })
-        // Add mentor status to user
+            // Add mentor status to user
         const user = userDoc.data();
         user.isMentor = true;
         user.organizationId = organizationId;
@@ -1075,9 +1061,9 @@ exports.addMentorToUser = functions.https.onRequest(async (request, response) =>
 /**
  * Creates a mentor organization 
  */
-exports.createMentorOrganization = functions.https.onRequest(async (request, response) => {
+exports.createMentorOrganization = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         const name = request.body.name;
         const school = request.body.school;
@@ -1088,10 +1074,10 @@ exports.createMentorOrganization = functions.https.onRequest(async (request, res
             return handleError(response, 400, "One or more of the required body parameters are missing!");
 
         // Check if the organization exists
-        await organizationCollection.where(name,'==', name).get()
+        await organizationCollection.where(name, '==', name).get()
             .then(doc => {
                 if (doc.exists)
-                    return handleError(response, 400, "Organization " + organizationId + " already exists!");
+                    return handleError(response, 400, "Organization " + name + " already exists!");
             })
             .catch(error => {
                 return handleError(response, 500, error);
@@ -1118,9 +1104,9 @@ exports.createMentorOrganization = functions.https.onRequest(async (request, res
 /**
  * Adds a mentee to mentor
  */
-exports.sendMenteeRequest = functions.https.onRequest(async (request, response) => {
+exports.sendMenteeRequest = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         const menteeId = request.body.menteeId;
         const mentorId = request.body.mentorId;
@@ -1154,8 +1140,8 @@ exports.sendMenteeRequest = functions.https.onRequest(async (request, response) 
         const mentee = menteeDoc.data();
 
         //Check if mentee already has the same mentor
-        if (mentee.mentors.hasOwnProperty(mentorId))
-            return handleError(response, 400, mentorID + " is already a mentor of mentee " + menteeId);
+        if (mentee.mentors[mentorId])
+            return handleError(response, 400, mentorId + " is already a mentor of mentee " + menteeId);
 
 
         // Update both mentee and mentor requests
@@ -1182,9 +1168,9 @@ exports.sendMenteeRequest = functions.https.onRequest(async (request, response) 
 /**
  * Updates the response to a request from amentee
  */
-exports.respondToMenteeRequest = functions.https.onRequest(async (request, response) => {
+exports.respondToMenteeRequest = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         const menteeId = request.body.menteeId;
         const mentorId = request.body.mentorId;
@@ -1224,7 +1210,7 @@ exports.respondToMenteeRequest = functions.https.onRequest(async (request, respo
 
         //Check if mentee has a request to the mentor
         if (!mentee.mentorRequests[mentorId])
-            return handleError(response, 400, "Request for mentor " + mentorID + " does not exist.");
+            return handleError(response, 400, "Request for mentor " + mentorId + " does not exist.");
 
         // Update requests to reflect response
         const mentorName = mentor.firstName + ' ' + mentor.lastName;
@@ -1236,8 +1222,7 @@ exports.respondToMenteeRequest = functions.https.onRequest(async (request, respo
 
             mentor.mentees[menteeId] = menteeName;
             mentee.mentors[mentorId] = mentorName;
-        }
-        else {
+        } else {
             delete mentor.requests[menteeId];
             mentee.mentorRequests[mentorId] = 'DECLINED';
         }
@@ -1263,14 +1248,14 @@ exports.respondToMenteeRequest = functions.https.onRequest(async (request, respo
 /**
  * Returns all mentors available
  */
-exports.getAllMentors = functions.https.onRequest(async (request, response) => {
+exports.getAllMentors = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         await userCollection.where('isMentor', '==', true).get()
-            .then(function (querySnapshot) {
+            .then(function(querySnapshot) {
                 const mentors = [];
-                querySnapshot.forEach(function (doc) {
+                querySnapshot.forEach(function(doc) {
                     const mentor = doc.data();
                     const cleanedMentor = {
                         mentorId: mentor.id,
@@ -1297,14 +1282,14 @@ exports.getAllMentors = functions.https.onRequest(async (request, response) => {
 /**
  * Returns all mentor organizations that are supported
  */
-exports.getAllOrganizations = functions.https.onRequest(async (request, response) => {
+exports.getAllOrganizations = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         await organizationCollection.get()
-            .then(function (querySnapshot) {
+            .then(function(querySnapshot) {
                 const organizations = [];
-                querySnapshot.forEach(function (doc) {
+                querySnapshot.forEach(function(doc) {
                     const org = doc.data();
                     org.id = doc.id
                     organizations.push(org);
@@ -1324,9 +1309,9 @@ exports.getAllOrganizations = functions.https.onRequest(async (request, response
 /**
  * Returns all mentors in affiliated with a given organization
  */
-exports.getAllMentorsInOrganization = functions.https.onRequest(async (request, response) => {
+exports.getAllMentorsInOrganization = functions.https.onRequest(async(request, response) => {
 
-    cors(request, response, async () => {
+    cors(request, response, async() => {
 
         const organizationId = request.params.organizationId;
         if (!organizationId)
@@ -1345,9 +1330,9 @@ exports.getAllMentorsInOrganization = functions.https.onRequest(async (request, 
             .where('isMentor', '==', true)
             .where('oraganizationId', '==', organizationId)
             .get()
-            .then(function (querySnapshot) {
+            .then(function(querySnapshot) {
                 const mentors = [];
-                querySnapshot.forEach(function (doc) {
+                querySnapshot.forEach(function(doc) {
                     const mentor = doc.data();
                     const cleanedMentor = {
                         mentorId: mentor.id,
