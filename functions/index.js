@@ -994,6 +994,48 @@ exports.createMentor = functions.https.onRequest(async(request, response) => {
 });
 //TODO: Make all errors more specific.
 
+exports.getAllUserMentees = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if(userDoc.data().mentees) {
+            return handleResponse(response, 200, userDoc.data().mentees);
+        }else {
+            return handleResponse(response, 500);
+        }
+
+    });
+    
+});
+
+exports.getAllUserMentors = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if(userDoc.data().mentors) {
+            return handleResponse(response, 200, userDoc.data().mentors);
+        }else {
+            return handleResponse(response, 500);
+        }
+
+    });
+    
+});
+
 /**
  *  If a student is also mentor, then their profile is modfied to include their mentor information
  */
