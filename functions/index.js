@@ -994,7 +994,7 @@ exports.createMentor = functions.https.onRequest(async(request, response) => {
 });
 //TODO: Make all errors more specific.
 
-exports.getAllUserMentees = functions.https.onRequest(async(request, response) => {
+exports.getAllUserConnections = functions.https.onRequest(async(request, response) => {
 
     cors(request, response, async() => {
 
@@ -1005,35 +1005,45 @@ exports.getAllUserMentees = functions.https.onRequest(async(request, response) =
                 return handleError(response, 500, error);
             })
 
-        if(userDoc.data().mentees) {
-            return handleResponse(response, 200, userDoc.data().mentees);
-        }else {
-            return handleResponse(response, 500);
+        user = userDoc.data();
+
+        var connectionsData = [];
+
+        if (user.mentees) {
+            console.log("mentees being looked at connections = ", connectionsData);
+            console.log("mentees = ", user.mentees);
+            for (let [key, value] of Object.entries(user.mentees)) {
+                await userCollection.doc(key).get()
+                    .then(doc => {
+                        userData = doc.data();
+                        if (!userData.userId) {
+                            userData.userId = key;
+                        }
+                        userData.isUsersMentor = false;
+                        connectionsData.push(userData);
+                    });
+            }
+            console.log("mentees done data = ", connectionsData);
         }
 
-    });
-    
-});
-
-exports.getAllUserMentors = functions.https.onRequest(async(request, response) => {
-
-    cors(request, response, async() => {
-
-        const userId = request.body.userId;
-
-        const userDoc = await userCollection.doc(userId).get()
-            .catch(error => {
-                return handleError(response, 500, error);
-            })
-
-        if(userDoc.data().mentors) {
-            return handleResponse(response, 200, userDoc.data().mentors);
-        }else {
-            return handleResponse(response, 500);
+        if (user.mentors) {
+            for (let [key, value] of Object.entries(user.mentors)) {
+                await userCollection.doc(key).get()
+                    .then(doc => {
+                        userData = doc.data();
+                        if (!userData.userId) {
+                            userData.userId = key;
+                        }
+                        userData.isUsersMentor = true;
+                        connectionsData.push(userData);
+                    });
+            }
         }
 
+        return handleResponse(response, 200, connectionsData);
+
     });
-    
+
 });
 
 /**
