@@ -1611,6 +1611,58 @@ exports.createMentor = functions.https.onRequest(async(request, response) => {
 });
 //TODO: Make all errors more specific.
 
+exports.getAllUserConnections = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        user = userDoc.data();
+
+        var connectionsData = [];
+
+        if (user.mentees) {
+            console.log("mentees being looked at connections = ", connectionsData);
+            console.log("mentees = ", user.mentees);
+            for (let [key, value] of Object.entries(user.mentees)) {
+                await userCollection.doc(key).get()
+                    .then(doc => {
+                        userData = doc.data();
+                        if (!userData.userId) {
+                            userData.userId = key;
+                        }
+                        userData.isUsersMentor = false;
+                        connectionsData.push(userData);
+                    });
+            }
+            console.log("mentees done data = ", connectionsData);
+        }
+
+        if (user.mentors) {
+            for (let [key, value] of Object.entries(user.mentors)) {
+                await userCollection.doc(key).get()
+                    .then(doc => {
+                        userData = doc.data();
+                        if (!userData.userId) {
+                            userData.userId = key;
+                        }
+                        userData.isUsersMentor = true;
+                        connectionsData.push(userData);
+                    });
+            }
+        }
+
+        return handleResponse(response, 200, connectionsData);
+
+    });
+
+});
+
 /**
  *  If a student is also mentor, then their profile is modfied to include their mentor information
  */
