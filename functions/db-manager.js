@@ -18,7 +18,7 @@ const fs = require('fs');
  * @param {*} req 
  * @param {*} res - resturns result of load as JSON
  */
-exports.loadDbCourses = async () => {
+exports.loadDbCourses = async() => {
 
     console.log("Started loading courses into db...");
 
@@ -37,8 +37,8 @@ exports.loadDbCourses = async () => {
     };
     for (const line of courseLines) {
         course = line.split("\t");
-        
-        if(currCourse !== course[1]) {
+
+        if (currCourse !== course[1]) {
             currCourse = course[1];
             currCourseInfo.lecture = false;
             currCourseInfo.lab = false;
@@ -75,22 +75,19 @@ exports.loadDbCourses = async () => {
             credits: parseInt(course[4]),
         }
 
-        const courseId = course[1];        
+        const courseId = course[1];
         if (new_course.type !== 'Lab' && new_course.type !== 'Lecture') {
             batch.set(courseCollection.doc(courseId), new_course);
-        }
-        else if(new_course.type === 'Lecture' && !currCourseInfo.lecture) {
-            if(currCourseInfo.lab) {
+        } else if (new_course.type === 'Lecture' && !currCourseInfo.lecture) {
+            if (currCourseInfo.lab) {
                 new_course.lab = true;
             }
             batch.set(courseCollection.doc(courseId), new_course);
             currCourseInfo.lecture = true;
-        }
-        else if(new_course.type === 'Lab' && !currCourseInfo.lab) {
-            if(currCourseInfo.lecture) {
-                batch.set(courseCollection.doc(courseId), {lab: true}, {merge: true});
-            }
-            else {
+        } else if (new_course.type === 'Lab' && !currCourseInfo.lab) {
+            if (currCourseInfo.lecture) {
+                batch.set(courseCollection.doc(courseId), { lab: true }, { merge: true });
+            } else {
                 batch.set(courseCollection.doc(courseId), new_course);
             }
             currCourseInfo.lab = true;
@@ -98,7 +95,7 @@ exports.loadDbCourses = async () => {
 
         count++;
         if (count == 500) {
-            await batch.commit().catch(function (error) {
+            await batch.commit().catch(function(error) {
                 console.log("Failed to batch write courses ", error);
             });
             batch = db.batch();
@@ -107,13 +104,13 @@ exports.loadDbCourses = async () => {
     }
 
     if (count != 0) {
-        await batch.commit().catch(function (error) {
+        await batch.commit().catch(function(error) {
             console.log("Failed to batch write courses ", error);
         });
     }
 
-    await courseCollection.doc("Free Elective").set({});  // Free elective course
-    await courseCollection.doc("Pathway").set({});         // Pathway course
+    await courseCollection.doc("Free Elective").set({}); // Free elective course
+    await courseCollection.doc("Pathway").set({}); // Pathway course
 
     console.log("Finished loading courses into db!");
 
@@ -123,7 +120,7 @@ exports.loadDbCourses = async () => {
 /**
  * Loads the database with all checksheets in directory: ./resources/checksheets/
  */
-exports.loadDbChecksheets = async () => {
+exports.loadDbChecksheets = async() => {
     console.log("Started loading checksheets into db...");
 
     // Adjust later to loop through all directories 
@@ -147,19 +144,20 @@ exports.loadDbChecksheets = async () => {
 
         const checksheet_id = sheetInfo[0] + '-' + sheetInfo[2];
         await checksheetCollection.doc(checksheet_id).set(new_checksheet)
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             })
 
         var pathwaysIds = [];
-        var pathways = [];         // Pathways for the checksheet
+        var pathways = []; // Pathways for the checksheet
         // var electives = [];        // Categories of electives
         var course;
         var curr_course;
         var count = 0;
-        var pathwayCount = 0;      //Counter variable to keep track of free of choice pathways
+        var pathwayCount = 0; //Counter variable to keep track of free of choice pathways
+        var electiveCount = 0;
         var curr_semester = 0;
-        var semester_credits = 0;  // total credits for curr_semester
+        var semester_credits = 0; // total credits for curr_semester
         var semester_courses = []; // List of courses for each semester
         for (const line of allLines) {
             if (count !== 0 && count !== 1) {
@@ -174,11 +172,11 @@ exports.loadDbChecksheets = async () => {
 
                         // Add semester to checksheet semester collection
                         await checksheetCollection.doc(checksheet_id).collection('semesters').doc('Semester ' + curr_semester).set({
-                            semNum: curr_semester,
-                            totalCredits: semester_credits,
-                            semesterCourses: semester_courses
-                        })
-                            .catch(function (error) {
+                                semNum: curr_semester,
+                                totalCredits: semester_credits,
+                                semesterCourses: semester_courses
+                            })
+                            .catch(function(error) {
                                 console.log("Could not load semester " + curr_semester, error);
                             });
                     }
@@ -194,7 +192,7 @@ exports.loadDbChecksheets = async () => {
                 curr_course = curr_course.replace('/', '|');
 
                 const courseRef = courseCollection.doc(curr_course);
-                if (curr_course !== '-') { // if it is a course and not an elective or pathway
+                if (curr_course !== '-' && !curr_course.includes("XXX")) { // if it is a course and not an elective or pathway
                     var courseDoc = await courseRef.get();
 
                     //Try searching as elective
@@ -211,11 +209,10 @@ exports.loadDbChecksheets = async () => {
                             credits: parseInt(course[5])
                         }
                         await courseCollection.doc(curr_course).set(new_course)
-                            .catch(function (error) {
+                            .catch(function(error) {
                                 console.log("Failed to add course: " + curr_course, error);
                             });
-                    }
-                    else {
+                    } else {
                         // Get exisiting course
                         const updated_course = courseDoc.data();
 
@@ -237,7 +234,7 @@ exports.loadDbChecksheets = async () => {
 
                         // Update course in db
                         await courseCollection.doc(curr_course).set(updated_course)
-                            .catch(function (error) {
+                            .catch(function(error) {
                                 console.log("Failed to update course: " + curr_course, error);
                             });
 
@@ -254,12 +251,13 @@ exports.loadDbChecksheets = async () => {
                             pathways.push({
                                 courseId: curr_course,
                                 name: updated_course.name,
-                                type: course[8]
+                                type: course[8],
+                                credits: parseInt(course[5])
                             });
                         }
                     }
-                }
-                else if (course[8] === '0') {  // Course is a pathway
+
+                } else if (course[8] === '0') { // Course is a pathway
                     const pathwayId = "Pathway " + pathwayCount;
                     semester_courses.push({
                         courseId: pathwayId,
@@ -267,29 +265,31 @@ exports.loadDbChecksheets = async () => {
                         credits: course[5]
                     });
                     pathwayCount++;
-                }
-                else {  // Elective 
+
+                } else { // Elective 
                     const elec = course[9].replace("\r", "");
 
                     semester_courses.push({
-                        courseId: elec,
-                        name: "Elective",
+                        courseId: elec + electiveCount,
+                        name: elec,
                         credits: course[5]
                     });
+
+                    electiveCount += 1;
                 }
 
-                semester_credits += parseInt(course[5]);  // Add to total credits for semester
+                semester_credits += parseInt(course[5]); // Add to total credits for semester
             }
 
             count++;
         }
 
         await checksheetCollection.doc(checksheet_id).collection('semesters').doc('Semester ' + curr_semester).set({
-            semNum: curr_semester,
-            totalCredits: semester_credits,
-            semesterCourses: semester_courses
-        })
-            .catch(function (error) {
+                semNum: curr_semester,
+                totalCredits: semester_credits,
+                semesterCourses: semester_courses
+            })
+            .catch(function(error) {
                 console.log("Could not load semester " + curr_semester, error);
             });
 
@@ -298,13 +298,13 @@ exports.loadDbChecksheets = async () => {
         var updated_checksheet = new_checksheet;
 
         await checksheetCollection.doc(checksheet_id).get()
-            .then(function (doc) {
+            .then(function(doc) {
                 if (doc.exists)
                     updated_checksheet = doc.data();
                 else
                     console.log("Checksheet doesn't exist.");
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             });
 
@@ -312,7 +312,7 @@ exports.loadDbChecksheets = async () => {
         updated_checksheet.pathways = pathways;
 
         await checksheetCollection.doc(checksheet_id).set(updated_checksheet)
-            .catch(function (error) {
+            .catch(function(error) {
                 console.log("Could not load checksheet for " + checksheet_id, error);
             })
 
@@ -325,7 +325,7 @@ exports.loadDbChecksheets = async () => {
 /**
  *  Loads the database with pathways for all courses from directory: ./resources/pathways/
  */
-exports.loadDbPathways = async () => {
+exports.loadDbPathways = async() => {
     console.log("Started loading pathways into db...");
 
     const pathwayCategories = ['1a', '1f', '2', '3', '4', '5a', '5f', '6a', '6d', '7'];
@@ -336,20 +336,21 @@ exports.loadDbPathways = async () => {
 
         allLines = currFile.split("\t");
 
-        const pathwayCourses = [];  //courses listed under the pathway
+        const pathwayCourses = []; //courses listed under the pathway
         var courseDoc;
         var batch = db.batch();
         var count = 0;
         for (const line of allLines) {
             if (count == 500) {
-                await batch.commit().catch(function (error) {
+                console.log("Batch commited")
+                await batch.commit().catch(function(error) {
                     console.log("failed to batch update pathways ", error);
                 });
                 batch = db.batch();
                 count = 0;
             }
 
-            if (line.includes('-') && !line.includes(" ") && !pathwayCourses.includes(line)) {  //Seperate just the class id (ex. CS-2114)
+            if (line.includes('-') && !line.includes(" ") && !pathwayCourses.includes(line)) { //Seperate just the class id (ex. CS-2114)
                 pathwayCourses.push(line);
 
                 //Get and update course information in db;
@@ -365,13 +366,18 @@ exports.loadDbPathways = async () => {
                     updated_course.pathways.push(category);
 
                     batch.set(courseCollection.doc(line), updated_course);
+
+                    count++;
                 }
+                //TODO: Figure out how to get these missing courses
+                // else {
+                //     console.log(line)
+                // }
             }
-            count++;
         }
 
         if (count != 0) {
-            await batch.commit().catch(function (error) {
+            await batch.commit().catch(function(error) {
                 console.log("failed to batch update pathways ", error);
             });
         }
@@ -385,7 +391,7 @@ exports.loadDbPathways = async () => {
 /**
  * Autocomplete searches given a field and a prefix for that field in a provided collection.
  */
-exports.autocompleteSearch = async (collection, field, prefix) => {
+exports.autocompleteSearch = async(collection, field, prefix) => {
 
     var strSearch = prefix;
     var strlength = strSearch.length;
@@ -402,12 +408,12 @@ exports.autocompleteSearch = async (collection, field, prefix) => {
         .where(field, '>=', startcode)
         .where(field, '<', endcode)
         .get()
-        .then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
                 queryResult.push(doc.data());
             });
         })
-        .catch(function (error) {
+        .catch(function(error) {
             throw new Error("Failed to Query. ", error);
         })
 
@@ -418,7 +424,7 @@ exports.autocompleteSearch = async (collection, field, prefix) => {
  * Autocomplete searchs given a field and a prefix for that field in a provided collection,
  *      while also ensuring that the first field provided matches the first search value.
  */
-exports.autocompleteSearchSecond = async (collection, field1, search, field2, prefix) => {
+exports.autocompleteSearchSecond = async(collection, field1, search, field2, prefix) => {
 
     var strSearch = prefix;
     var strlength = strSearch.length;
@@ -436,12 +442,12 @@ exports.autocompleteSearchSecond = async (collection, field1, search, field2, pr
         .where(field2, '<', endcode)
         .where(field1, '==', search)
         .get()
-        .then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
+        .then(function(querySnapshot) {
+            querySnapshot.forEach(function(doc) {
                 queryResult.push(doc.data());
             });
         })
-        .catch(function (error) {
+        .catch(function(error) {
             throw new Error("Failed to Query. ", error);
         })
 
@@ -451,7 +457,7 @@ exports.autocompleteSearchSecond = async (collection, field1, search, field2, pr
 /**
  * Loads static data into database as resources to be used later as reference.
  */
-exports.loadStaticData = async () => {
+exports.loadStaticData = async() => {
 
     const majors = {
         'CS': 'Computer Science'
@@ -473,6 +479,30 @@ exports.loadStaticData = async () => {
         '6d': 'Critique and Practice in Design',
         '7': 'Critical Analysis of Equity and Identity in the United States'
     };
+
+
+    //Load Elective Options
+    const electives = {};
+
+    var electiveFile = fs.readFileSync("./resources/ElectiveOptions.csv").toString('utf-8');
+    const electiveOptions = electiveFile.split('\n');
+
+    var electiveType = ''
+    var options = []
+    electiveOptions.forEach(elective => {
+        const splitElective = elective.split(',');
+
+        if (splitElective[0].trim().toLowerCase() !== electiveType) {
+            if (electiveType !== '')
+                electives[electiveType] = options;
+
+            electiveType = splitElective[0].trim().toLowerCase();
+            options = [];
+        }
+
+        options.push(splitElective[1].trim());
+    })
+    electives[electiveType] = options;
 
     // Load Ap equivalents
     const ap_equivalents = [];
@@ -518,12 +548,13 @@ exports.loadStaticData = async () => {
         majors: majors,
         schools: schools,
         pathways: pathways,
-        apEquivalents: ap_equivalents
+        apEquivalents: ap_equivalents,
+        electives: electives
     }
 
     console.log('Loading static resources...')
     await resoursesCollection.doc('static').set(staticData)
-        .catch(function (error) {
+        .catch(function(error) {
             console.log('Failed to add static resources. ', error);
             throw new Error(error);
         });

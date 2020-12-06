@@ -33,12 +33,12 @@ Semester,Course Subject,Course Number,Course Name,Grade,Credit Hours,Prerequisit
 6,CS,3604,Professionalism in Computing,,3,CS-1944&CS-2114&COMM-2004,,,
 6,,,,,3,,,0,
 7,CS,3304,Comparative Languages,,3,CS-3114,,,
-7,CS,41X4,,,3,,,,CS Theory Elective
-7,,,,,3,,,,CS Technical Elective
+7,,,,,3,,,,CS Theory Elective
+7,,,,,3,,,,Technical Elective
 7,,,,,3,,,0,Free Elective
-7,CS,3/4XXX,3/4XXX,,3,,,,CS 3/4XXX Elective
+7,CS,3/4XXX,,,3,,,,CS 3/4XXX Elective
 8,CS,4944,Senior Seminar,,1,CS-3604,,,
-8,CS,4XXX,,,3,,,,CS 4XXX Capstone
+8,,,,,3,,,,Capstone Elective
 8,CS,4XXX,,,3,,,,CS 4XXX Elective
 8,,,,,4,,,0,Free Elective
 8,,,,,3,,,0,

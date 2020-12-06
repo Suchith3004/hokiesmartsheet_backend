@@ -90,17 +90,19 @@ const handleResponse = (response, status, body) => {
 /**
  * Initializes the database by loading in all static data. 
  */
-exports.initializeDB = functions.https.onRequest(async(request, response) => {
+exports.initializeDB = functions
+    .runWith({ timeoutSeconds: 300 })
+    .https.onRequest(async(request, response) => {
 
-    await dbManager.loadStaticData()
-        .then(function() {
-            return handleResponse(response, 200, "Success!");
-        })
-        .catch(function(error) {
-            return handleError(response, 500, error);
-        })
+        await dbManager.loadStaticData()
+            .then(function() {
+                return handleResponse(response, 200, "Success!");
+            })
+            .catch(function(error) {
+                return handleError(response, 500, error);
+            })
 
-});
+    });
 
 /**
  * Loads all the courses, checksheets, and pathways into the db
@@ -183,6 +185,8 @@ exports.createUser = functions.https.onRequest(async(request, response) => {
             userChecksheet.userId = userId;
             userChecksheet.firstName = request.body.firstName;
             userChecksheet.lastName = request.body.lastName;
+            userChecksheet.gradYear = request.body.gradYear;
+            userChecksheet.gradSeason = request.body.gradSeason;
             // userChecksheet.homlessCourses = [];
             userChecksheet.mentors = {};
             userChecksheet.mentorRequests = {};
@@ -198,7 +202,7 @@ exports.createUser = functions.https.onRequest(async(request, response) => {
             return handleError(response, 400, "Checksheet" + checksheetId + "doesn't exist.");
         }
 
-        // Update use checksheet to adjust for AP/IB classes (only AP right now)
+        // Update user checksheet to adjust for AP/IB classes (only AP right now)
         const userSheetRef = await userCollection.doc(userId).get()
             .catch(error => {
                 return handleError(response, 500, error);
@@ -212,32 +216,36 @@ exports.createUser = functions.https.onRequest(async(request, response) => {
                 return handleError(response, 500, "Failed to retrieve checksheet: " + checksheetId + " ." + error);
             });
 
+
+        const transferCredits = request.body.transferCredits;
         for (const semDoc of semSnapshot.docs) {
             const semester = semDoc.data();
             semester.courseReferences = [];
-
             const coursesToRemove = [];
+
             semester.semesterCourses.forEach((course, i) => {
 
                 semester.semesterCourses[i].pathway = course.courseId.includes('Pathway') || userChecksheet.pathwayIds.includes(course.courseId);
+                semester.semesterCourses[i].elective = course.name.includes('Elective')
 
                 // Check if credit is recieved through transfer credit
-                if (request.body.transferCredits.includes(course.courseId)) {
+                if (transferCredits.includes(course.courseId)) {
+                    course.used = true;
+                    course.elective = false;
                     userChecksheet.transferCourses.push(course);
-                    coursesToRemove.push(i);
+                    transferCredits.splice(transferCredits.indexOf(course.courseId), 1);
+                    coursesToRemove.push(course);
                     semester.totalCredits -= course.credits;
-                    semester.semesterCourses[i].completed = true;
                 } else {
                     // add course to references
+                    // console.log(course.courseId)
                     semester.courseReferences.push(course.courseId);
                     semester.semesterCourses[i].completed = false;
                 }
-
             });
 
-            //Remove all transfer courses from the semester
-            coursesToRemove.forEach((index) => {
-                semester.semesterCourses.splice(index, 1);
+            coursesToRemove.forEach(courseRemove => {
+                semester.semesterCourses.splice(semester.semesterCourses.indexOf(courseRemove), 1);
             })
 
             // Add semester to user checksheet collection
@@ -246,12 +254,819 @@ exports.createUser = functions.https.onRequest(async(request, response) => {
                     return handleError(response, 500, error);
                 })
         }
+        for (const transfer of transferCredits) {
+            await courseCollection.doc(transfer).get()
+                .then(doc => {
+                    if (doc.exists) {
+                        const courseToAdd = {
+                            used: false,
+                            pathway: false,
+                            elective: false,
+                            courseId: transfer,
+                            name: doc.data().name,
+                            credits: doc.data().credits
+                        }
+                        userChecksheet.transferCourses.push(courseToAdd)
+                    }
+                })
+                .catch(error => {
+                    handleResponse(response, 500, error)
+                })
+        }
 
 
 
         //Update all semesters to include completion status and ap/ib equivalent used. (currently only ap)
         const equivalentIds = request.body.apEquivalents;
         for (const equivalentId of equivalentIds) {
+
+            // Retrieve matching ap equivalent from the backend
+            var staticRef = await resourcesCollection.doc('static').get()
+                .catch(function(error) {
+                    return handleError(response, 500, error);
+                });
+
+            if (!staticRef.exists) {
+                return handleError(response, 500, 'No static resources exist.');
+            }
+
+            const updatedEquivalent = staticRef.data().apEquivalents[equivalentId];
+            updatedEquivalent.used = false;
+            updatedEquivalent.pathway = false;
+
+            // Look for matching course within users' checksheet
+            var querySnapshot = await userCollection.doc(userId).collection('semesters')
+                .where('courseReferences', 'array-contains', updatedEquivalent.vtCourseId).get()
+                .catch(function(error) {
+                    return handleError(response, 500, error);
+                });
+
+            if (!querySnapshot.empty) {
+                // Remove course from semester if satisfied by ap credit
+                const updatedSemester = querySnapshot.docs[0].data();
+                const courseId = updatedEquivalent.vtCourseId;
+
+                for (const course of updatedSemester.semesterCourses) {
+                    if (course.courseId === courseId) {
+
+                        updatedEquivalent.used = true;
+                        const courseIndex = updatedSemester.courseReferences.indexOf(courseId);
+                        updatedEquivalent.pathway = updatedSemester.semesterCourses[courseIndex].pathway;
+                        updatedEquivalent.credits = course.credits
+                        updatedSemester.courseReferences.splice(courseIndex, 1);
+                        updatedSemester.semesterCourses.splice(courseIndex, 1);
+                        updatedSemester.totalCredits -= course.credits;
+
+                        await userCollection.doc(userId).collection('semesters').doc('Semester ' + updatedSemester.semNum).set(updatedSemester)
+                            .catch(error => {
+                                return handleError(response, 500, error);
+                            });
+
+                        break;
+                    }
+                }
+            }
+
+            // Add AP class to list within user checksheet
+            userChecksheet.apEquivalents.push(updatedEquivalent);
+        }
+
+        //Add completed field to all the pathways
+        const pathways = userChecksheet.pathways
+        pathways.forEach((_, index) => {
+            pathways[index].completed = false;
+        })
+
+        userChecksheet.pathways = pathways;
+
+        // Update the ap equivalents for the user checksheet
+        await userCollection.doc(userId).set(userChecksheet, { merge: true })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        // Return the newly created user checksheet
+        await userCollection.doc(userId).get()
+            .then(async function(doc) {
+                const cleanedSheet = doc.data();
+                cleanedSheet.semesters = [];
+                const snapshot = await userCollection.doc(userId).collection('semesters').get();
+                snapshot.forEach(semester => {
+
+                    const currSem = semester.data();
+                    delete currSem.courseReferences;
+                    cleanedSheet.semesters.push(currSem);
+                });
+
+                return handleResponse(response, 200, cleanedSheet);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+    });
+
+});
+
+/**
+ * Retrieves the checksheet of a user
+ */
+exports.getUser = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const userId = request.path.replace('/', '');
+
+        await userCollection.doc(userId).get()
+            .then(async function(doc) {
+                if (doc.exists) {
+                    if (!doc.data().isMentor) {
+                        const cleanedSheet = doc.data();
+                        cleanedSheet.semesters = [];
+                        const snapshot = await userCollection.doc(userId).collection('semesters').get();
+                        snapshot.forEach(semester => {
+
+                            const currSem = semester.data();
+                            delete currSem.courseReferences;
+                            cleanedSheet.semesters.push(currSem);
+                        });
+                        return handleResponse(response, 200, cleanedSheet);
+                    } else {
+                        return handleResponse(response, 200, doc.data())
+                    }
+                }
+                return handleError(response, 400, "User doesn't exist.");
+            })
+            .catch(function(error) {
+                return handleError(response, 500, "Failed to retrieve checksheet. " + error);
+            })
+    });
+
+});
+
+/**
+ * Moves a class from one semester to another if the prerequisites and co requisites have been met
+ */
+exports.moveClass = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        //TODO: Add check to ensure semester numbers given are within limits
+        const userId = request.body.userId;
+        const courseId = request.body.courseId;
+        const fromSem = request.body.fromSem;
+        const toSem = request.body.toSem;
+        const toIndex = request.body.toIndex;
+
+        if (!courseId || !fromSem || !toSem || !userId || !toIndex)
+            return handleError(response, 400, "Missing body parameters.");
+
+        // Retrieve user checksheet from db
+        const userSheetRef = await userCollection.doc(userId).get()
+            .catch(function(error) {
+                return handleError(response, 500, error);
+            });
+
+        if (!userSheetRef.exists)
+            return handleError(response, 400, "User (" + userId + ") doesn't exist in the db.");
+
+        const userChecksheet = userSheetRef.data();
+
+        // Check if course exists in origin semester
+        const courseRef = await userCollection.doc(userId).collection('semesters').doc('Semester ' + fromSem).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (courseRef.exists) {
+            const courses = courseRef.data().courseReferences
+            if (!courses.includes(courseId))
+                return handleError(response, 400, 'Course ' + courseId + ' does not exisit in semester ' + fromSem);
+        } else {
+            return handleError(response, 400, 'Semester ' + fromSem + 'does not exist in db.');
+        }
+
+        // Return parameters init
+        const moveStatus = {
+            prerequisites: false,
+            corequisites: false,
+            dependents: false
+        }
+
+        // If pathway or elective it can be immediately moved
+        if (courseId.includes('Pathway') || courseId.includes('Elective')) {
+            await this.internalMoveCourse(toSem, fromSem, courseId, userId, toIndex)
+                .catch(error => {
+                    return handleError(response, 500, error);
+                });
+
+            moveStatus.prerequisites = true;
+            moveStatus.corequisites = true;
+
+            return handleResponse(response, 200, moveStatus);
+        }
+
+        // Retrieve full course data from db
+        const courseToMoveRef = await courseCollection.doc(courseId).get()
+            .catch(function(error) {
+                return handleError(response, 500, error);
+            });
+
+        if (!courseToMoveRef.exists)
+            return handleError(response, 400, "Course " + courseId + " doesn't exist in the db.");
+
+        const courseToMove = courseToMoveRef.data();
+
+
+        // Check to ensure all prerequisites and co requisites are met
+        const preReqs = courseToMove.prerequisites;
+        const coReqs = courseToMove.corequisites;
+        const dependentCourses = [];
+
+
+        for (var i = 1; i <= toSem; i++) {
+
+            var semester;
+            // Retrieve semester
+            const semesterDoc = await userCollection.doc(userId).collection('semesters').doc('Semester ' + i).get()
+                .catch(error => {
+                    return handleError(response, 500, error);
+                })
+
+            if (semesterDoc.exists) {
+                semester = semesterDoc.data()
+            } else {
+                return handleError(response, 500, 'Semester not found.')
+            }
+
+            if (preReqs) {
+                // Check pre-reqs
+                for (const preReq of preReqs) {
+                    // Seperate the prerequisties that include 'or'
+                    const seperatedReqs = preReq.split('|');
+
+                    // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
+                    //TODO: IB classes
+                    userChecksheet.apEquivalents.forEach(equivalent => {
+                        if (seperatedReqs.includes(equivalent.vtCourseId))
+                            preReqs.splice(preReqs.indexOf(preReq), 1);
+                    })
+
+                    // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
+                    userChecksheet.transferCourses.forEach(course => {
+
+                        if (seperatedReqs.includes(course.courseId))
+                            preReqs.splice(preReqs.indexOf(preReq), 1);
+                    });
+
+                    // Remove course from pre-reqs if it is taken in the semester before destination
+                    semester.courseReferences.forEach(id => {
+                        if (i !== toSem) {
+                            if (seperatedReqs.includes(id))
+                                preReqs.splice(preReqs.indexOf(preReq), 1);
+                        }
+                    });
+
+                }
+            }
+            if (coReqs) {
+                // Check co-reqs
+                for (const coReq of coReqs) {
+                    // Seperate the coRequisties that include 'or'
+                    const seperatedReqs = coReq.split('|');
+
+                    // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
+                    //TODO: IB classes
+                    userChecksheet.apEquivalents.forEach(equivalent => {
+                        if (seperatedReqs.includes(equivalent.vtCourseId))
+                            coReqs.splice(coReqs.indexOf(coReq), 1);
+                    })
+
+                    // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
+                    userChecksheet.transferCourses.forEach(course => {
+
+                        if (seperatedReqs.includes(course.courseId))
+                            coReqs.splice(coReqs.indexOf(coReq), 1);
+                    });
+
+                    // Remove course from pre-reqs if it is taken in the semester before destination
+                    semester.courseReferences.forEach(id => {
+                        if (seperatedReqs.includes(id))
+                            coReqs.splice(coReqs.indexOf(coReq), 1);
+                    });
+
+                }
+            }
+
+            if (i > fromSem) {
+                //If course is being moved up in semesters (toSem > fromSem)
+                //TODO: add force move and account for OR's
+                for (const currCourse of semester.courseReferences) {
+
+                    const courseRef = await courseCollection.doc(currCourse).get()
+                        .catch(error => {
+                            return handleError(response, 500, error);
+                        });
+
+                    if (courseRef.exists) {
+                        const course = courseRef.data();
+
+                        if (course.prerequisites) {
+                            course.prerequisites.forEach(req => {
+                                if (req.includes(courseId)) {
+
+                                    moveStatus.dependents = true;
+                                    dependentCourses.push(currCourse);
+                                }
+                            });
+                        }
+                        if (course.corequisites) {
+                            course.corequisites.forEach(req => {
+                                if (req.includes(courseId)) {
+                                    moveStatus.dependents = true;
+                                    dependentCourses.push(currCourse);
+                                }
+                            });
+                        }
+                    } else {
+                        console.log(currCourse + " does not exists.");
+                    }
+
+                }
+            }
+        }
+
+        // If all pre-requisites and co-requisites have been met, move the course
+        if (!preReqs || preReqs.length === 0)
+            moveStatus.prerequisites = true;
+
+        if (!coReqs || coReqs.length === 0)
+            moveStatus.corequisites = true;
+
+
+        moveStatus.preReqsNotMet = (preReqs && preReqs.length > 0) ? preReqs : "N/A";
+        moveStatus.coReqsNotMet = (coReqs && coReqs.length > 0) ? coReqs : "N/A";
+        moveStatus.dependentCourses = (dependentCourses.length) ? dependentCourses : "N/A";
+
+        if (moveStatus.prerequisites && moveStatus.corequisites && !moveStatus.dependents) {
+            await this.internalMoveCourse(toSem, fromSem, courseId, userId, toIndex)
+                .catch(error => {
+                    return handleError(response, 500, error);
+                });
+
+
+            await userCollection.doc(userId).get()
+                .then(async function(doc) {
+                    if (doc.exists) {
+                        const cleanedSheet = doc.data();
+                        cleanedSheet.semesters = [];
+                        const snapshot = await userCollection.doc(userId).collection('semesters').get();
+                        snapshot.forEach(semester => {
+
+                            const currSem = semester.data();
+                            delete currSem.courseReferences;
+                            cleanedSheet.semesters.push(currSem);
+                        });
+                        moveStatus.userData = cleanedSheet
+                        return handleResponse(response, 200, moveStatus);
+                    }
+                    return handleError(response, 400, "User doesn't exist.");
+                })
+
+        } else {
+            return handleResponse(response, 200, moveStatus);
+        }
+
+    });
+
+});
+
+/**
+ * Moves the course with courseId from fromSem to toSem for the specified user.
+ */
+this.internalMoveCourse = async(toSem, fromSem, courseId, userId, toIndex) => {
+
+    const fromSemId = 'Semester ' + fromSem;
+    const toSemId = 'Semester ' + toSem;
+
+    const fromSemRef = await userCollection.doc(userId).collection('semesters').doc(fromSemId).get()
+        .catch(error => {
+            throw new Error(error);
+        });
+
+    if (!fromSemRef.exists)
+        throw new Error(fromSem + ' does not exist in user checksheet');
+
+    const toSemRef = await userCollection.doc(userId).collection('semesters').doc(toSemId).get()
+        .catch(error => {
+            throw new Error(error);
+        });
+
+    if (!toSemRef.exists)
+        throw new Error(toSem + ' does not exist in user checksheet');
+
+    const fromSemester = fromSemRef.data();
+    const toSemester = toSemRef.data();
+
+    // Remove from the origin semester
+    const courseIndex = fromSemester.courseReferences.indexOf(courseId);
+    fromSemester.courseReferences.splice(courseIndex, 1);
+    const course = fromSemester.semesterCourses[courseIndex];
+    fromSemester.semesterCourses.splice(courseIndex, 1);
+    fromSemester.totalCredits -= course.credits;
+
+    //Add to the destination semester
+    toSemester.courseReferences.splice(toIndex, 0, courseId);
+    toSemester.semesterCourses.splice(toIndex, 0, course);
+    toSemester.totalCredits += course.credits;
+
+    // Update both semesters in db
+
+    if (fromSemester.totalCredits === 0) { // If the origin semester is now empty, delete it
+        await userCollection.doc(userId).collection('semesters').doc(fromSemId).delete()
+            .catch(error => {
+                throw new Error(error);
+            })
+    } else { // update origin semester if not empty
+        await userCollection.doc(userId).collection('semesters').doc(fromSemId).set(fromSemester)
+            .catch(error => {
+                throw new Error(error);
+            });
+    }
+
+    // Update destination semester
+    await userCollection.doc(userId).collection('semesters').doc(toSemId).set(toSemester)
+        .catch(error => {
+            throw new Error(error);
+        });
+
+}
+
+
+exports.assignPathway = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+        const sem = request.body.semester;
+        const pathwayId = request.body.pathwayId;
+        const pathwayType = request.body.pathwayType;
+        const newCourseId = request.body.courseId;
+        const newCourseType = request.body.courseType;
+
+        if (!sem || !pathwayId || !userId || !pathwayType || !newCourseId || !newCourseType)
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        const semId = "Semester " + sem;
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!userDoc.exists)
+            return handleError(response, 400, "User Id " + userId + " does not exist");
+
+        const userSheet = userDoc.data()
+
+        const semesterDoc = await userCollection.doc(userId).collection('semesters').doc(semId).get()
+            .catch(error => {
+                return handleError(response, 400, error)
+            })
+
+        if (!semesterDoc.exists)
+            return handleError(response, 400, semId + " does not exist.");
+
+        const semester = semesterDoc.data()
+
+        const courseIndex = semester.courseReferences.indexOf(pathwayId)
+        if (courseIndex < 0) {
+            return handleError(response, 400, pathwayId + " does not exist.");
+        }
+
+        //TODO: reconsider pathway 7 logic
+        if (userSheet.pathwayIds.includes(newCourseId) && pathwayType !== '7')
+            return handleError(response, 400, newCourseId + " already used as a pathway.")
+
+        if (newCourseType === 'AP') {
+            const apEquivalents = userSheet.apEquivalents;
+
+            for (var i = 0; i < apEquivalents.length; i++) {
+                if (apEquivalents[i].vtCourseId === newCourseId && !apEquivalents[i].used) {
+                    apEquivalents[i].used = true;
+                    apEquivalents[i].pathway = true;
+
+                    userSheet.pathways.push({
+                        type: pathwayType,
+                        credits: apEquivalents[i].credits ? apEquivalents[i].credits : 3, //TODO: BANDAGE
+                        name: apEquivalents[i].vtCourseName,
+                        courseId: apEquivalents[i].vtCourseId,
+                        completed: true
+                    })
+                    userSheet.pathwayIds.push(apEquivalents[i].vtCourseId)
+
+                    //TODO: account for if its already been taken by elective or another thing
+                    break;
+                } else if (i == apEquivalents.length - 1) {
+                    return handleError(response, 400, "No Ap equivalent fits the criteria"); //Warn for using an ap that is already used
+                }
+            }
+
+            userSheet.apEquivalents = apEquivalents;
+        } else if (newCourseType === 'Transfer') {
+            const transferCourses = userSheet.transferCourses;
+
+            for (i = 0; i < transferCourses.length; i++) {
+                if (transferCourses[i].courseId === newCourseId && !transferCourses[i].used) {
+                    transferCourses[i].used = true;
+                    transferCourses[i].pathway = true;
+                    //TODO: account for if its already been taken by elective or another thing
+
+                    userSheet.pathways.push({
+                        type: pathwayType,
+                        credits: transferCourses[i].credits,
+                        name: transferCourses[i].name,
+                        courseId: transferCourses[i].courseId,
+                        completed: true
+                    })
+                    userSheet.pathwayIds.push(transferCourses[i].courseId)
+
+                    break;
+                } else if (i == transferCourses.length - 1) {
+                    return handleError(response, 400, "No transfer exists to match " + newCourseId);
+                }
+            }
+
+            userSheet.transferCourses = transferCourses;
+        } else {
+
+            var querySnapshot = await userCollection.doc(userId).collection('semesters')
+                .where('courseReferences', 'array-contains', newCourseId).get()
+                .catch(function(error) {
+                    return handleError(response, 500, error);
+                });
+
+            if (!querySnapshot.empty)
+                return handleResponse(response, 400, newCourseId + " has already been used.")
+
+            await courseCollection.doc(newCourseId).get()
+                .then(doc => {
+                    if (!doc.exists)
+                        return handleError(response, 400, newCourseId + " does not exist!");
+
+                    ///|| !(pathwayType === '7' && (doc.data().pathways.includes('3') || doc.data().pathways.includes('2')))
+                    if (!doc.data().pathways.includes(pathwayType))
+                        return handleError(response, 400, newCourseId + " does not have pathway type " + pathwayType);
+
+                    //Add the new course into list
+                    semester.totalCredits += doc.data().credits
+                    semester.courseReferences.push(newCourseId);
+                    semester.semesterCourses.push({
+                        completed: false,
+                        credits: doc.data().credits,
+                        name: doc.data().name,
+                        pathway: true,
+                        courseId: newCourseId
+                    })
+
+                    userSheet.pathways.push({
+                        type: pathwayType,
+                        courseId: newCourseId,
+                        name: doc.data().name
+                    })
+                    userSheet.pathwayIds.push(newCourseId)
+
+                })
+                .catch(error => {
+                    handleResponse(response, 500, error);
+                })
+
+        }
+
+        if (userSheet.pathwayIds.includes(pathwayId)) {
+            const pathwayIndex = userSheet.pathwayIds.indexOf(pathwayId);
+            userSheet.pathways.splice(pathwayIndex, 1);
+            userSheet.pathwayIds.splice(pathwayIndex, 1)
+        }
+
+        //Remove pathway from list of course
+        semester.totalCredits -= semester.semesterCourses[courseIndex].credits;
+        semester.courseReferences.splice(courseIndex, 1);
+        semester.semesterCourses.splice(courseIndex, 1);
+
+
+        await userCollection.doc(userId).set(userSheet)
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+
+        await userCollection.doc(userId).collection('semesters').doc(semId).set(semester)
+            .then(() => {
+                return handleResponse(response, 200)
+            })
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+    });
+})
+
+
+exports.assignElective = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+        const sem = request.body.semester;
+        const electiveId = request.body.electiveId;
+        const newCourseId = request.body.courseId;
+        const newCourseType = request.body.courseType;
+
+        if (!sem || !electiveId || !userId || !newCourseId || !newCourseType)
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        const semId = "Semester " + sem;
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!userDoc.exists)
+            return handleError(response, 400, "User Id " + userId + " does not exist");
+
+        const userSheet = userDoc.data()
+
+        const semesterDoc = await userCollection.doc(userId).collection('semesters').doc(semId).get()
+            .catch(error => {
+                return handleError(response, 400, error)
+            })
+
+        if (!semesterDoc.exists)
+            return handleError(response, 400, semId + " does not exist.");
+
+        const semester = semesterDoc.data()
+
+        const courseIndex = semester.courseReferences.indexOf(electiveId)
+        if (courseIndex < 0) {
+            return handleError(response, 400, electiveId + " does not exist.");
+        }
+
+        //TODO: Add elective options check
+        //TODO: Add 3/4XXX check
+        if (newCourseType === 'AP') {
+            const apEquivalents = userSheet.apEquivalents;
+
+            for (var i = 0; i < apEquivalents.length; i++) {
+                if (apEquivalents[i].vtCourseId === newCourseId && !apEquivalents[i].used) {
+                    apEquivalents[i].used = true;
+                    apEquivalents[i].pathway = true;
+                    //TODO: account for if its already been taken by elective or another thing
+                    break;
+                } else if (i == apEquivalents.length - 1) {
+                    return handleError(response, 400, "No Ap equivalent fits the criteria"); //Warn for using an ap that is already used
+                }
+            }
+
+            userSheet.apEquivalents = apEquivalents;
+        } else if (newCourseType === 'Transfer') {
+            const transferCourses = userSheet.transferCourses;
+
+            for (i = 0; i < transferCourses.length; i++) {
+                if (transferCourses[i].courseId === newCourseId && !transferCourses[i].used) {
+                    transferCourses[i].used = true;
+                    transferCourses[i].elective = true;
+                    //TODO: account for if its already been taken by elective or another thing
+                    break;
+                } else if (i == transferCourses.length - 1) {
+                    return handleError(response, 400, "No Transfer course exists that matches " + newCourseId);
+                }
+            }
+
+            userSheet.transferCourses = transferCourses;
+        } else {
+            await courseCollection.doc(newCourseId).get()
+                .then(doc => {
+                    if (!doc.exists)
+                        return handleError(response, 400, newCourseId + " does not exist!");
+
+                    //Add the new course into list
+                    semester.totalCredits += doc.data().credits
+                    semester.courseReferences.push(newCourseId);
+                    semester.semesterCourses.push({
+                        completed: false,
+                        credits: doc.data().credits,
+                        name: doc.data().name,
+                        pathway: false,
+                        elective: true,
+                        courseId: newCourseId
+                    })
+
+                })
+                .catch(error => {
+                    handleResponse(response, 500, error);
+                })
+        }
+
+        //Remove pathway from list of course
+        semester.totalCredits -= semester.semesterCourses[courseIndex].credits;
+        semester.courseReferences.splice(courseIndex, 1);
+        semester.semesterCourses.splice(courseIndex, 1);
+
+
+        await userCollection.doc(userId).set(userSheet)
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+
+        await userCollection.doc(userId).collection('semesters').doc(semId).set(semester)
+            .then(() => {
+                return handleResponse(response, 200)
+            })
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+    });
+})
+
+
+
+exports.changeCourseStatus = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+        const sem = request.body.semester;
+        const courseId = request.body.courseId;
+
+        //TODO: Retrieve semester ourself???
+        if (!userId || !sem || !courseId)
+            return handleError(response, 400, "Required body parameters are missing.")
+
+        const semId = "Semester " + sem;
+        const userRef = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!userRef.exists)
+            handleError(response, 400, userId + " does not exist.")
+
+        const userSheet = userRef.data();
+
+        const semRef = await userCollection.doc(userId).collection('semesters').doc(semId).get()
+            .catch(error => {
+                return handleError(response, 500, error)
+            })
+
+        if (!semRef.exists)
+            return handleError(response, 400, semId + " does not exist")
+
+        const semester = semRef.data()
+
+        if (!semester.courseReferences.includes(courseId))
+            return handleError(response, 400, courseId + " does not exist in " + semId + '.')
+
+        const courseIndex = semester.courseReferences.indexOf(courseId)
+        semester.semesterCourses[courseIndex].completed = !semester.semesterCourses[courseIndex].completed;
+
+        if (userSheet.pathwayIds.includes(courseId)) {
+            const pathwayIndex = userSheet.pathwayIds.indexOf(courseId);
+            userSheet.pathways[pathwayIndex].completed = !semester.semesterCourses[courseIndex].completed
+        }
+
+
+        //TODO: Upload seperately later, use merge a lot more!
+        await userCollection.doc(userId).collection('semesters').doc(semId).set(semester)
+            .catch(error => {
+                return handleError(response, 500, error)
+            })
+
+        await userCollection.doc(userId).set(userSheet)
+            .then(() => {
+                return handleResponse(response, 200);
+            })
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+
+    })
+})
+
+
+
+exports.addApEquivalents = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const userId = request.body.userId;
+        const apEquivalents = request.body.apEquivalents;
+
+        if (!userId || !apEquivalents)
+            return handleError(response, 400, "Missing required body paramenters.");
+
+        const userRef = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!userRef.exists)
+            handleError(response, 400, userId + " does not exist.")
+
+        const userChecksheet = userRef.data()
+
+        for (const equivalentId of apEquivalents) {
 
             // Retrieve matching ap equivalent from the backend
             var staticRef = await resourcesCollection.doc('static').get()
@@ -327,315 +1142,12 @@ exports.createUser = functions.https.onRequest(async(request, response) => {
             .catch(error => {
                 return handleError(response, 500, error);
             })
-    });
 
-});
+    })
 
-/**
- * Retrieves the checksheet of a user
- */
-exports.getUserChecksheet = functions.https.onRequest(async(request, response) => {
-    cors(request, response, async() => {
+})
 
-        const userId = request.path.replace('/', '');
 
-        await userCollection.doc(userId).get()
-            .then(async function(doc) {
-                if (doc.exists) {
-                    const cleanedSheet = doc.data();
-                    cleanedSheet.semesters = [];
-                    const snapshot = await userCollection.doc(userId).collection('semesters').get();
-                    snapshot.forEach(semester => {
-
-                        const currSem = semester.data();
-                        delete currSem.courseReferences;
-                        cleanedSheet.semesters.push(currSem);
-                    });
-                    return handleResponse(response, 200, cleanedSheet);
-                }
-                return handleError(response, 400, "User doesn't exist.");
-            })
-            .catch(function(error) {
-                return handleError(response, 500, "Failed to retrieve checksheet. " + error);
-            })
-    });
-
-});
-
-/**
- * Moves a class from one semester to another if the prerequisites and co requisites have been met
- */
-exports.moveClass = functions.https.onRequest(async(request, response) => {
-    cors(request, response, async() => {
-
-        //TODO: Add check to ensure semester numbers given are within limits
-        const userId = request.body.userId
-        const courseId = request.body.courseId;
-        const fromSem = request.body.fromSem;
-        const toSem = request.body.toSem;
-
-        if (courseId === undefined || fromSem === undefined || toSem === undefined || userId === undefined)
-            return handleError(response, 400, "Missing body parameters.");
-
-        // Retrieve user checksheet from db
-        const userSheetRef = await userCollection.doc(userId).get()
-            .catch(function(error) {
-                return handleError(response, 500, error);
-            });
-
-        if (!userSheetRef.exists)
-            return handleError(response, 400, "User (" + userId + ") doesn't exist in the db.");
-
-        const userChecksheet = userSheetRef.data();
-
-        // Check if course exists in origin semester
-        const courseRef = await userCollection.doc(userId).collection('semesters').doc('Semester ' + fromSem).get()
-            .catch(error => {
-                return handleError(response, 500, error);
-            })
-
-        if (courseRef.exists) {
-            const courses = courseRef.data().courseReferences
-            if (!courses.includes(courseId))
-                return handleError(response, 400, 'Course ' + courseId + ' does not exisit in semester ' + fromSem);
-        } else {
-            return handleError(response, 400, 'Semester ' + fromSem + 'does not exist in db.');
-        }
-
-        // Return parameters init
-        const moveStatus = {
-            prerequisites: false,
-            corequisites: false,
-            dependents: false
-        }
-
-        // If pathway or elective it can be immediately moved
-        if (courseId.includes('Pathway') || courseId.includes('Elective')) {
-            await this.internalMoveCourse(toSem, fromSem, courseId, userId)
-                .catch(error => {
-                    return handleError(response, 500, error);
-                });
-
-            moveStatus.prerequisites = true;
-            moveStatus.corequisites = true;
-
-            return handleResponse(response, 200, moveStatus);
-        }
-
-        // Retrieve full course data from db
-        const courseToMoveRef = await courseCollection.doc(courseId).get()
-            .catch(function(error) {
-                return handleError(response, 500, error);
-            });
-
-        if (!courseToMoveRef.exists)
-            return handleError(response, 400, "Course " + courseId + " doesn't exist in the db.");
-
-        const courseToMove = courseToMoveRef.data();
-
-
-        // Check to ensure all prerequisites and co requisites are met
-        const preReqs = courseToMove.prerequisites;
-        const coReqs = courseToMove.corequisites;
-        const dependentCourses = [];
-
-        for (var i = 1; i <= toSem; i++) {
-
-            var semester;
-            // Retrieve semester
-            const semesterDoc = await userCollection.doc(userId).collection('semesters').doc('Semester ' + i).get()
-                .catch(error => {
-                    return handleError(response, 500, error);
-                })
-
-            if (semesterDoc.exists) {
-                semester = semesterDoc.data()
-            } else {
-                return handleError(response, 500, 'Semester not found.')
-            }
-
-            // Check pre-reqs
-            for (const preReq of preReqs) {
-                // Seperate the prerequisties that include 'or'
-                const seperatedReqs = preReq.split('|');
-
-                // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
-                //TODO: IB classes
-                userChecksheet.apEquivalents.forEach(equivalent => {
-                    if (seperatedReqs.includes(equivalent.vtCourseId))
-                        preReqs.splice(preReqs.indexOf(preReq), 1);
-                })
-
-                // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
-                userChecksheet.transferCourses.forEach(course => {
-
-                    if (seperatedReqs.includes(course.courseId))
-                        preReqs.splice(preReqs.indexOf(preReq), 1);
-                });
-
-                // Remove course from pre-reqs if it is taken in the semester before destination
-                semester.courseReferences.forEach(id => {
-                    if (i !== toSem) {
-                        if (seperatedReqs.includes(id))
-                            preReqs.splice(preReqs.indexOf(preReq), 1);
-                    }
-                });
-
-            }
-
-            // Check co-reqs
-            for (const coReq of coReqs) {
-                // Seperate the coRequisties that include 'or'
-                const seperatedReqs = coReq.split('|');
-
-                // Remove course from pre-reqs and co-reqs if it has been met by AP or IB classes
-                //TODO: IB classes
-                userChecksheet.apEquivalents.forEach(equivalent => {
-                    if (seperatedReqs.includes(equivalent.vtCourseId))
-                        coReqs.splice(coReqs.indexOf(coReq), 1);
-                })
-
-                // Remove course from pre-reqs and co-reqs if it has been met by Transfer Courses
-                userChecksheet.transferCourses.forEach(course => {
-
-                    if (seperatedReqs.includes(course.courseId))
-                        coReqs.splice(coReqs.indexOf(coReq), 1);
-                });
-
-                // Remove course from pre-reqs if it is taken in the semester before destination
-                semester.courseReferences.forEach(id => {
-                    if (seperatedReqs.includes(id))
-                        coReqs.splice(coReqs.indexOf(coReq), 1);
-                });
-
-            }
-
-            if (i > fromSem) {
-                //If course is being moved up in semesters (toSem > fromSem)
-                //TODO: add force move and account for OR's
-                for (const currCourse of semester.courseReferences) {
-
-                    const courseRef = await courseCollection.doc(currCourse).get()
-                        .catch(error => {
-                            return handleError(response, 500, error);
-                        });
-
-                    if (courseRef.exists) {
-                        const course = courseRef.data();
-
-                        if (course.prerequisites) {
-                            course.prerequisites.forEach(req => {
-                                if (req.includes(courseId)) {
-
-                                    moveStatus.dependents = true;
-                                    dependentCourses.push(currCourse);
-                                }
-                            });
-                        }
-                        if (course.corequisites) {
-                            course.corequisites.forEach(req => {
-                                if (req.includes(courseId)) {
-                                    moveStatus.dependents = true;
-                                    dependentCourses.push(currCourse);
-                                }
-                            });
-                        }
-                    } else {
-                        console.log(currCourse + " does not exists.");
-                    }
-
-                }
-            }
-        }
-
-        // If all pre-requisites and co-requisites have been met, move the course
-        if (preReqs.length === 0)
-            moveStatus.prerequisites = true;
-
-        if (coReqs.length === 0)
-            moveStatus.corequisites = true;
-
-        moveStatus.preReqsNotMet = (preReqs.length) ? preReqs : "N/A";
-        moveStatus.coReqsNotMet = (coReqs.length) ? coReqs : "N/A";
-        moveStatus.dependentCourses = (dependentCourses.length) ? dependentCourses : "N/A";
-
-        if (moveStatus.prerequisites && moveStatus.corequisites && !moveStatus.dependents) {
-            await this.internalMoveCourse(toSem, fromSem, courseId, userId)
-                .then(() => {
-
-                    return handleResponse(response, 200, moveStatus);
-                })
-                .catch(error => {
-                    return handleError(response, 500, error);
-                });
-        } else {
-            return handleResponse(response, 200, moveStatus);
-        }
-
-    });
-
-});
-
-/**
- * Moves the course with courseId from fromSem to toSem for the specified user.
- */
-this.internalMoveCourse = async(toSem, fromSem, courseId, userId) => {
-
-    const fromSemId = 'Semester ' + fromSem;
-    const toSemId = 'Semester ' + toSem;
-
-    const fromSemRef = await userCollection.doc(userId).collection('semesters').doc(fromSemId).get()
-        .catch(error => {
-            throw new Error(error);
-        });
-
-    if (!fromSemRef.exists)
-        throw new Error(fromSem + ' does not exist in user checksheet');
-
-    const toSemRef = await userCollection.doc(userId).collection('semesters').doc(toSemId).get()
-        .catch(error => {
-            throw new Error(error);
-        });
-
-    if (!toSemRef.exists)
-        throw new Error(toSem + ' does not exist in user checksheet');
-
-    const fromSemester = fromSemRef.data();
-    const toSemester = toSemRef.data();
-
-    // Remove from the origin semester
-    const courseIndex = fromSemester.courseReferences.indexOf(courseId);
-    fromSemester.courseReferences.splice(courseIndex, 1);
-    const course = fromSemester.semesterCourses[courseIndex];
-    fromSemester.semesterCourses.splice(courseIndex, 1);
-    fromSemester.totalCredits -= course.credits;
-
-    //Add to the destination semester
-    toSemester.courseReferences.push(courseId);
-    toSemester.semesterCourses.push(course);
-    toSemester.totalCredits += course.credits;
-
-    // Update both semesters in db
-
-    if (fromSemester.totalCredits === 0) { // If the origin semester is now empty, delete it
-        await userCollection.doc(userId).collection('semesters').doc(fromSemId).delete()
-            .catch(error => {
-                throw new Error(error);
-            })
-    } else { // update origin semester if not empty
-        await userCollection.doc(userId).collection('semesters').doc(fromSemId).set(fromSemester)
-            .catch(error => {
-                throw new Error(error);
-            });
-    }
-
-    // Update destination semester
-    await userCollection.doc(userId).collection('semesters').doc(toSemId).set(toSemester)
-        .catch(error => {
-            throw new Error(error);
-        });
-
-}
 
 
 
@@ -776,6 +1288,46 @@ exports.autocompleteCourseName = functions.https.onRequest(async(request, respon
 });
 
 
+exports.getCoursesByPathway = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const pathways = request.body.pathways;
+
+        if (!pathways)
+            return handleError(response, 400, "Missing required body parameters!");
+
+        const results = [];
+
+        for (const pathwayType of pathways) {
+
+            if (!pathwayType)
+                continue;
+
+            var querySnapshot = await courseCollection
+                .where('pathways', 'array-contains', pathwayType).get()
+                .catch(function(error) {
+                    return handleError(response, 500, error);
+                });
+
+            if (!querySnapshot.empty) {
+
+                querySnapshot.docs.forEach(doc => {
+
+                    const foundCourse = {
+                        name: doc.data().name,
+                        credits: doc.data().credits,
+                        courseId: doc.id
+                    }
+                    if (results.indexOf(foundCourse) < 0)
+                        results.push(foundCourse)
+                })
+            }
+        }
+
+        return handleResponse(response, 200, results);
+    })
+})
+
 /**
  * --------------------------------------------------------------------------------------------------
  *                              STATIC RESOURCES FUNCTIONS
@@ -868,6 +1420,70 @@ exports.getAllPathways = functions.https.onRequest(async(request, response) => {
     });
 
 });
+
+/**
+ * Retrieves a list of electives within type
+ */
+exports.getElectiveOptions = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const electiveType = request.path.replace('/', '').trim().toLowerCase().replace('%20', ' ');
+
+        await resourcesCollection.doc('static').get()
+            .then(async(doc) => {
+                const staticResources = doc.data();
+                const electives = staticResources.electives;
+
+                if (electives[electiveType]) {
+                    const cleanedCourses = [];
+
+                    for (const course of electives[electiveType]) {
+                        await courseCollection.doc(course).get()
+                            .then((doc) => {
+                                if (doc.exists) {
+                                    cleanedCourses.push({
+                                        courseId: course,
+                                        name: doc.data().name,
+                                        credits: doc.data().credits
+                                    })
+                                }
+                            })
+                            .catch(error => {
+                                handleError(response, 500, error)
+                            })
+                    }
+
+                    return handleResponse(response, 200, cleanedCourses)
+                } else {
+                    return handleError(response, 400, electiveType + " does not exist.")
+                }
+            })
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+
+    })
+})
+
+exports.getElectiveCategories = functions.https.onRequest(async(request, response) => {
+    cors(request, response, async() => {
+
+        const electives = ["Capstone", "Natural Science", "Professional Writing", "Communications", "CS Theory", "Statistics"]
+
+        return handleResponse(response, 200, electives)
+            // await resourcesCollection.doc('static').get()
+            //     .then(() => {
+            //         // const staticResources = doc.data();
+            //         const electives = ["Capstone", "Natural Science", "Professional Writing", "Communications", "CS Theory", "Statistics"]
+
+        //         return handleResponse(response, 200, electives)
+        //     })
+        //     .catch(error => {
+        //         return handleResponse(response, 500, error)
+        //     })
+
+    })
+})
 
 
 
@@ -983,6 +1599,7 @@ exports.createMentor = functions.https.onRequest(async(request, response) => {
 
         await userCollection.doc(mentorId).set(mentor)
             .then(() => {
+                mentor.userId = mentorId
                 return handleResponse(response, 200, mentor);
             })
             .catch(error => {
@@ -1143,6 +1760,9 @@ exports.sendMenteeRequest = functions.https.onRequest(async(request, response) =
         if (mentee.mentors[mentorId])
             return handleError(response, 400, mentorId + " is already a mentor of mentee " + menteeId);
 
+        //Check if mentor already has a request from that mentee
+        if (mentor.requests[menteeId])
+            return handleError(response, 400, mentorId + " already has a request from " + menteeId);
 
         // Update both mentee and mentor requests
         mentor.requests[menteeId] = "RECIEVED";
@@ -1212,13 +1832,18 @@ exports.respondToMenteeRequest = functions.https.onRequest(async(request, respon
         if (!mentee.mentorRequests[mentorId])
             return handleError(response, 400, "Request for mentor " + mentorId + " does not exist.");
 
+        //Check if mentor has a request from the mentor
+        if (!mentor.requests[menteeId])
+            return handleError(response, 400, mentorId + " does not have a request from " + menteeId);
+
+
         // Update requests to reflect response
         const mentorName = mentor.firstName + ' ' + mentor.lastName;
         const menteeName = mentee.firstName + ' ' + mentee.lastName;
 
-        if (response) { // Accepted
+        if (result) { // Accepted
             delete mentor.requests[menteeId];
-            delete mentee.mentorRequests[mentorId];
+            mentee.mentorRequests[mentorId] = 'ACCEPTED';
 
             mentor.mentees[menteeId] = menteeName;
             mentee.mentors[mentorId] = mentorName;
@@ -1252,20 +1877,35 @@ exports.getAllMentors = functions.https.onRequest(async(request, response) => {
 
     cors(request, response, async() => {
 
+        const userId = request.path.replace('/', '');
+
+        const userDoc = await userCollection.doc(userId).get()
+            .catch(error => {
+                return handleError(response, 500, error)
+            })
+
+        if (!userDoc.exists)
+            return handleError(response, 400, userId + " does not exist.");
+
+        const mentee = userDoc.data();
+
         await userCollection.where('isMentor', '==', true).get()
             .then(function(querySnapshot) {
                 const mentors = [];
                 querySnapshot.forEach(function(doc) {
                     const mentor = doc.data();
-                    const cleanedMentor = {
-                        mentorId: mentor.id,
-                        name: mentor.firstName + ' ' + mentor.lastName,
-                        organizationName: mentor.organizationName,
-                        occupation: mentor.occupation,
-                        description: mentor.description,
-                        vtAlumni: mentor.vtAlumni
+
+                    if (!mentee.mentorRequests[doc.id] && userId !== doc.id) {
+                        const cleanedMentor = {
+                            userId: doc.id,
+                            name: mentor.firstName + ' ' + mentor.lastName,
+                            organizationName: mentor.organizationName,
+                            occupation: mentor.occupation,
+                            description: mentor.description,
+                            vtAlumni: mentor.vtAlumni
+                        }
+                        mentors.push(cleanedMentor);
                     }
-                    mentors.push(cleanedMentor);
                 })
 
                 handleResponse(response, 200, mentors);
@@ -1354,3 +1994,287 @@ exports.getAllMentorsInOrganization = functions.https.onRequest(async(request, r
     })
 
 })
+
+
+
+exports.shareMenteeChecksheet = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const menteeId = request.body.menteeId;
+        const mentorId = request.body.mentorId;
+        const semesters = request.body.semesters;
+        const ap = request.body.ap;
+        const transfer = request.body.transfer;
+        const pathways = request.body.pathways;
+
+        if (!(menteeId && mentorId && semesters && ap !== undefined && transfer !== undefined && pathways !== undefined))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        // Check if mentor exists
+        const mentorDoc = await userCollection.doc(mentorId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!mentorDoc.exists)
+            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+        // Check if user is actually a mentor
+        const mentor = mentorDoc.data();
+        if (!mentor.isMentor)
+            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+
+        // Check if mentee exists
+        const menteeDoc = await userCollection.doc(menteeId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!menteeDoc.exists)
+            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+        const mentee = menteeDoc.data();
+
+        //Check if mentor is a mentor of mentee
+        if (!mentee.mentors[mentorId])
+            return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
+
+        if (mentee.shared[mentorId])
+            return handleError(response, 400, mentorId + " already has access to the checksheet of " + menteeId);
+
+        const sharedSheet = {}
+        sharedSheet.semesters = []
+
+        for (const sem of semesters) {
+            const semId = "Semester " + sem;
+
+            const semDoc = await userCollection.doc(menteeId).collection('semesters').doc(semId).get()
+                .catch(error => {
+                    return handleResponse(response, 500, error)
+                })
+
+            if (semDoc.exists) {
+                sharedSheet.semesters.push({
+                    semNum: semDoc.data().semNum,
+                    semesterCourses: semDoc.data().semesterCourses,
+                    totalCredits: semDoc.data().totalCredits
+                })
+            }
+        }
+
+        if (ap) {
+            sharedSheet.apEquivalents = mentee.apEquivalents;
+        }
+
+        if (transfer) {
+            sharedSheet.transferCourses = mentee.transferCourses;
+        }
+
+        if (pathways) {
+            sharedSheet.pathways = mentee.pathways;
+        }
+
+        mentee.shared[mentorId] = { smesters: semesters, ap: ap, transfer: transfer, pathways: pathways }
+
+        await userCollection.doc(menteeId).set(mentee)
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+
+        await userCollection.doc(mentorId).collection('shared').doc(menteeId).set(sharedSheet)
+            .then(() => {
+                return handleResponse(response, 200)
+            })
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+
+
+    })
+})
+
+
+exports.getSharedChecksheet = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const menteeId = request.body.menteeId;
+        const mentorId = request.body.mentorId;
+
+
+        if (!(menteeId && mentorId))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        // Check if mentor exists
+        const mentorDoc = await userCollection.doc(mentorId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!mentorDoc.exists)
+            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+        // Check if user is actually a mentor
+        const mentor = mentorDoc.data();
+        if (!mentor.isMentor)
+            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+
+        // Check if mentee exists
+        const menteeDoc = await userCollection.doc(menteeId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!menteeDoc.exists)
+            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+        const mentee = menteeDoc.data();
+
+        //Check if mentor is a mentor of mentee
+        if (!mentee.mentors[mentorId])
+            return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
+
+        if (!mentee.shared[mentorId])
+            return handleError(response, 400, mentorId + " does not have access to checksheet of " + menteeId);
+
+        await userCollection.doc(mentorId).collection('shared').doc(menteeId).get()
+            .then(doc => {
+                return handleResponse(response, 200, doc.data())
+            })
+            .catch(error => {
+                return handleResponse(response, 500, error)
+            })
+    })
+})
+
+
+exports.getSharedChecksheet = functions.https.onRequest(async(request, response) => {
+
+    cors(request, response, async() => {
+
+        const menteeId = request.body.menteeId;
+        const mentorId = request.body.mentorId;
+
+
+        if (!(menteeId && mentorId))
+            return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+        // Check if mentor exists
+        const mentorDoc = await userCollection.doc(mentorId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!mentorDoc.exists)
+            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+        // Check if user is actually a mentor
+        const mentor = mentorDoc.data();
+        if (!mentor.isMentor)
+            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+
+        // Check if mentee exists
+        const menteeDoc = await userCollection.doc(menteeId).get()
+            .catch(error => {
+                return handleError(response, 500, error);
+            })
+
+        if (!menteeDoc.exists)
+            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+        const mentee = menteeDoc.data();
+
+        //Check if mentor is a mentor of mentee
+        if (!mentee.mentors[mentorId])
+            return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
+
+        if (!mentee.shared[mentorId])
+            return handleError(response, 400, mentorId + " does not have access to checksheet of " + menteeId);
+
+
+    })
+
+})
+
+// exports.changeSharedChecksheet = functions.https.onRequest(async(request, response) => {
+
+//     cors(request, response, async() => {
+
+//         const menteeId = request.body.menteeId;
+//         const mentorId = request.body.mentorId;
+//         const semesters = request.body.semesters;
+//         const ap = request.body.ap;
+//         const transfer = request.body.transfer;
+//         const pathways = request.body.pathways;
+
+//         if (!(menteeId && mentorId && semesters && ap !== undefined && transfer !== undefined && pathways !== undefined))
+//             return handleError(response, 400, "One or more of the required body parameters are missing!");
+
+//         // Check if mentor exists
+//         const mentorDoc = await userCollection.doc(mentorId).get()
+//             .catch(error => {
+//                 return handleError(response, 500, error);
+//             })
+
+//         if (!mentorDoc.exists)
+//             return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
+
+//         // Check if user is actually a mentor
+//         const mentor = mentorDoc.data();
+//         if (!mentor.isMentor)
+//             return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
+
+
+//         // Check if mentee exists
+//         const menteeDoc = await userCollection.doc(menteeId).get()
+//             .catch(error => {
+//                 return handleError(response, 500, error);
+//             })
+
+//         if (!menteeDoc.exists)
+//             return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
+//         const mentee = menteeDoc.data();
+
+//         //Check if mentor is a mentor of mentee
+//         if (!mentee.mentors[mentorId])
+//             return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
+
+//         if (!mentee.shared[mentorId])
+//             return handleError(response, 400, mentorId + " does not have access to checksheet of " + menteeId);
+
+//         const sharedDoc = await userCollection.doc(mentorId).collection('shared').doc(menteeId).get()
+//             .catch(error => {
+//                 return handleResponse(response, 500, error)
+//             })
+
+//         if (!sharedDoc.exists)
+//             return handleError(response, 400, mentorId + " does not weirdly have access to checksheet of " + menteeId);
+
+//         const sharedSheet = sharedDoc.data()
+
+//         semesters.forEach(semNum => {
+//             const semIndex = mentee.shared[mentorId].semesters.indexOf(semNum);
+
+//             sharedSheet.semesters.splice(semIndex, 1);
+//         })
+
+//         if (ap)
+//             delete sharedSheet.apEquivalents;
+
+//         if (transfer)
+//             delete sharedSheet.transferCourses;
+
+//         if (pathways)
+//             delete sharedSheet.pathways;
+
+//         await userCollection.doc(mentorId).collection('shared').doc(menteeId).set(sharedSheet)
+//             .then(() => {
+//                 handleResponse(response, 200)
+//             })
+//             .catch(error => {
+//                 return handleResponse(response, 500, error)
+//             })
+
+//     })
+// })
