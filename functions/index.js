@@ -134,6 +134,27 @@ exports.loadResources = functions.firestore
             description: "Students that belong to the unversity."
         })
 
+        await organizationCollection.doc("CS-Mentoring").set({
+            name: "CS Mentoring Club",
+            school: "Computer Science",
+            representatives: {},
+            description: "A peer-to-peer mentoring program designed to pair freshman and sophomores who are CS majors or planning to be CS majors with juniors and seniors in the major.  The mentoring will include one-on-one mentoring as well as monthly meetings."
+        })
+
+        await organizationCollection.doc("Hokie-Mentorship-Connect").set({
+            name: "Hokie Mentorship Connect",
+            school: "Virginia Tech",
+            representatives: {},
+            description: "Career and Professional Development is building our Virginia Tech family through mentoring and purposeful connections!"
+        })
+
+        await organizationCollection.doc("CS-Volunteering").set({
+            name: "CS Volunteering Club",
+            school: "Computer Science",
+            representatives: {},
+            description: "Undergraduate Computer Science students volunteer to make a difference in the community."
+        })
+
         console.log("Database initialized and loaded...");
 
     });
@@ -378,7 +399,7 @@ exports.getUser = functions.https.onRequest(async(request, response) => {
         await userCollection.doc(userId).get()
             .then(async function(doc) {
                 if (doc.exists) {
-                    if (!doc.data().isMentor) {
+                    if (!doc.data().isMentor || doc.data().major) {
                         const cleanedSheet = doc.data();
                         cleanedSheet.semesters = [];
                         const snapshot = await userCollection.doc(userId).collection('semesters').get();
@@ -1023,8 +1044,22 @@ exports.changeCourseStatus = functions.https.onRequest(async(request, response) 
 
         if (userSheet.pathwayIds.includes(courseId)) {
             const pathwayIndex = userSheet.pathwayIds.indexOf(courseId);
-            userSheet.pathways[pathwayIndex].completed = !semester.semesterCourses[courseIndex].completed
+            userSheet.pathways[pathwayIndex].completed = semester.semesterCourses[courseIndex].completed
         }
+
+        userSheet.apEquivalents.forEach((equivalent, index) => {
+            if (equivalent.vtCourseId === courseId) {
+                if (!userSheet.apEquivalents[index].used)
+                    userSheet.apEquivalents[index].used = semester.semesterCourses[courseIndex].completed
+            }
+        })
+
+        userSheet.transferCourses.forEach((transfer, index) => {
+            if (transfer.vtCourseId === courseId) {
+                if (!userSheet.transferCourses[index].used)
+                    userSheet.transferCourses[index].used = semester.semesterCourses[courseIndex].completed
+            }
+        })
 
 
         //TODO: Upload seperately later, use merge a lot more!
@@ -1622,17 +1657,17 @@ exports.getAllUserConnections = functions.https.onRequest(async(request, respons
                 return handleError(response, 500, error);
             })
 
-        user = userDoc.data();
+        var user = userDoc.data();
 
         var connectionsData = [];
 
         if (user.mentees) {
             console.log("mentees being looked at connections = ", connectionsData);
             console.log("mentees = ", user.mentees);
-            for (let [key, value] of Object.entries(user.mentees)) {
+            for (let [key] of Object.entries(user.mentees)) {
                 await userCollection.doc(key).get()
                     .then(doc => {
-                        userData = doc.data();
+                        var userData = doc.data();
                         if (!userData.userId) {
                             userData.userId = key;
                         }
@@ -1644,10 +1679,10 @@ exports.getAllUserConnections = functions.https.onRequest(async(request, respons
         }
 
         if (user.mentors) {
-            for (let [key, value] of Object.entries(user.mentors)) {
+            for (let [key] of Object.entries(user.mentors)) {
                 await userCollection.doc(key).get()
                     .then(doc => {
-                        userData = doc.data();
+                        var userData = doc.data();
                         if (!userData.userId) {
                             userData.userId = key;
                         }
@@ -1694,18 +1729,21 @@ exports.addMentorToUser = functions.https.onRequest(async(request, response) => 
             return handleError(response, 400, "User " + userId + " does not exist");
 
         // Check if the organization exists
-        await organizationCollection.doc(organizationId).get()
-            .then(doc => {
-                if (!doc.exists)
-                    return handleError(response, 400, "Organization " + organizationId + " does not exist.");
-            })
+        const orgDoc = await organizationCollection.doc(organizationId).get()
             .catch(error => {
                 return handleError(response, 500, error);
             })
             // Add mentor status to user
+
+        if (!orgDoc.exists)
+            return handleError(response, 400, "Organization " + organizationId + " does not exist.");
+
+        const organizationInfo = orgDoc.data();
+
         const user = userDoc.data();
         user.isMentor = true;
         user.organizationId = organizationId;
+        user.organizationName = organizationInfo.name;
         user.description = description;
         user.requests = {};
         user.mentees = {};
@@ -2092,12 +2130,10 @@ exports.shareMenteeChecksheet = functions.https.onRequest(async(request, respons
         if (!mentee.mentors[mentorId])
             return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
 
-        if (mentee.shared[mentorId])
-            return handleError(response, 400, mentorId + " already has access to the checksheet of " + menteeId);
-
         const sharedSheet = {}
         sharedSheet.semesters = []
 
+        semesters.sort((a, b) => a - b)
         for (const sem of semesters) {
             const semId = "Semester " + sem;
 
@@ -2127,7 +2163,14 @@ exports.shareMenteeChecksheet = functions.https.onRequest(async(request, respons
             sharedSheet.pathways = mentee.pathways;
         }
 
+        if (!mentee.shared)
+            mentee.shared = {}
+
         mentee.shared[mentorId] = { smesters: semesters, ap: ap, transfer: transfer, pathways: pathways }
+
+        sharedSheet.major = mentee.major;
+        sharedSheet.school = mentee.school;
+        sharedSheet.totalCredits = mentee.totalCredits;
 
         await userCollection.doc(menteeId).set(mentee)
             .catch(error => {
@@ -2154,6 +2197,7 @@ exports.getSharedChecksheet = functions.https.onRequest(async(request, response)
         const menteeId = request.body.menteeId;
         const mentorId = request.body.mentorId;
 
+        console.log(request.body)
 
         if (!(menteeId && mentorId))
             return handleError(response, 400, "One or more of the required body parameters are missing!");
@@ -2199,134 +2243,3 @@ exports.getSharedChecksheet = functions.https.onRequest(async(request, response)
             })
     })
 })
-
-
-exports.getSharedChecksheet = functions.https.onRequest(async(request, response) => {
-
-    cors(request, response, async() => {
-
-        const menteeId = request.body.menteeId;
-        const mentorId = request.body.mentorId;
-
-
-        if (!(menteeId && mentorId))
-            return handleError(response, 400, "One or more of the required body parameters are missing!");
-
-        // Check if mentor exists
-        const mentorDoc = await userCollection.doc(mentorId).get()
-            .catch(error => {
-                return handleError(response, 500, error);
-            })
-
-        if (!mentorDoc.exists)
-            return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
-
-        // Check if user is actually a mentor
-        const mentor = mentorDoc.data();
-        if (!mentor.isMentor)
-            return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
-
-
-        // Check if mentee exists
-        const menteeDoc = await userCollection.doc(menteeId).get()
-            .catch(error => {
-                return handleError(response, 500, error);
-            })
-
-        if (!menteeDoc.exists)
-            return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
-        const mentee = menteeDoc.data();
-
-        //Check if mentor is a mentor of mentee
-        if (!mentee.mentors[mentorId])
-            return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
-
-        if (!mentee.shared[mentorId])
-            return handleError(response, 400, mentorId + " does not have access to checksheet of " + menteeId);
-
-
-    })
-
-})
-
-// exports.changeSharedChecksheet = functions.https.onRequest(async(request, response) => {
-
-//     cors(request, response, async() => {
-
-//         const menteeId = request.body.menteeId;
-//         const mentorId = request.body.mentorId;
-//         const semesters = request.body.semesters;
-//         const ap = request.body.ap;
-//         const transfer = request.body.transfer;
-//         const pathways = request.body.pathways;
-
-//         if (!(menteeId && mentorId && semesters && ap !== undefined && transfer !== undefined && pathways !== undefined))
-//             return handleError(response, 400, "One or more of the required body parameters are missing!");
-
-//         // Check if mentor exists
-//         const mentorDoc = await userCollection.doc(mentorId).get()
-//             .catch(error => {
-//                 return handleError(response, 500, error);
-//             })
-
-//         if (!mentorDoc.exists)
-//             return handleError(response, 400, "Mentor " + mentorId + " does not exist!");
-
-//         // Check if user is actually a mentor
-//         const mentor = mentorDoc.data();
-//         if (!mentor.isMentor)
-//             return handleError(response, 400, "Mentor " + mentorId + " is not a mentor!");
-
-
-//         // Check if mentee exists
-//         const menteeDoc = await userCollection.doc(menteeId).get()
-//             .catch(error => {
-//                 return handleError(response, 500, error);
-//             })
-
-//         if (!menteeDoc.exists)
-//             return handleError(response, 400, "Mentee " + mentorId + " does not exist.");
-//         const mentee = menteeDoc.data();
-
-//         //Check if mentor is a mentor of mentee
-//         if (!mentee.mentors[mentorId])
-//             return handleError(response, 400, mentorId + " is not a mentor of mentee " + menteeId);
-
-//         if (!mentee.shared[mentorId])
-//             return handleError(response, 400, mentorId + " does not have access to checksheet of " + menteeId);
-
-//         const sharedDoc = await userCollection.doc(mentorId).collection('shared').doc(menteeId).get()
-//             .catch(error => {
-//                 return handleResponse(response, 500, error)
-//             })
-
-//         if (!sharedDoc.exists)
-//             return handleError(response, 400, mentorId + " does not weirdly have access to checksheet of " + menteeId);
-
-//         const sharedSheet = sharedDoc.data()
-
-//         semesters.forEach(semNum => {
-//             const semIndex = mentee.shared[mentorId].semesters.indexOf(semNum);
-
-//             sharedSheet.semesters.splice(semIndex, 1);
-//         })
-
-//         if (ap)
-//             delete sharedSheet.apEquivalents;
-
-//         if (transfer)
-//             delete sharedSheet.transferCourses;
-
-//         if (pathways)
-//             delete sharedSheet.pathways;
-
-//         await userCollection.doc(mentorId).collection('shared').doc(menteeId).set(sharedSheet)
-//             .then(() => {
-//                 handleResponse(response, 200)
-//             })
-//             .catch(error => {
-//                 return handleResponse(response, 500, error)
-//             })
-
-//     })
-// })
