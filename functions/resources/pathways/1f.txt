@@ -1,0 +1,1473 @@
+12931	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	CH Boor	T R	11:00AM	12:15PM	ONLINE	11T
+12932	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	CH Boor	M W	4:00PM	5:15PM	ONLINE	16M
+12933	COMM-1016	Communication Skills	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	N Sowder	M W	2:30PM	3:45PM	TBA	14M
+12935	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	CH Boor	T R	12:30PM	1:45PM	ONLINE	12T
+12936	COMM-1016	Communication Skills	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	N Sowder	T R	9:30AM	10:45AM	TBA	09T
+12937	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	L Purcell	M W F	10:10AM	11:00AM	ONLINE	10M
+12938	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	DS Conner	M W	2:30PM	3:45PM	ONLINE	14M
+12939	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	L Purcell	M W F	12:20PM	1:10PM	ONLINE	12M
+12940	COMM-1016	Communication Skills	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	N Sowder	T R	11:00AM	12:15PM	TBA	11T
+12941	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	L Purcell	M W F	9:05AM	9:55AM	ONLINE	09M
+12942	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	CH Boor	M W	2:30PM	3:45PM	ONLINE	14M
+12943	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	DS Conner	M W	4:00PM	5:15PM	ONLINE	16M
+12944	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	DS Conner	T R	11:00AM	12:15PM	ONLINE	11T
+12945	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	DS Conner	T R	9:30AM	10:45AM	ONLINE	09T
+12946	COMM-1016	Communication Skills	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	L Purcell	M W F	1:25PM	2:15PM	ONLINE	13M
+14648	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AJ Hobin	T R	9:30AM	10:45AM	ONLINE	09T
+14649	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AJ Hobin	T R	11:00AM	12:15PM	ONLINE	11T
+14650	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MS Maycock	M W	4:00PM	5:15PM	ONLINE	16M
+14651	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MS Maycock	M W	2:30PM	3:45PM	ONLINE	14M
+14652	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	T R	8:00AM	9:15AM	ONLINE	08T
+14653	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	T R	9:30AM	10:45AM	ONLINE	09T
+14654	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+14655	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+14656	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	J Lawrence	M W F	9:05AM	9:55AM	ONLINE	09M
+21578	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	LN Wallace	M W F	8:00AM	8:50AM	ONLINE	08M
+21579	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	AG Scott	M W F	8:00AM	8:50AM	ONLINE	08M
+21580	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	I Farrou	M W F	8:00AM	8:50AM	ONLINE	08M
+21581	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	LN Wallace	M W F	9:05AM	9:55AM	ONLINE	09M
+21582	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	AG Scott	M W F	9:05AM	9:55AM	ONLINE	09M
+21583	ENGL-1105	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+9
+
+9	I Farrou	M W F	9:05AM	9:55AM	ONLINE	09M
+14657	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	A Inthajak	M W F	8:00AM	8:50AM	ONLINE	08M
+14658	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14659	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14660	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14661	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HR Patton	T R	2:00PM	3:15PM	ONLINE	14T
+14662	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14663	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	A Inthajak	M W F	9:05AM	9:55AM	ONLINE	09M
+14664	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	ML Bronson	M W F	9:05AM	9:55AM	ONLINE	09M
+14665	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR King	M W F	9:05AM	9:55AM	ONLINE	09M
+14666	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CJ Robertson	M W F	9:05AM	9:55AM	ONLINE	09M
+14667	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	IL Johnson	M W F	9:05AM	9:55AM	ONLINE	09M
+14668	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MM Williams	M W F	10:10AM	11:00AM	ONLINE	10M
+14669	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14670	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JR Greene	M W F	9:05AM	9:55AM	ONLINE	09M
+14671	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KG Morse	T R	9:30AM	10:45AM	ONLINE	09T
+14672	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Snyder	T R	11:00AM	12:15PM	ONLINE	11T
+14673	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KG Morse	T R	12:30PM	1:45PM	ONLINE	12T
+14674	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+14
+
+14	T Snyder	T R	8:00AM	9:15AM	ONLINE	08T
+14675	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JR Scallorns	T R	9:30AM	10:45AM	ONLINE	09T
+14676	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	ML Bronson	M W F	10:10AM	11:00AM	ONLINE	10M
+14677	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+14
+
+14	A Jones	T R	8:00AM	9:15AM	ONLINE	08T
+14678	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JL Mengert	T R	9:30AM	10:45AM	ONLINE	09T
+14679	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Drapeau	T R	2:00PM	3:15PM	ONLINE	14T
+14680	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Drapeau	T R	3:30PM	4:45PM	ONLINE	15T
+14682	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	S Reynolds	M W	4:00PM	5:15PM	ONLINE	16M
+14683	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Gibbs	T R	2:00PM	3:15PM	ONLINE	14T
+14684	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Becker	T R	3:30PM	4:45PM	ONLINE	15T
+14685	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RJ Hooper	M W F	9:05AM	9:55AM	ONLINE	09M
+14686	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HR Patton	T R	12:30PM	1:45PM	ONLINE	12T
+14687	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14688	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CR Franklin	M W	4:00PM	5:15PM	ONLINE	16M
+14689	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JD Zan	M W F	11:15AM	12:05PM	ONLINE	11M
+14690	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TA Saunders	M W F	1:25PM	2:15PM	ONLINE	13M
+14691	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	IL Johnson	M W F	11:15AM	12:05PM	ONLINE	11M
+14692	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	H Baker	T R	9:30AM	10:45AM	ONLINE	09T
+14693	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	H Baker	T R	11:00AM	12:15PM	ONLINE	11T
+14694	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RJ Hooper	M W F	10:10AM	11:00AM	ONLINE	10M
+14695	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	EL Bloomer	T R	3:30PM	4:45PM	ONLINE	15T
+14696	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Snyder	T R	2:00PM	3:15PM	ONLINE	14T
+14697	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CJ Belcher	M W F	11:15AM	12:05PM	ONLINE	11M
+14698	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Becker	T R	9:30AM	10:45AM	ONLINE	09T
+14699	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	L Neilan	M W F	9:05AM	9:55AM	ONLINE	09M
+14700	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	A Jones	T R	2:00PM	3:15PM	ONLINE	14T
+14701	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR Conaway	M W F	9:05AM	9:55AM	ONLINE	09M
+14702	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SC Payne	M W F	9:05AM	9:55AM	ONLINE	09M
+14703	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	C Wilson	T R	2:00PM	3:15PM	ONLINE	14T
+14705	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+14
+
+14	JA Gibbs	T R	8:00AM	9:15AM	ONLINE	08T
+14706	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CE Taylor	M W F	1:25PM	2:15PM	ONLINE	13M
+14707	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	S Reynolds	T R	2:00PM	3:15PM	ONLINE	14T
+14708	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RM Allnutt	M W F	11:15AM	12:05PM	ONLINE	11M
+14709	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	A Jones	T R	9:30AM	10:45AM	ONLINE	09T
+14710	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR Conaway	M W F	1:25PM	2:15PM	ONLINE	13M
+14711	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14712	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MD Moore	T R	11:00AM	12:15PM	ONLINE	11T
+14713	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+14
+
+14	T Becker	T R	8:00AM	9:15AM	ONLINE	08T
+14714	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	M Yu	M W F	8:00AM	8:50AM	ONLINE	08M
+14715	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AJ Hobin	T R	2:00PM	3:15PM	ONLINE	14T
+14716	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TA Saunders	M W F	9:05AM	9:55AM	ONLINE	09M
+14717	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	L Neilan	M W F	10:10AM	11:00AM	ONLINE	10M
+14718	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	CE Taylor	M W F	9:05AM	9:55AM	ONLINE	09M
+14719	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	VL Ruccolo	T R	11:00AM	12:15PM	ONLINE	11T
+14720	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LJ Shafer	M W F	10:10AM	11:00AM	ONLINE	10M
+14721	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	EL Bloomer	T R	2:00PM	3:15PM	ONLINE	14T
+14722	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MS Maycock	T R	3:30PM	4:45PM	ONLINE	15T
+14723	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HR Patton	T R	9:30AM	10:45AM	ONLINE	09T
+14724	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JR Scallorns	T R	11:00AM	12:15PM	ONLINE	11T
+14725	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HA Ankong	M W F	8:00AM	8:50AM	ONLINE	08M
+14726	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	VL Ruccolo	T R	2:00PM	3:15PM	ONLINE	14T
+14727	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	H Baker	T R	3:30PM	4:45PM	ONLINE	15T
+14728	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RH Canter	M W F	9:05AM	9:55AM	ONLINE	09M
+14729	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KG Morse	M W F	10:10AM	11:00AM	ONLINE	10M
+14730	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MM Williams	M W F	9:05AM	9:55AM	ONLINE	09M
+14731	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	IL Johnson	M W F	10:10AM	11:00AM	ONLINE	10M
+14732	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LJ Shafer	M W F	9:05AM	9:55AM	ONLINE	09M
+14733	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	M Yu	M W F	11:15AM	12:05PM	ONLINE	11M
+14734	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JR Greene	M W F	10:10AM	11:00AM	ONLINE	10M
+14735	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SD Frost	M W F	11:15AM	12:05PM	ONLINE	11M
+14736	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	OB Awotayo	M W F	10:10AM	11:00AM	ONLINE	10M
+14737	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AK McGlone	T R	2:00PM	3:15PM	ONLINE	14T
+14738	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CC Correll	T R	9:30AM	10:45AM	ONLINE	09T
+14739	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KM Gray	M W F	10:10AM	11:00AM	ONLINE	10M
+14740	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CC Correll	T R	11:00AM	12:15PM	ONLINE	11T
+14741	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	OB Awotayo	M W F	9:05AM	9:55AM	ONLINE	09M
+14742	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CE Taylor	M W F	10:10AM	11:00AM	ONLINE	10M
+14743	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MB Fernandes	M W F	10:10AM	11:00AM	ONLINE	10M
+14744	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+14745	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RM Allnutt	M W F	10:10AM	11:00AM	ONLINE	10M
+14746	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	H Baker	T R	2:00PM	3:15PM	ONLINE	14T
+14747	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Snyder	T R	3:30PM	4:45PM	ONLINE	15T
+14748	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TA Saunders	M W F	10:10AM	11:00AM	ONLINE	10M
+14749	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	VL Ruccolo	T R	3:30PM	4:45PM	ONLINE	15T
+14750	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HR Patton	T R	8:00AM	9:15AM	ONLINE	08T
+14751	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AK McGlone	T R	9:30AM	10:45AM	ONLINE	09T
+14752	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JD Zan	M W F	9:05AM	9:55AM	ONLINE	09M
+14753	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Drapeau	T R	9:30AM	10:45AM	ONLINE	09T
+14754	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TA Saunders	M W F	11:15AM	12:05PM	ONLINE	11M
+14755	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LA Fehr	M W F	10:10AM	11:00AM	ONLINE	10M
+14756	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	M Yu	M W F	10:10AM	11:00AM	ONLINE	10M
+14757	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+14758	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AJ Hobin	T R	3:30PM	4:45PM	ONLINE	15T
+14759	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SJ Baker	M W F	9:05AM	9:55AM	ONLINE	09M
+14760	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	BJ Christopher	M W F	8:00AM	8:50AM	ONLINE	08M
+14761	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CC Correll	T R	2:00PM	3:15PM	ONLINE	14T
+14762	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KM Gray	M W F	9:05AM	9:55AM	ONLINE	09M
+14763	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+14764	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR Conaway	M W F	10:10AM	11:00AM	ONLINE	10M
+14765	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	A Jones	T R	3:30PM	4:45PM	ONLINE	15T
+14766	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SJ Baker	M W F	11:15AM	12:05PM	ONLINE	11M
+14767	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JD Zan	M W F	10:10AM	11:00AM	ONLINE	10M
+14768	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	S Reynolds	M W	2:30PM	3:45PM	ONLINE	14M
+14769	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JR Greene	M W F	11:15AM	12:05PM	ONLINE	11M
+14770	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RH Canter	M W F	11:15AM	12:05PM	ONLINE	11M
+14771	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+14772	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR Conaway	M W F	11:15AM	12:05PM	ONLINE	11M
+14773	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CJ Robertson	M W F	10:10AM	11:00AM	ONLINE	10M
+14774	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CE Taylor	M W F	11:15AM	12:05PM	ONLINE	11M
+14775	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RH Canter	M W F	1:25PM	2:15PM	ONLINE	13M
+14776	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MS Maycock	T R	2:00PM	3:15PM	ONLINE	14T
+14777	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LA Fehr	M W F	1:25PM	2:15PM	ONLINE	13M
+14778	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	MD Moore	T R	2:00PM	3:15PM	ONLINE	14T
+14779	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Drapeau	T R	8:00AM	9:15AM	ONLINE	08T
+14780	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	C Wilson	T R	3:30PM	4:45PM	ONLINE	15T
+14781	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	BM Flores Zaldivar	M W F	8:00AM	8:50AM	ONLINE	08M
+14782	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	L Neilan	M W F	11:15AM	12:05PM	ONLINE	11M
+14783	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SD Mooney	T R	2:00PM	3:15PM	ONLINE	14T
+14784	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CJ Liebel	M W F	9:05AM	9:55AM	ONLINE	09M
+14785	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KK Homsher	M W F	8:00AM	8:50AM	ONLINE	08M
+14786	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AK McGlone	T R	12:30PM	1:45PM	ONLINE	12T
+14787	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JD Zan	M W F	1:25PM	2:15PM	ONLINE	13M
+14788	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RJ Hooper	M W F	1:25PM	2:15PM	ONLINE	13M
+14789	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SA Lara	M W F	10:10AM	11:00AM	ONLINE	10M
+14790	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	IL Johnson	M W F	1:25PM	2:15PM	ONLINE	13M
+14791	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LA Fehr	M W F	11:15AM	12:05PM	ONLINE	11M
+14792	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	M Yu	M W F	1:25PM	2:15PM	ONLINE	13M
+14793	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Gibbs	T R	3:30PM	4:45PM	ONLINE	15T
+14794	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SJ Baker	M W F	1:25PM	2:15PM	ONLINE	13M
+14795	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SD Frost	M W F	1:25PM	2:15PM	ONLINE	13M
+14796	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	AN Lewis	M W F	10:10AM	11:00AM	ONLINE	10M
+14797	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+14798	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SA Lara	M W F	8:00AM	8:50AM	ONLINE	08M
+14799	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	HA Ankong	M W F	9:05AM	9:55AM	ONLINE	09M
+14800	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	BJ Christopher	M W F	9:05AM	9:55AM	ONLINE	09M
+14801	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TB Portela	M W F	10:10AM	11:00AM	ONLINE	10M
+14802	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	T R	8:00AM	9:15AM	ONLINE	08T
+14803	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	VL Ruccolo	T R	9:30AM	10:45AM	ONLINE	09T
+14804	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	JA Gibbs	T R	11:00AM	12:15PM	ONLINE	11T
+14805	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	T Becker	T R	2:00PM	3:15PM	ONLINE	14T
+14806	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	S Reynolds	T R	3:30PM	4:45PM	ONLINE	15T
+14807	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	M Weaver	T R	9:30AM	10:45AM	ONLINE	09T
+14808	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RD Whittemore	M W F	9:05AM	9:55AM	ONLINE	09M
+14809	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	SR King	M W F	10:10AM	11:00AM	ONLINE	10M
+14810	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	C Wilson	M W	2:30PM	3:45PM	ONLINE	14M
+14811	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	C Wilson	M W	4:00PM	5:15PM	ONLINE	16M
+14812	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	CD Johnson	M W F	8:00AM	8:50AM	ONLINE	08M
+14813	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	LA Fehr	M W F	9:05AM	9:55AM	ONLINE	09M
+14814	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+14815	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	BM Flores Zaldivar	M W F	9:05AM	9:55AM	ONLINE	09M
+14816	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	TB Portela	M W F	8:00AM	8:50AM	ONLINE	08M
+14817	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RJ Hooper	M W F	11:15AM	12:05PM	ONLINE	11M
+14818	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	KK Homsher	M W F	9:05AM	9:55AM	ONLINE	09M
+14819	ENGL-1106	First-Year Writing	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+19
+
+19	RI Hargrave	M W F	8:00AM	8:50AM	ONLINE	08M
+15434	FR-3106	Gram/Composition/Conversation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	M Gueye	M W F	11:15AM	12:05PM	ONLINE	11M
+15435	FR-3106	Gram/Composition/Conversation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	M Gueye	M W F	10:10AM	11:00AM	ONLINE	10M
+20562	FR-3106	Gram/Composition/Conversation	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	A Alquier	M W F	12:20PM	1:10PM	ONLINE	12M
+15794	GER-3106	Gram/Comp/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	S Hofer	T R	2:00PM	3:15PM	ONLINE	14T
+15795	GER-3106	Gram/Comp/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+20
+
+20	EK Bauer	M W F	1:25PM	2:15PM	ONLINE	13M
+19704	SPAN-3105	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+19705	SPAN-3105	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+19706	SPAN-3105	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+19707	SPAN-3105	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+20590	SPAN-3105	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	NP Lopez-Romero	M W F	2:30PM	3:20PM	ONLINE	14M
+19708	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+19709	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+19710	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+19711	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	D Delgado Lopez	M W F	10:10AM	11:00AM	ONLINE	10M
+19712	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	D Delgado Lopez	M W F	9:05AM	9:55AM	ONLINE	09M
+20591	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	EL Austin	M W F	11:15AM	12:05PM	ONLINE	11M
+20592	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	CD Andrango-Walker	M W F	1:25PM	2:15PM	ONLINE	13M
+20593	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	CD Andrango-Walker	M W F	2:30PM	3:20PM	ONLINE	14M
+20594	SPAN-3106	Gram/Composition/Conv	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Staff	M W F	12:20PM	1:10PM	ONLINE	12M

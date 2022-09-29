@@ -9,7 +9,7 @@ Semester,Course Subject,Course Number,Course Name,Grade,Credit Hours,Prerequisit
 2,PHYS,2305,Found of Physics I w/ Lab,,4,MATH-1205|MATH-1205|MATH-1225,MATH-1206|MATH-1206H|MATH-1226,4,
 2,ENGL,1106,First-Year Writing,,3,ENGL-1105,,1F,
 2,MATH,1226,Calculus of a Single Variable,,4,MATH-1225,,5F,
-2,ENGE,1216,Foundations of Engineering,C-,2,ENGE-1216,,6D,
+2,ENGE,1216,Foundations of Engineering,C-,2,ENGE-1215,,6D,
 2,CS,1114,Intro to Software,C,3,,,,
 3,MATH,2204,Intro to Multivariable Calculus ,,3,MATH-1226,,,
 3,MATH,2534,Intro Discrete Math,,3,CS-1114|ECE-1574,,,
@@ -33,12 +33,12 @@ Semester,Course Subject,Course Number,Course Name,Grade,Credit Hours,Prerequisit
 6,CS,3604,Professionalism in Computing,,3,CS-1944&CS-2114&COMM-2004,,,
 6,,,,,3,,,0,
 7,CS,3304,Comparative Languages,,3,CS-3114,,,
-7,CS,41X4,,,3,,,,CS Theory Elective
-7,,,,,3,,,,CS Technical Elective
+7,,,,,3,,,,CS Theory Elective
+7,,,,,3,,,,Technical Elective
 7,,,,,3,,,0,Free Elective
-7,CS,3/4XXX,3/4XXX,,3,,,,CS 3/4XXX Elective
+7,CS,3/4XXX,,,3,,,,CS 3/4XXX Elective
 8,CS,4944,Senior Seminar,,1,CS-3604,,,
-8,CS,4XXX,,,3,,,,CS 4XXX Capstone
+8,,,,,3,,,,Capstone Elective
 8,CS,4XXX,,,3,,,,CS 4XXX Elective
 8,,,,,4,,,0,Free Elective
 8,,,,,3,,,0,

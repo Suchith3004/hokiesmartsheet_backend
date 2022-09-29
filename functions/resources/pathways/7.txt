@@ -1,0 +1,689 @@
+10066	AAEC-3324	Environment Sustain Dev Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+150
+
+150	MJ Ellerbrock	M W F	12:20PM	1:10PM	ONLINE	12M
+10067	AAEC-3324	Environment Sustain Dev Econ	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	E Benami	T R	3:30PM	4:45PM	ONLINE	15T
+10225	AFST-1714	Intro African American Studies	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+25
+
+25	AN Baldwin	T R	9:30AM	10:45AM	TBA	09T
+10226	AFST-1714	Intro African American Studies	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+10227	AFST-1714	Intro African American Studies	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+21585	AFST-2044	Contmpry African Amer Theatre	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+10
+
+10	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+10229	AFST-2204	Race & Gender in Rel & Cult	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BK Singh	T R	11:00AM	12:15PM	ONLINE	11T
+10230	AFST-2275	African-American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+48
+
+48	L Holness	T R	11:00AM	12:15PM	ONLINE	11T
+10231	AFST-2276	African-American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+10253	AINS-2414	Identity & Inclusion in Agric	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	DM Westfall-Rudd	T	8:00AM	9:15AM	LITRV 200	08T
+ 	 	 	 	* Additional Times *	R	8:00AM	9:15AM	ONLINE	 
+21068	AINS-3174	Native American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	J Taylor	T R	9:30AM	10:45AM	ONLINE	09T
+10260	ALCE-2414	Identity & Inclusion in Agric	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	DM Westfall-Rudd	T	8:00AM	9:15AM	LITRV 200	08T
+ 	 	 	 	* Additional Times *	R	8:00AM	9:15AM	ONLINE	 
+10676	APS-1704	Intro to Appalachian Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JL Laney	T R	9:30AM	10:45AM	ONLINE	09T
+10678	APS-1704	Intro to Appalachian Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JL Laney	T R	11:00AM	12:15PM	ONLINE	11T
+10679	APS-1704	Intro to Appalachian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	TH Edmondson	(ARR)	----- (ARR) -----	ONLINE	00X
+20452	APS-1704	Intro to Appalachian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	TH Edmondson	(ARR)	----- (ARR) -----	ONLINE	00X
+12876	CINE-4144	TS: Documentary Cinema History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+15
+
+15	KR Precoda	M	10:10AM	12:45PM	ONLINE	10M
+12877	CINE-4144	TS: Revolutionary Cinema	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+10
+
+10	KR Precoda	W	10:10AM	12:45PM	ONLINE	10W
+12988	COMM-2094	Comm & Issues of Diversity	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	SC Stinson	(ARR)	----- (ARR) -----	ONLINE	00X
+12989	COMM-2094	Comm & Issues of Diversity	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	C Evia Puerto	(ARR)	----- (ARR) -----	ONLINE	00X
+12990	COMM-2094	Comm & Issues of Diversity	ONLINE	
+Online: Asynchronous
+
+3	
+Full 0
+
+0	C Evia Puerto	(ARR)	----- (ARR) -----	ONLINE	00X
+20943	COMM-2094	Comm & Issues of Diversity	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	SC Stinson	(ARR)	----- (ARR) -----	ONLINE	00X
+20988	CRIM-2504	Crime & Punishment Amer Hist	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	D Halpin	T R	3:30PM	4:45PM	ONLINE	15T
+20994	CRIM-3124	Murder in American History	
+L	
+3	
+Full 0
+
+0	Staff
+20996	CRIM-3124	Murder in American History	
+L	
+3	
+40
+
+40	Staff
+20998	CRIM-3124	Murder in American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	MA Kiechle	M W F	1:25PM	2:15PM	ONLINE	13M
+21592	DANC-2014	Introduction to Dance History	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	GS Hardwig	(ARR)	----- (ARR) -----	ONLINE	00X
+21593	DANC-2014	Introduction to Dance History	ONLINE	
+Online: Asynchronous
+
+3	
+30
+
+30	GS Hardwig	(ARR)	----- (ARR) -----	ONLINE	00X
+14253	ECON-1204	Economics of Race	ONLINE	
+Online: Asynchronous
+
+3	
+24
+
+24	Z Yang	(ARR)	----- (ARR) -----	ONLINE	00X
+14277	ECON-1214	Econ Hist: Diversity&Inclusion	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	M Miller	T R	5:00PM	6:15PM	ONLINE	17T
+14321	EDCI-3024	Issues of Schooling in the US	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+24
+
+24	Y Liu	T R	11:00AM	12:15PM	ONLINE	11T
+20616	ENGL-1514	Language and Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	K Carmichael	M W	4:00PM	5:15PM	ONLINE	16M
+21398	ENGL-1514	Language and Society	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	KG Morse	M W F	11:15AM	12:05PM	ONLINE	11M
+21586	ENGL-2044	Contmpry African Amer Theatre	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+10
+
+10	Staff	M W F	11:15AM	12:05PM	ONLINE	11M
+14841	ENGL-2634	Writing and Social Justice	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+22
+
+22	JR Greene	M W	2:30PM	3:45PM	ONLINE	14M
+21572	ENGR-2984G	SS: US Engr in Global Context	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	RS Emmett	T R	9:30AM	10:45AM	ONLINE	09T
+15900	HD-1134	Intro to Disabilities Studies	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	CL Duncan Lane	(ARR)	----- (ARR) -----	ONLINE	00X
+15901	HD-1134	Intro to Disabilities Studies	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+80
+
+80	C Shivers	T R	3:30PM	4:45PM	TBA	15T
+15906	HD-2014	Integrative Health Practices	ONLINE	
+Online: Asynchronous
+
+3	
+80
+
+80	MF Komelski	(ARR)	----- (ARR) -----	ONLINE	00X
+15991	HIST-1115	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	KA Minor	(ARR)	----- (ARR) -----	ONLINE	00X
+15992	HIST-1115	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	EL McKagen	(ARR)	----- (ARR) -----	ONLINE	00X
+15993	HIST-1115	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	EK Cherry	(ARR)	----- (ARR) -----	ONLINE	00X
+15994	HIST-1116	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	TH Edmondson	(ARR)	----- (ARR) -----	ONLINE	00X
+15995	HIST-1116	History of the United States	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+15996	HIST-1116	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	AC Demmer	(ARR)	----- (ARR) -----	ONLINE	00X
+15997	HIST-1116	History of the United States	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	AC Demmer	(ARR)	----- (ARR) -----	ONLINE	00X
+16002	HIST-1764	History of Rock n Roll	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	RP Stephens	(ARR)	----- (ARR) -----	ONLINE	00X
+16013	HIST-2104	History of Public Health	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+44
+
+44	MA Kiechle	M W	2:30PM	3:45PM	ONLINE	14M
+16014	HIST-2104	Slavery, Law & War in No. Am.	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	CW Newhall	T	2:00PM	3:15PM	TBA	14T
+ 	 	 	 	* Additional Times *	R	2:00PM	3:15PM	ONLINE	 
+16015	HIST-2104	Asian-American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+38
+
+38	A Lumba	M W	2:30PM	3:45PM	ONLINE	14M
+20822	HIST-2104	TS: History of Agriculture	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	A Zeide	(ARR)	----- (ARR) -----	ONLINE	00X
+20823	HIST-2104	TS: U. S. Food History	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	A Zeide	(ARR)	----- (ARR) -----	ONLINE	00X
+16017	HIST-2275	African-American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+48
+
+48	L Holness	T R	11:00AM	12:15PM	ONLINE	11T
+16018	HIST-2276	African-American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+20821	HIST-2504	Crime & Punishment Amer Hist	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	D Halpin	T R	3:30PM	4:45PM	ONLINE	15T
+20827	HIST-3124	Murder in American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	MA Kiechle	M W F	1:25PM	2:15PM	ONLINE	13M
+21061	HIST-3174	Native American History	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	J Taylor	T R	9:30AM	10:45AM	ONLINE	09T
+16046	HIST-3724	Disease, Med, & Health	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+49
+
+49	MS Dufour	T R	2:00PM	3:15PM	ONLINE	14T
+16214	HTM-4434	Event & Exp Wksp	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	C Fitch	T R	11:00AM	12:15PM	WAL 364	11T
+16263	HUM-1704	Intro to Appalachian Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JL Laney	T R	11:00AM	12:15PM	ONLINE	11T
+16265	HUM-1704	Intro to Appalachian Studies	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JL Laney	T R	9:30AM	10:45AM	ONLINE	09T
+16266	HUM-1704	Intro to Appalachian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	TH Edmondson	(ARR)	----- (ARR) -----	ONLINE	00X
+20453	HUM-1704	Intro to Appalachian Studies	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	TH Edmondson	(ARR)	----- (ARR) -----	ONLINE	00X
+16319	IS-1004	Nations and Nationalities	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	E Weisband	(ARR)	----- (ARR) -----	ONLINE	00X
+20698	MGT-2204	Global Business of Pop Culture	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+75
+
+75	EC Jamison	T R	9:30AM	10:45AM	ONLINE	09T
+17862	MGT-3444	Multi Diversity in Orgs	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+52
+
+52	AK Ward Bartlett	T R	11:00AM	12:15PM	ONLINE	11T
+17879	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	11:00AM	12:15PM	ONLINE	11T
+17880	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	12:30PM	1:45PM	ONLINE	12T
+20733	MGT-4334	Ethical Leadership	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	KA Schnatterly	T R	2:00PM	3:15PM	ONLINE	14T
+20922	PM-4744	Housing Challenges & Policies	ONLINE	
+Online: Asynchronous
+
+3	
+35
+
+35	H Lee	(ARR)	----- (ARR) -----	ONLINE	00X
+19260	PSCI-1004	Nations and Nationalities	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	E Weisband	(ARR)	----- (ARR) -----	ONLINE	00X
+19261	PSCI-1014	US Gov & Politics	ONLINE	
+Online: Asynchronous
+
+3	
+40
+
+40	CE Jewitt	(ARR)	----- (ARR) -----	ONLINE	00X
+19262	PSCI-1014	US Gov & Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	CA Hankinson	M W F	12:20PM	1:10PM	TBA	12M
+19263	PSCI-1014	US Gov & Politics	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	CA Hankinson	M W F	10:10AM	11:00AM	TBA	10M
+19264	PSCI-1014	US Gov & Politics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	C Levinson	T R	2:30PM	3:45PM	ONLINE	14T
+19460	RED-4604	Environ & Sustain Housing	ONLINE	
+Online: Asynchronous
+
+3	
+60
+
+60	E Hopkins	(ARR)	----- (ARR) -----	ONLINE	00X
+19472	RLCL-2204	Race & Gender in Rel & Cult	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BK Singh	T R	11:00AM	12:15PM	ONLINE	11T
+19613	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+19614	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	JE Hawdon	M W	2:30PM	3:45PM	ONLINE	14M
+19615	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	LE Simmons	(ARR)	----- (ARR) -----	ONLINE	00X
+19616	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	JE Hawdon	T R	9:30AM	10:45AM	ONLINE	09T
+19617	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	JE Hawdon	T R	2:00PM	3:15PM	ONLINE	14T
+19618	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+75
+
+75	MD Hughes	T R	11:00AM	12:15PM	ONLINE	11T
+19619	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JW Ryan	(ARR)	----- (ARR) -----	ONLINE	00X
+19620	SOC-1004	Introductory Sociology	ONLINE	
+Online: Asynchronous
+
+3	
+100
+
+100	JW Ryan	(ARR)	----- (ARR) -----	ONLINE	00X
+21255	SOC-1004	Introductory Sociology	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+49
+
+49	MD Hughes	T R	2:00PM	3:15PM	ONLINE	14T
+19623	SOC-2004	Social Problems	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	P Raonka	T R	8:00AM	9:15AM	ONLINE	08T
+19624	SOC-2004	Social Problems	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+75
+
+75	HM Williams	M W	4:00PM	5:15PM	TBA	16M
+19625	SOC-2004	Social Problems	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19626	SOC-2014	Soc Intimate Relationships	ONLINE	
+Online: Asynchronous
+
+3	
+75
+
+75	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+19627	SOC-2024	Soc of Race and Ethnicity	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+40
+
+40	I Islam	T R	12:30PM	1:45PM	ONLINE	12T
+19628	SOC-2024	Soc of Race and Ethnicity	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	H Momplaisir	(ARR)	----- (ARR) -----	ONLINE	00X
+19651	SOC-3314	Social Movements	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	KM Byrd	(ARR)	----- (ARR) -----	ONLINE	00X
+20597	SPAN-3514	Span Medical Professions	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	V Venkatesh	M W F	10:10AM	11:00AM	ONLINE	10M
+20598	SPAN-3514	Span Medical Professions	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	V Venkatesh	M W F	11:15AM	12:05PM	ONLINE	11M
+21584	TA-2044	Contmpry African Amer Theatre	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+10
+
+10	D Jeffries	M W F	11:15AM	12:05PM	ONLINE	11M
+20381	WGS-2204	Race & Gender in Rel & Cult	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	BK Singh	T R	11:00AM	12:15PM	ONLINE	11T

@@ -1,0 +1,455 @@
+10058	AAEC-2104	Personal Financial Planning	ONLINE	
+Online: Asynchronous
+
+3	
+500
+
+500	WA White	(ARR)	----- (ARR) -----	ONLINE	00X
+10323	ALS-3104	Animal Breeding and Genetics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+125
+
+125	HL Bradford	T R	11:00AM	12:15PM	ONLINE	11T
+20652	ART-3114	Creative Code	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	ZR Duer	M W	10:10AM	12:05PM	ONLINE	10M
+11755	BIT-2406	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	L Travis	M W	2:30PM	3:45PM	ONLINE	14M
+11757	BIT-2406	Bus Stats Analytics & Model	ONLINE	
+Online: Asynchronous
+
+3	
+200
+
+200	BW Taylor	(ARR)	----- (ARR) -----	ONLINE	00X
+11758	BIT-2406	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	ZE Bowden	M W F	11:15AM	12:05PM	ONLINE	11M
+11760	BIT-2406	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+100
+
+100	BM Fraticelli	T R	12:30PM	1:45PM	ONLINE	12T
+21353	BIT-2406	Bus Stats Analytics & Model	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+80
+
+80	ZE Bowden	M W F	9:05AM	9:55AM	ONLINE	09M
+12107	CEE-3804	Computer Applications for CEE	
+L	
+Face-to-Face Instruction
+
+3	
+30
+
+30	SW Case	T R	11:00AM	12:15PM	TBA	11T
+12108	CEE-3804	Computer Applications for CEE	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	AA Trani	M W F	8:00AM	8:50AM	ONLINE	08M
+12109	CEE-3804	Computer Applications for CEE	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	AS Brand	M W F	1:25PM	2:15PM	ONLINE	13M
+20433	CEE-3804	Computer Applications for CEE	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+40
+
+40	AT Abdelhalim	M W F	9:05AM	9:55AM	TBA	09M
+21418	CEE-3804	Computer Applications for CEE	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	SW Case	T R	11:00AM	12:15PM	ONLINE	11T
+12890	CMDA-2014	Data Matter	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+60
+
+60	Staff	M W	4:00PM	5:15PM	ONLINE	16M
+21118	CMDA-4864	Comp Mod Data Analyt Capstone	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+Full 0
+
+0	FW Faltin	M W	2:30PM	3:45PM	TBA	14M
+13149	CS-3114	Data Structures and Algorithms	ONLINE	
+Online: Asynchronous
+
+3	
+150
+
+150	WD McQuain	(ARR)	----- (ARR) -----	ONLINE	00X
+13151	CS-3114	Data Structures and Algorithms	ONLINE	
+Online: Asynchronous
+
+3	
+140
+
+140	WD McQuain	(ARR)	----- (ARR) -----	ONLINE	00X
+14278	ECON-3054	Introduction to Forecasting	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+25
+
+25	RA Ashley	M W F	12:20PM	1:10PM	ONLINE	12M
+20622	ENGL-4074	Syntax	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	CM Eska	T R	12:30PM	1:45PM	ONLINE	12T
+15468	FREC-3004	Environmental Informatics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	RQ Thomas	T R	2:00PM	3:15PM	ONLINE	14T
+15470	FREC-3214	Forest Biometrics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+27
+
+27	PJ Radtke	M W F	10:10AM	11:00AM	ONLINE	10M
+15921	HD-3024	Community Analytics	
+L	
+Face-to-Face Instruction
+
+3	
+48
+
+48	IS Bradburn	T R	11:00AM	12:15PM	TBA	11T
+16212	HTM-4354	IT & Social Media in HTM	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+30
+
+30	Z Xiang	T	6:00PM	9:00PM	ONLINE	18T
+16673	LAR-3044	Land Analysis & Site Planning	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	M Kim	T R	12:30PM	1:45PM	ONLINE	12T
+16960	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	M W F	10:10AM	11:00AM	ONLINE	10M
+16961	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+16962	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+16963	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	12:30PM	1:45PM	ONLINE	12T
+16964	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	9:30AM	10:45AM	ONLINE	09T
+16965	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+16966	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+16967	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+45
+
+45	Staff	M W F	12:20PM	1:10PM	TBA	12M
+16968	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+45
+
+45	Staff	M W F	9:05AM	9:55AM	TBA	09M
+16969	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W F	1:25PM	2:15PM	TBA	13M
+16970	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	M W	4:00PM	5:15PM	ONLINE	16M
+16971	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	3:30PM	4:45PM	ONLINE	15T
+16972	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W F	12:20PM	1:10PM	TBA	12M
+16973	MATH-2214	Intro Diff Equations	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16974	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	2:00PM	3:15PM	ONLINE	14T
+16975	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+45
+
+45	Staff	M W F	9:05AM	9:55AM	TBA	09M
+16976	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W	2:30PM	3:45PM	TBA	14M
+16977	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W F	11:15AM	12:05PM	TBA	11M
+16978	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+45
+
+45	Staff	M W F	10:10AM	11:00AM	TBA	10M
+16979	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W F	11:15AM	12:05PM	TBA	11M
+16980	MATH-2214	Intro Diff Equations	ONLINE	
+Online: Asynchronous
+
+3	
+50
+
+50	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+16981	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	T R	11:00AM	12:15PM	ONLINE	11T
+21081	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+21082	MATH-2214	Intro Diff Equations	ONLINE	
+Online: Asynchronous
+
+3	
+45
+
+45	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+21085	MATH-2214	Intro Diff Equations	
+L	
+Hybrid (F2F & Online Instruc.)
+
+3	
+50
+
+50	Staff	M W F	10:10AM	11:00AM	TBA	10M
+21086	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+50
+
+50	Staff	T R	2:00PM	3:15PM	ONLINE	14T
+21087	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	M W F	12:20PM	1:10PM	ONLINE	12M
+21089	MATH-2214	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+45
+
+45	Staff	M W F	9:05AM	9:55AM	ONLINE	09M
+16982	MATH-2214H	Intro Diff Equations	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	L Zietsman	T R	2:00PM	3:15PM	ONLINE	14T
+19754	SPIA-4464	Data & Art of Policy and Plans	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+38
+
+38	TC Lim	T R	11:00AM	12:15PM	ONLINE	11T
+19773	STAT-3005	Statistical Methods	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+35
+
+35	Staff	T R	12:30PM	1:45PM	ONLINE	12T
+19774	STAT-3005	Statistical Methods	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+125
+
+125	Staff	M W F	1:25PM	2:15PM	ONLINE	13M
+19777	STAT-3604	Statistics for Social Science	ONLINE	
+Online: Asynchronous
+
+3	
+250
+
+250	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+21051	STAT-3604	Statistics for Social Science	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+Full 0
+
+0	Staff	M W F	8:00AM	8:50AM	ONLINE	08M
+19778	STAT-3615	Biological Statistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+197
+
+197	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+21062	STAT-3615	Biological Statistics	ONLINE	
+Online: Asynchronous
+
+3	
+70
+
+70	Staff	(ARR)	----- (ARR) -----	ONLINE	00X
+21063	STAT-3615	Biological Statistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+80
+
+80	Staff	T R	2:00PM	3:15PM	ONLINE	14T
+21065	STAT-3615	Biological Statistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+70
+
+70	Staff	M W	2:30PM	3:45PM	ONLINE	14M
+21071	STAT-3615	Biological Statistics	ONLINE	
+Online with Synchronous Mtgs.
+
+3	
+80
+
+80	Staff	M W	5:30PM	6:45PM	ONLINE	17M
